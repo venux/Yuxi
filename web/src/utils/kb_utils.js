@@ -16,7 +16,7 @@ export const brandIcons = {
 
 export const getKbTypeLabel = (type) => {
   const labels = {
-    milvus: 'CommonRAG',
+    milvus: 'Yuxi',
     dify: 'Dify',
     notion: 'Notion'
   }
@@ -39,4 +39,25 @@ export const getKbTypeColor = (type) => {
     notion: 'purple'
   }
   return colors[type] || 'blue'
+}
+
+const READ_ONLY_KB_TYPES = new Set(['dify', 'notion'])
+
+export const isReadOnlyDatabase = (database, kbTypes = {}) => {
+  const kbType = (typeof database === 'string' ? database : database?.kb_type || 'milvus').toLowerCase()
+
+  if (database?.supports_documents !== undefined) {
+    return database.supports_documents === false
+  }
+  if (kbTypes[kbType]?.supports_documents !== undefined) {
+    return kbTypes[kbType].supports_documents === false
+  }
+  return READ_ONLY_KB_TYPES.has(kbType)
+}
+
+export const kbUtils = {
+  getKbTypeLabel,
+  getKbTypeIcon,
+  getKbTypeColor,
+  isReadOnlyDatabase
 }

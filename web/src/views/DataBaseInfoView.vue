@@ -139,7 +139,7 @@
 </template>
 
 <script setup>
-import { ref, watch, onUnmounted, computed } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDatabaseStore } from '@/stores/database'
 import { useTaskerStore } from '@/stores/tasker'
@@ -157,6 +157,7 @@ import RAGEvaluationTab from '@/components/RAGEvaluationTab.vue'
 import EvaluationBenchmarks from '@/components/EvaluationBenchmarks.vue'
 import SearchConfigModal from '@/components/SearchConfigModal.vue'
 import SearchConfigPanel from '@/components/SearchConfigPanel.vue'
+import { kbUtils } from '@/utils/kb_utils'
 
 const route = useRoute()
 const store = useDatabaseStore()
@@ -168,7 +169,9 @@ const state = computed(() => store.state)
 const isCurrentDatabaseLoaded = computed(() => database.value?.db_id === databaseId.value)
 const kbType = computed(() => (isCurrentDatabaseLoaded.value ? database.value.kb_type?.toLowerCase() : ''))
 const isMilvus = computed(() => kbType.value === 'milvus')
-const isConnector = computed(() => Boolean(kbType.value) && !isMilvus.value)
+const isConnector = computed(
+  () => isCurrentDatabaseLoaded.value && kbUtils.isReadOnlyDatabase(database.value)
+)
 
 // 计算待解析文件数量（status: 'uploaded'）
 const pendingParseCount = computed(() => {
@@ -237,9 +240,7 @@ const isDragging = ref(false)
 
 watch(
   () => [databaseId.value, isMilvus.value],
-  ([newDbId, isMilvusType], oldValue = []) => {
-    const [oldDbId] = oldValue
-
+  ([newDbId, isMilvusType]) => {
     if (!newDbId) {
       return
     }

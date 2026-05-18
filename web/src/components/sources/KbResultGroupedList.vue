@@ -97,7 +97,31 @@ const resolveChunks = (input) => {
 }
 
 const normalizedChunks = computed(() =>
-  resolveChunks(props.chunks).filter((item) => item && typeof item === 'object' && item.content)
+  resolveChunks(props.chunks)
+    .filter((item) => item && typeof item === 'object' && item.content)
+    .map((item) => {
+      const metadata = item.metadata && typeof item.metadata === 'object' ? item.metadata : {}
+      const source =
+        metadata.source ||
+        metadata.file_name ||
+        metadata.filename ||
+        metadata.title ||
+        item.file_name ||
+        item.filename ||
+        item.file_id ||
+        item.resource_id ||
+        '未知来源'
+
+      return {
+        ...item,
+        score: typeof item.score === 'number' ? item.score : metadata.score,
+        metadata: {
+          ...metadata,
+          source,
+          chunk_id: metadata.chunk_id || item.id
+        }
+      }
+    })
 )
 
 const fileGroupList = computed(() => {

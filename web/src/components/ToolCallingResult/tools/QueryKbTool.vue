@@ -3,8 +3,8 @@
     <template #header>
       <div class="sep-header">
         <span class="note">{{ operationLabel }}</span>
-        <span class="separator" v-if="kbName">|</span>
-        <span class="description" v-if="kbName">知识库: {{ kbName }}</span>
+        <span class="separator" v-if="resourceLabel">|</span>
+        <span class="description" v-if="resourceLabel">知识库: {{ resourceLabel }}</span>
         <span class="separator" v-if="queryText">|</span>
         <span class="description">{{ queryText }}</span>
       </div>
@@ -93,6 +93,7 @@
 import { computed } from 'vue'
 import BaseToolCall from '../BaseToolCall.vue'
 import KbResultGroupedList from '@/components/sources/KbResultGroupedList.vue'
+import { useDatabaseStore } from '@/stores/database'
 
 const props = defineProps({
   toolCall: {
@@ -100,6 +101,8 @@ const props = defineProps({
     required: true
   }
 })
+
+const databaseStore = useDatabaseStore()
 
 const args = computed(() => {
   const value = props.toolCall.args || props.toolCall.function?.arguments
@@ -116,7 +119,9 @@ const toolName = computed(() => props.toolCall.name || props.toolCall.function?.
 
 const operationLabel = computed(() => `${toolName.value} 搜索`)
 
-const kbName = computed(() => args.value.kb_name || '')
+const resourceLabel = computed(
+  () => args.value.kb_name || databaseStore.getDatabaseNameById(args.value.resource_id)
+)
 const queryText = computed(() => args.value.query_text || '')
 
 const EMPTY_RESULT = Object.freeze({
@@ -133,7 +138,9 @@ const normalizeChunks = (payload) => {
   if (Array.isArray(payload)) return payload
   if (!payload || typeof payload !== 'object') return []
 
+  if (Array.isArray(payload.results)) return payload.results
   if (Array.isArray(payload.chunks)) return payload.chunks
+  if (Array.isArray(payload.data?.results)) return payload.data.results
   if (Array.isArray(payload.data?.chunks)) return payload.data.chunks
 
   return []

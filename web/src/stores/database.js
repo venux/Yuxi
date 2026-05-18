@@ -527,6 +527,22 @@ export const useDatabaseStore = defineStore('database', () => {
     }
   }
 
+  function getDatabaseNameById(id) {
+    const normalizedId = String(id || '').trim()
+    if (!normalizedId) return ''
+
+    const matchedDatabase = databases.value.find(
+      (item) => String(item.db_id || '').trim() === normalizedId
+    )
+    if (matchedDatabase?.name) return matchedDatabase.name
+
+    if (String(database.value?.db_id || '').trim() === normalizedId) {
+      return database.value?.name || ''
+    }
+
+    return ''
+  }
+
   return {
     databases,
     database,
@@ -554,6 +570,7 @@ export const useDatabaseStore = defineStore('database', () => {
     startAutoRefresh,
     stopAutoRefresh,
     toggleAutoRefresh,
-    selectAllFailedFiles
+    selectAllFailedFiles,
+    getDatabaseNameById
   }
 })

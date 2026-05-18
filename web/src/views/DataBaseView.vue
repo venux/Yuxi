@@ -220,7 +220,7 @@ import ExtensionCardGrid from '@/components/extensions/ExtensionCardGrid.vue'
 import InfoCard from '@/components/shared/InfoCard.vue'
 import dayjs, { parseToShanghai } from '@/utils/time'
 import AiTextarea from '@/components/AiTextarea.vue'
-import { getKbTypeLabel, getKbTypeIcon, getKbTypeColor } from '@/utils/kb_utils'
+import { getKbTypeLabel, getKbTypeIcon, getKbTypeColor, kbUtils } from '@/utils/kb_utils'
 import { CHUNK_PRESET_OPTIONS, getChunkPresetDescription } from '@/utils/chunk_presets'
 
 const route = useRoute()
@@ -450,9 +450,12 @@ const handleCreateDatabase = async () => {
 }
 
 const cardSubtitle = (database) => {
-  const parts = [`${database.row_count || 0} 文件`]
+  const parts = []
   if (database.created_at) {
     parts.push(formatCreatedTime(database.created_at))
+  }
+  if (!kbUtils.isReadOnlyDatabase(database)) {
+    parts.push(`${database.row_count || 0} 文件`)
   }
   return parts.join(' · ')
 }
