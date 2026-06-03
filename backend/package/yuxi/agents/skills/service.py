@@ -586,8 +586,10 @@ def _parse_skill_markdown(content: str) -> tuple[str, str, str, dict[str, Any]]:
 
     name = _validate_skill_display_name(str(data.get("name", "")))
     raw_slug = str(data.get("slug", "")).strip()
-    slug = _validate_skill_slug_value(raw_slug, field_name="slug") if raw_slug else _validate_skill_slug_value(
-        name, field_name="name"
+    slug = (
+        _validate_skill_slug_value(raw_slug, field_name="slug")
+        if raw_slug
+        else _validate_skill_slug_value(name, field_name="name")
     )
     description = str(data.get("description", "")).strip()
     if not description:

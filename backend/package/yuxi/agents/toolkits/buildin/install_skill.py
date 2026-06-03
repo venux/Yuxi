@@ -15,7 +15,6 @@ from yuxi.repositories.conversation_repository import ConversationRepository
 from yuxi.storage.postgres.manager import pg_manager
 from yuxi.utils.logging_config import logger
 
-
 SANDBOX_PATH_HINT = (
     "请使用 /home/gem/user-data/workspace/...、/home/gem/user-data/uploads/... 或 /home/gem/user-data/outputs/..."
 )
@@ -83,9 +82,7 @@ def _download_skill_dir(backend, remote_dir: str, local_dir: Path) -> None:
         target_path.write_bytes(content)
 
 
-def _prepare_skill_from_sandbox(
-    sandbox_path: str, thread_id: str, uid: str, staging_root: Path
-) -> tuple[Path, str]:
+def _prepare_skill_from_sandbox(sandbox_path: str, thread_id: str, uid: str, staging_root: Path) -> tuple[Path, str]:
     """从 Sandbox 路径准备 skill 目录。返回 (本地目录, 原始 skill name)。"""
     from yuxi.agents.backends.sandbox import ProvisionerSandboxBackend, resolve_virtual_path
     from yuxi.agents.skills.service import (
