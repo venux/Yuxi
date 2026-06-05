@@ -240,11 +240,11 @@ const showCopiedFeedback = (btn) => {
 
   cite {
     position: relative;
-    margin-left: 4px;
+    margin: 0 4px;
     padding: 0 0.25rem;
     border-radius: 4px;
-    outline: 2px solid var(--gray-200);
-    background-color: var(--gray-200);
+    outline: 2px solid var(--gray-100);
+    background-color: var(--gray-100);
     color: var(--gray-800);
     font-size: 12px;
     font-style: normal;

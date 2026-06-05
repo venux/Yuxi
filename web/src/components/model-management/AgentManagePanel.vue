@@ -103,6 +103,15 @@ const filteredAgents = computed(() => {
   })
 })
 
+const groupedAgents = computed(() => {
+  const agents = filteredAgents.value.filter((agent) => !agent.is_subagent)
+  const subagents = filteredAgents.value.filter((agent) => agent.is_subagent)
+  return [
+    { key: 'agents', title: '智能体', agents },
+    { key: 'subagents', title: '子智能体', agents: subagents }
+  ].filter((group) => group.agents.length > 0)
+})
+
 const agentStats = computed(() => ({
   total: managedAgents.value.length,
   builtin: managedAgents.value.filter(isBuiltinAgent).length,
@@ -394,62 +403,76 @@ defineExpose({
       </template>
     </PageShoulder>
 
-    <ExtensionCardGrid :min-width="320">
-      <InfoCard
-        v-for="agent in filteredAgents"
-        :key="agent.id"
-        :title="agent.name"
-        :subtitle="agent.slug || agent.id"
-        :description="agent.description || '暂无描述'"
-        :default-icon="Bot"
-        :tags="getAgentTags(agent)"
-        class="config-card agent-card"
-        @click="canManageAgent(agent) && openEditAgentModal(agent)"
-      >
-        <template #icon>
-          <img
-            v-if="getAgentIconSrc(agent)"
-            class="agent-card-icon-image"
-            :src="getAgentIconSrc(agent)"
-            :alt="`${agent.name || '智能体'}图标`"
-          />
-        </template>
+    <div v-if="groupedAgents.length === 0" class="agent-empty-state">
+      <a-empty :image="false" :description="searchQuery ? '没有匹配的智能体' : '暂无智能体'" />
+    </div>
 
-        <template #status>
-          <a-dropdown v-if="canManageAgent(agent)" :trigger="['click']" placement="bottomRight">
-            <template #overlay>
-              <a-menu>
-                <a-menu-item key="edit" @click.stop="openEditAgentModal(agent)">
-                  <span class="agent-card-menu-item">
-                    <Edit3 :size="14" />
-                    编辑智能体
-                  </span>
-                </a-menu-item>
-                <a-menu-item
-                  key="delete"
-                  :disabled="isBuiltinAgent(agent)"
-                  @click.stop="deleteAgent(agent)"
-                >
-                  <span class="agent-card-menu-item" :class="{ danger: !isBuiltinAgent(agent) }">
-                    <Trash2 :size="14" />
-                    删除智能体
-                  </span>
-                </a-menu-item>
-              </a-menu>
+    <template v-else>
+      <section v-for="group in groupedAgents" :key="group.key" class="agent-group-section">
+        <div class="agent-group-header">
+          <span>{{ group.title }}</span>
+        </div>
+        <ExtensionCardGrid :min-width="320">
+          <InfoCard
+            v-for="agent in group.agents"
+            :key="agent.id"
+            :title="agent.name"
+            :subtitle="agent.slug || agent.id"
+            :description="agent.description || '暂无描述'"
+            :default-icon="Bot"
+            :tags="getAgentTags(agent)"
+            class="config-card agent-card"
+            @click="canManageAgent(agent) && openEditAgentModal(agent)"
+          >
+            <template #icon>
+              <img
+                v-if="getAgentIconSrc(agent)"
+                class="agent-card-icon-image"
+                :src="getAgentIconSrc(agent)"
+                :alt="`${agent.name || '智能体'}图标`"
+              />
             </template>
-            <a-button
-              type="text"
-              size="small"
-              class="agent-card-menu-trigger"
-              aria-label="智能体操作"
-              @click.stop
-            >
-              <MoreVertical :size="16" />
-            </a-button>
-          </a-dropdown>
-        </template>
-      </InfoCard>
-    </ExtensionCardGrid>
+
+            <template #status>
+              <a-dropdown v-if="canManageAgent(agent)" :trigger="['click']" placement="bottomRight">
+                <template #overlay>
+                  <a-menu>
+                    <a-menu-item key="edit" @click.stop="openEditAgentModal(agent)">
+                      <span class="agent-card-menu-item">
+                        <Edit3 :size="14" />
+                        编辑智能体
+                      </span>
+                    </a-menu-item>
+                    <a-menu-item
+                      key="delete"
+                      :disabled="isBuiltinAgent(agent)"
+                      @click.stop="deleteAgent(agent)"
+                    >
+                      <span
+                        class="agent-card-menu-item"
+                        :class="{ danger: !isBuiltinAgent(agent) }"
+                      >
+                        <Trash2 :size="14" />
+                        删除智能体
+                      </span>
+                    </a-menu-item>
+                  </a-menu>
+                </template>
+                <a-button
+                  type="text"
+                  size="small"
+                  class="agent-card-menu-trigger"
+                  aria-label="智能体操作"
+                  @click.stop
+                >
+                  <MoreVertical :size="16" />
+                </a-button>
+              </a-dropdown>
+            </template>
+          </InfoCard>
+        </ExtensionCardGrid>
+      </section>
+    </template>
 
     <!-- Agent Edit Modal -->
     <a-modal
@@ -615,6 +638,30 @@ defineExpose({
 .agent-manage-panel {
   height: 100%;
   min-height: 0;
+}
+
+.agent-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.agent-group-section + .agent-group-section {
+  padding-top: 2px;
+}
+
+.agent-group-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px var(--page-padding) 0;
+  color: var(--gray-500);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 18px;
 }
 
 .agent-card-icon-image {
