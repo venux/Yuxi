@@ -339,29 +339,19 @@ async def get_active_run_by_thread(*, thread_id: str, current_uid: str, db: Asyn
     from sqlalchemy import select
     from yuxi.storage.postgres.models_business import AgentRun
 
-    active_result = await db.execute(
+    # 线程内的 run 是串行的，最近一条 run 即代表线程当前状态。
+    # 已被回复的 interrupted run 会被更晚创建的 resume run 取代，因此不会再被当作待处理中断返回。
+    result = await db.execute(
         select(AgentRun)
         .where(
             AgentRun.thread_id == thread_id,
             AgentRun.uid == str(current_uid),
             AgentRun.run_type.in_(["chat", "resume"]),
-            AgentRun.status.in_(["pending", "running", "cancel_requested"]),
         )
         .order_by(AgentRun.created_at.desc())
         .limit(1)
     )
-    run = active_result.scalar_one_or_none()
-    if not run:
-        interrupted_result = await db.execute(
-            select(AgentRun)
-            .where(
-                AgentRun.thread_id == thread_id,
-                AgentRun.uid == str(current_uid),
-                AgentRun.run_type.in_(["chat", "resume"]),
-                AgentRun.status == "interrupted",
-            )
-            .order_by(AgentRun.created_at.desc())
-            .limit(1)
-        )
-        run = interrupted_result.scalar_one_or_none()
-    return {"run": run.to_dict() if run else None}
+    run = result.scalar_one_or_none()
+    if run and run.status in ("pending", "running", "cancel_requested", "interrupted"):
+        return {"run": run.to_dict()}
+    return {"run": None}

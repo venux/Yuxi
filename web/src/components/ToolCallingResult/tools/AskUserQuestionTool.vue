@@ -1,11 +1,45 @@
 <template>
-  <BaseToolCall :tool-call="toolCall" hide-params>
+  <BaseToolCall
+    :tool-call="toolCall"
+    :appearance="appearance"
+    :default-expanded="defaultExpanded"
+    :force-show-result="questions.length > 0"
+    hide-params
+  >
     <template #header>
       <div class="sep-header">
         <span class="note">提问</span>
         <span class="separator">|</span>
         <span class="description">{{ shortQuestionSummary }}</span>
-        <span v-if="userAnswer" class="tag tag-answered"> 已回答: {{ displayAnswer }} </span>
+        <span v-if="displayAnswer" class="tag tag-answered"> 已回答: {{ displayAnswer }} </span>
+      </div>
+    </template>
+
+    <template #result>
+      <div class="ask-question-result">
+        <div v-if="questions.length" class="question-list">
+          <div
+            v-for="(questionItem, questionIndex) in questions"
+            :key="questionItem.questionId || questionIndex"
+            class="question-item"
+          >
+            <div class="question-title">
+              <span class="question-index">{{ questionIndex + 1 }}</span>
+              <span class="question-text">{{ questionItem.question }}</span>
+            </div>
+
+            <div v-if="questionItem.operation" class="operation-row">
+              <span class="row-label">操作</span>
+              <span class="operation-text">{{ questionItem.operation }}</span>
+            </div>
+
+            <div v-if="getQuestionAnswerText(questionItem)" class="answer-row">
+              <span class="row-label">回答</span>
+              <span class="answer-text">{{ getQuestionAnswerText(questionItem) }}</span>
+            </div>
+          </div>
+        </div>
+        <div v-else class="no-question">暂无提问内容</div>
       </div>
     </template>
   </BaseToolCall>
@@ -14,51 +48,55 @@
 <script setup>
 import { computed } from 'vue'
 import BaseToolCall from '../BaseToolCall.vue'
+import { normalizeQuestions } from '@/utils/questionUtils'
 
 const props = defineProps({
   toolCall: {
     type: Object,
     required: true
+  },
+  appearance: {
+    type: String,
+    default: 'card'
+  },
+  defaultExpanded: {
+    type: Boolean,
+    default: false
   }
 })
 
-// 解析参数
+const parseJsonValue = (value, fallback = null) => {
+  if (value === undefined || value === null || value === '') return fallback
+  if (typeof value === 'object') return value
+  try {
+    return JSON.parse(value)
+  } catch {
+    return fallback
+  }
+}
+
 const parsedArgs = computed(() => {
-  const args = props.toolCall.args || props.toolCall.function?.arguments
-  if (!args) return {}
-  if (typeof args === 'object') return args
-  try {
-    return JSON.parse(args)
-  } catch {
-    return {}
-  }
+  const args = props.toolCall.args ?? props.toolCall.function?.arguments
+  return parseJsonValue(args, {})
 })
 
-// 解析结果
 const parsedResult = computed(() => {
-  const content = props.toolCall.tool_call_result?.content
-  if (!content) return null
-  if (typeof content === 'object') return content
-  try {
-    return JSON.parse(content)
-  } catch {
-    return null
-  }
+  const content = props.toolCall.tool_call_result?.content ?? props.toolCall.result
+  return parseJsonValue(content, null)
 })
 
 const questions = computed(() => {
-  const rawQuestions = parsedArgs.value.questions
-  if (!Array.isArray(rawQuestions)) return []
+  const argsQuestions = parsedArgs.value?.questions
+  if (Array.isArray(argsQuestions) && argsQuestions.length) {
+    return normalizeQuestions(argsQuestions)
+  }
 
-  return rawQuestions
-    .map((item) => {
-      if (!item || typeof item !== 'object') return null
-      const question = String(item.question || '').trim()
-      if (!question) return null
-      const questionId = String(item.question_id || item.questionId || '').trim()
-      return { questionId, question }
-    })
-    .filter(Boolean)
+  const resultQuestions = parsedResult.value?.questions
+  if (Array.isArray(resultQuestions) && resultQuestions.length) {
+    return normalizeQuestions(resultQuestions)
+  }
+
+  return []
 })
 
 const shortQuestionSummary = computed(() => {
@@ -72,54 +110,85 @@ const shortQuestionSummary = computed(() => {
   return `${shortFirstQuestion} 等 ${questions.value.length} 题`
 })
 
-// 用户答案
 const userAnswer = computed(() => {
   const result = parsedResult.value
   if (!result) return null
   return result.user_answer || result.answer || null
 })
 
-const formatSingleAnswer = (answer) => {
+const getOptionLabel = (value, questionItem) => {
+  const rawValue = String(value || '').trim()
+  if (!rawValue) return ''
+
+  const option = questionItem?.options?.find(
+    (item) => String(item.value) === rawValue || String(item.label) === rawValue
+  )
+  return option?.label || rawValue
+}
+
+const formatSingleAnswer = (answer, questionItem) => {
   if (Array.isArray(answer)) {
-    return answer.join(', ')
+    return answer
+      .map((item) => getOptionLabel(item, questionItem))
+      .filter(Boolean)
+      .join('、')
   }
+
   if (answer && typeof answer === 'object') {
     if (answer.type === 'other') {
-      return `Other: ${String(answer.text || '').trim()}`
+      const selected = Array.isArray(answer.selected)
+        ? answer.selected.map((item) => getOptionLabel(item, questionItem)).filter(Boolean)
+        : []
+      const text = String(answer.text || '').trim()
+      return [...selected, text ? `其他: ${text}` : '其他'].join('、')
     }
     return JSON.stringify(answer)
   }
-  return String(answer)
+
+  return getOptionLabel(answer, questionItem)
 }
 
-// 显示答案
-const displayAnswer = computed(() => {
+const getQuestionAnswer = (questionItem) => {
   const answer = userAnswer.value
-  if (!answer) return ''
+  if (answer === null || answer === undefined || answer === '') return undefined
 
-  if (Array.isArray(answer)) {
-    return answer.join(', ')
+  if (questions.value.length === 1 && (typeof answer !== 'object' || Array.isArray(answer))) {
+    return answer
   }
 
-  if (answer && typeof answer === 'object') {
-    if (answer.type === 'other') {
-      return `Other: ${String(answer.text || '').trim()}`
+  if (answer && typeof answer === 'object' && !Array.isArray(answer)) {
+    if (Object.prototype.hasOwnProperty.call(answer, questionItem.questionId)) {
+      return answer[questionItem.questionId]
     }
 
-    const entries = Object.entries(answer)
-    if (!entries.length) return ''
-
-    const summary = entries
-      .map(([questionId, value]) => {
-        const title = String(questionId || '').trim()
-        return `${title}: ${formatSingleAnswer(value)}`
-      })
-      .join(' | ')
-
-    return summary.length > 120 ? summary.slice(0, 120) + '...' : summary
+    if (questions.value.length === 1 && answer.type === 'other') {
+      return answer
+    }
   }
 
-  return String(answer)
+  return undefined
+}
+
+const getQuestionAnswerText = (questionItem) => {
+  const answer = getQuestionAnswer(questionItem)
+  if (answer === undefined || answer === null || answer === '') return ''
+  return formatSingleAnswer(answer, questionItem)
+}
+
+const displayAnswer = computed(() => {
+  if (!userAnswer.value) return ''
+
+  const summaries = questions.value
+    .map((questionItem) => getQuestionAnswerText(questionItem))
+    .filter(Boolean)
+
+  if (!summaries.length) {
+    const text = formatSingleAnswer(userAnswer.value, questions.value[0])
+    return text.length > 120 ? text.slice(0, 120) + '...' : text
+  }
+
+  const summary = summaries.join(' | ')
+  return summary.length > 120 ? summary.slice(0, 120) + '...' : summary
 })
 </script>
 
@@ -127,11 +196,100 @@ const displayAnswer = computed(() => {
 .sep-header {
   .tag-answered {
     margin-left: 8px;
-    color: var(--green-600);
-    background: var(--green-50);
+    color: var(--color-success-700);
+    background: var(--color-success-50);
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 45%;
+    flex-shrink: 0;
+  }
+}
+
+.ask-question-result {
+  padding: 8px 0;
+
+  .question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .question-item {
+    border: 1px solid var(--gray-100);
+    background: var(--gray-25);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+
+  .question-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--gray-800);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .question-index {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 20px;
+    border-radius: 50%;
+    color: var(--main-700);
+    background: var(--main-50);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .question-text {
+    min-width: 0;
+    word-break: break-word;
+  }
+
+  .operation-row,
+  .answer-row {
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .row-label {
+    color: var(--gray-500);
+    flex: 0 0 auto;
+  }
+
+  .operation-text,
+  .answer-text {
+    min-width: 0;
+    color: var(--gray-700);
+    word-break: break-word;
+  }
+
+  .answer-row {
+    padding-top: 8px;
+    border-top: 1px solid var(--gray-100);
+  }
+
+  .answer-text {
+    color: var(--color-success-700);
+    font-weight: 500;
+  }
+
+  .no-question {
+    padding: 12px;
+    color: var(--gray-500);
+    font-size: 13px;
+    text-align: center;
   }
 }
 </style>

@@ -101,8 +101,8 @@
           <div class="bottom" :class="{ 'start-screen': !conversations.length }">
             <!-- 人工审批弹窗 - 放在输入框上方 -->
             <HumanApprovalModal
-              :visible="approvalState.showModal"
-              :questions="approvalState.questions"
+              :visible="currentApprovalModalVisible"
+              :questions="currentApprovalQuestions"
               @submit="handleQuestionSubmit"
               @cancel="handleQuestionCancel"
             />
@@ -954,18 +954,38 @@ const currentThreadConfigNotice = computed(() => {
   return threadConfigNoticeMap.value[currentChatId.value] || null
 })
 
+const currentApprovalModalVisible = computed(
+  () =>
+    approvalState.showModal &&
+    Boolean(approvalState.threadId) &&
+    approvalState.threadId === currentChatId.value
+)
+const currentApprovalQuestions = computed(() =>
+  currentApprovalModalVisible.value ? approvalState.questions : []
+)
+
 const shouldSuppressRefsForApproval = () =>
-  approvalState.showModal ||
+  currentApprovalModalVisible.value ||
   Boolean(
     approvalState.threadId &&
-    chatState.currentThreadId === approvalState.threadId &&
+    currentChatId.value === approvalState.threadId &&
     isProcessing.value
   )
 
 // 计算是否显示Refs组件的条件
 const shouldShowRefs = computed(() => {
+  const convs = conversations.value
+  const lastConv = convs.length ? convs[convs.length - 1] : null
   return (conv) => {
-    return getLastMessage(conv) && conv.status !== 'streaming' && !shouldSuppressRefsForApproval()
+    if (!getLastMessage(conv) || conv.status === 'streaming' || shouldSuppressRefsForApproval()) {
+      return false
+    }
+    // 回复生成中（含 resume 续写的空窗期）抑制最后一个对话的 refs，避免过早出现操作栏。
+    // 同时看 isReplyLoading：切换/重连时 isStreaming 可能已置 false，但「正在生成回复」仍在显示。
+    if (conv === lastConv && (isProcessing.value || isReplyLoading.value)) {
+      return false
+    }
+    return true
   }
 })
 
@@ -1510,6 +1530,10 @@ const startChatMainResizeObserver = () => {
 }
 
 onMounted(() => {
+  if (typeof document !== 'undefined') {
+    document.addEventListener('visibilitychange', handlePageVisibilityChange)
+  }
+
   nextTick(() => {
     const chatMainContainer = document.querySelector('.chat-main')
     if (chatMainContainer) {
@@ -1532,6 +1556,9 @@ onDeactivated(() => {
 })
 
 onUnmounted(() => {
+  if (typeof document !== 'undefined') {
+    document.removeEventListener('visibilitychange', handlePageVisibilityChange)
+  }
   scrollController.cleanup()
   stopChatMainResizeObserver()
   stopStreamingStateRefresh()
@@ -1719,10 +1746,20 @@ const handleAttachmentRemove = async (attachment) => {
 }
 
 // ==================== 审批功能管理 ====================
-const { approvalState, processApprovalInStream } = useApproval({
+const {
+  approvalState,
+  processApprovalInStream,
+  restoreInterruptFromThreadState,
+  hideApprovalState
+} = useApproval({
   getThreadState,
   fetchThreadMessages
 })
+
+const restorePendingInterruptForThread = (threadId) => {
+  if (!threadId) return false
+  return restoreInterruptFromThreadState(threadId)
+}
 
 const { handleStreamChunk } = useAgentStreamHandler({
   getThreadState,
@@ -1739,8 +1776,34 @@ const { startRunStream, resumeActiveRunForThread, stopRunStreamSubscription } = 
   fetchAgentState,
   resetOnGoingConv,
   onScrollToBottom: () => scrollController.scrollToBottom(),
-  streamSmoother
+  streamSmoother,
+  onInterruptDetected: ({ threadId }) => {
+    restorePendingInterruptForThread(threadId)
+  },
+  onTerminalDetected: ({ threadId, touchedThreadIds = [] }) => {
+    if (approvalState.threadId === threadId || touchedThreadIds.includes(approvalState.threadId)) {
+      hideApprovalState()
+    }
+  }
 })
+
+const resumeCurrentRunForVisiblePage = async () => {
+  if (typeof document !== 'undefined' && document.visibilityState !== 'visible') return
+  const threadId = currentChatId.value
+  if (!threadId) return
+
+  try {
+    await resumeActiveRunForThread(threadId)
+    restorePendingInterruptForThread(threadId)
+  } catch (error) {
+    console.warn('Failed to resume current run after page became visible:', error)
+  }
+}
+
+const handlePageVisibilityChange = () => {
+  if (typeof document !== 'undefined' && document.visibilityState !== 'visible') return
+  void resumeCurrentRunForVisiblePage()
+}
 
 // ==================== CHAT ACTIONS ====================
 // 获取第一个非置顶的对话
@@ -1809,6 +1872,7 @@ const selectChat = async (chatId) => {
   await handleAgentStateRefresh(chatId)
   syncThreadConfigSnapshot(chatId, { overwrite: false })
   await resumeActiveRunForThread(chatId)
+  restorePendingInterruptForThread(chatId)
 }
 
 const selectThreadFromRoute = async (threadId) => {
@@ -1885,6 +1949,10 @@ const handleSendMessage = async ({ image } = {}) => {
 
   const threadState = getThreadState(threadId)
   if (!threadState) return
+  threadState.pendingInterrupt = null
+  if (approvalState.threadId === threadId) {
+    hideApprovalState()
+  }
 
   const pendingAttachments = [...currentPendingThreadAttachments.value]
   const pendingAttachmentFileIds = pendingAttachments
@@ -1966,6 +2034,10 @@ const handleSendOrStop = async (payload) => {
   if (isProcessing.value && threadState?.activeRunId) {
     try {
       await agentApi.cancelAgentRun(threadState.activeRunId)
+      threadState.pendingInterrupt = null
+      if (approvalState.threadId === threadId) {
+        hideApprovalState()
+      }
       message.info('已发送取消请求')
     } catch (error) {
       handleChatError(error, 'stop')
@@ -1979,6 +2051,7 @@ const handleSendOrStop = async (payload) => {
 // ==================== 人工审批处理 ====================
 const handleApprovalWithStream = async (answer) => {
   const threadId = approvalState.threadId
+  const parentRunId = approvalState.parentRunId
   if (!threadId) {
     message.error('无效的提问请求')
     approvalState.showModal = false
@@ -1992,14 +2065,17 @@ const handleApprovalWithStream = async (answer) => {
     return
   }
 
-  if (!approvalState.parentRunId) {
+  if (!parentRunId) {
     message.error('无法找到需要恢复的运行任务')
     approvalState.showModal = false
     return
   }
 
+  const pendingInterrupt = threadState.pendingInterrupt
+
   try {
-    approvalState.showModal = false
+    hideApprovalState()
+    threadState.pendingInterrupt = null
     threadState.isStreaming = true
     resetOnGoingConv(threadId)
     const resumeRequestId = createClientRequestId()
@@ -2009,7 +2085,7 @@ const handleApprovalWithStream = async (answer) => {
       thread_id: threadId,
       meta: { request_id: resumeRequestId },
       resume: answer,
-      parent_run_id: approvalState.parentRunId,
+      parent_run_id: parentRunId,
       resume_request_id: resumeRequestId
     })
     const runId = runResp?.run_id
@@ -2018,6 +2094,10 @@ const handleApprovalWithStream = async (answer) => {
     }
     await startRunStream(threadId, runId, '0-0')
   } catch (error) {
+    if (pendingInterrupt) {
+      threadState.pendingInterrupt = pendingInterrupt
+      restorePendingInterruptForThread(threadId)
+    }
     threadState.isStreaming = false
     threadState.replyLoadingVisible = false
     handleChatError(error, 'resume')
@@ -2179,6 +2259,12 @@ const showMsgRefs = (msg) => {
     return false
   }
 
+  // 回复生成中（含 resume 续写的空窗期）不在最后一条消息上过早显示操作栏/来源。
+  // isReplyLoading 兜底：切换/重连时 isStreaming 可能已置 false，但回复仍在生成。
+  if (msg.isLast && (isProcessing.value || isReplyLoading.value)) {
+    return false
+  }
+
   // 只有真正完成的消息才显示 refs
   if (msg.isLast && msg.status === 'finished') {
     return ['copy', 'sources']
@@ -2333,6 +2419,12 @@ watch(
 
 watch(currentChatId, (threadId, oldThreadId) => {
   if (threadId === oldThreadId) return
+  if (!threadId || approvalState.threadId !== threadId) {
+    hideApprovalState()
+  }
+  if (threadId) {
+    restorePendingInterruptForThread(threadId)
+  }
   emit('thread-change', threadId || '')
 })
 </script>

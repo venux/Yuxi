@@ -1,6 +1,7 @@
 import { message } from 'ant-design-vue'
 import { handleChatError } from '@/utils/errorHandler'
 import { unref } from 'vue'
+import { extractPendingInterrupt } from '@/composables/useApproval'
 
 const serializeToolArgs = (args) => {
   if (typeof args === 'string') return args
@@ -158,6 +159,7 @@ export function useAgentStreamHandler({
           threadState.isStreaming = false
           threadState.replyLoadingVisible = false
           threadState.pendingRequestId = null
+          threadState.pendingInterrupt = null
         }
         return true
 
@@ -208,6 +210,7 @@ export function useAgentStreamHandler({
           threadState.isStreaming = false
           threadState.replyLoadingVisible = false
           threadState.pendingRequestId = null
+          threadState.pendingInterrupt = null
           console.log(`${debugPrefix}[finished]`, {
             threadId,
             currentAgentId: unref(currentAgentId),
@@ -239,6 +242,10 @@ export function useAgentStreamHandler({
           threadState.isStreaming = false
           threadState.replyLoadingVisible = false
           threadState.pendingRequestId = null
+          const pendingInterrupt = extractPendingInterrupt(chunk, threadId)
+          if (pendingInterrupt) {
+            threadState.pendingInterrupt = pendingInterrupt
+          }
         }
         // 如果有 message 字段，显示提示（例如：敏感内容检测）
         if (chunkMessage) {
