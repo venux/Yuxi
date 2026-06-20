@@ -1,0 +1,200 @@
+{
+  "batchIndex": 11,
+  "files": [
+    {
+      "path": "backend/package/yuxi/agents/toolkits/__init__.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/buildin/__init__.py",
+      "language": "python",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/buildin/tools.py",
+      "language": "python",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/debug/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/registry.py",
+      "language": "python",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/question_utils.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/package/yuxi/agents/toolkits/__init__.py": [
+      "backend/package/yuxi/agents/toolkits/buildin/__init__.py",
+      "backend/package/yuxi/agents/toolkits/debug/__init__.py",
+      "backend/package/yuxi/agents/toolkits/kbs/__init__.py",
+      "backend/package/yuxi/agents/toolkits/registry.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/__init__.py": [
+      "backend/package/yuxi/agents/toolkits/buildin/install_skill.py",
+      "backend/package/yuxi/agents/toolkits/buildin/tools.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/tools.py": [
+      "backend/package/yuxi/agents/toolkits/registry.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/paths.py",
+      "backend/package/yuxi/utils/question_utils.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/debug/__init__.py": [],
+    "backend/package/yuxi/agents/toolkits/registry.py": [],
+    "backend/package/yuxi/utils/question_utils.py": []
+  },
+  "neighborMap": {
+    "backend/package/yuxi/agents/toolkits/__init__.py": [
+      {
+        "path": "backend/package/yuxi/agents/toolkits/kbs/__init__.py",
+        "batchIndex": 5,
+        "symbols": []
+      },
+      {
+        "path": "backend/package/yuxi/agents/middlewares/skills.py",
+        "batchIndex": 6,
+        "symbols": [
+          "SkillPromptMetadata",
+          "SkillDependencyNode",
+          "_list_skills_from_db",
+          "build_prompt_metadata",
+          "build_dependency_map",
+          "get_prompt_metadata",
+          "get_dependency_map",
+          "expand_skill_closure",
+          "resolve_runtime_skills_for_context",
+          "_activated_skills_reducer",
+          "SkillsState",
+          "SkillsMiddleware"
+        ]
+      }
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/__init__.py": [
+      {
+        "path": "backend/package/yuxi/agents/toolkits/buildin/install_skill.py",
+        "batchIndex": 2,
+        "symbols": [
+          "InstallSkillInput",
+          "_personal_skill_share_config",
+          "_collect_sandbox_file_paths",
+          "_download_skill_dir",
+          "_prepare_skill_from_sandbox",
+          "_enable_skills_in_current_config",
+          "_run_install_task",
+          "install_skill"
+        ]
+      }
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/tools.py": [
+      {
+        "path": "backend/package/yuxi/utils/__init__.py",
+        "batchIndex": 4,
+        "symbols": [
+          "is_text_pdf",
+          "hashstr",
+          "get_docker_safe_url"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/utils/paths.py",
+        "batchIndex": 6,
+        "symbols": []
+      }
+    ],
+    "backend/package/yuxi/agents/toolkits/registry.py": [
+      {
+        "path": "backend/package/yuxi/agents/toolkits/buildin/install_skill.py",
+        "batchIndex": 2,
+        "symbols": [
+          "InstallSkillInput",
+          "_personal_skill_share_config",
+          "_collect_sandbox_file_paths",
+          "_download_skill_dir",
+          "_prepare_skill_from_sandbox",
+          "_enable_skills_in_current_config",
+          "_run_install_task",
+          "install_skill"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/toolkits/kbs/tools.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_knowledge_base",
+          "ListKBsInput",
+          "list_kbs",
+          "GetMindmapInput",
+          "get_mindmap",
+          "_resolve_visible_knowledge_bases_for_query",
+          "_find_query_target",
+          "query_kb",
+          "open_kb_document",
+          "find_kb_document",
+          "get_common_kb_tools"
+        ]
+      }
+    ],
+    "backend/package/yuxi/utils/question_utils.py": [
+      {
+        "path": "backend/package/yuxi/services/chat_service.py",
+        "batchIndex": 2,
+        "symbols": [
+          "_build_state_files",
+          "_get_langgraph_messages",
+          "_build_langfuse_run_context",
+          "extract_agent_state",
+          "_agent_state_signature",
+          "_metadata_thread_id",
+          "_metadata_namespace",
+          "_json_safe",
+          "_apply_model_override",
+          "_stream_message_key",
+          "_stream_message_id",
+          "_message_chunk_yuxi_events",
+          "_protocol_event_yuxi_event",
+          "_stream_event_response",
+          "_message_payload_yuxi_events",
+          "_stream_agent_events",
+          "_get_existing_message_ids",
+          "_save_ai_message",
+          "_save_tool_message",
+          "save_partial_message",
+          "save_messages_from_langgraph_state",
+          "_extract_interrupt_info",
+          "_coerce_interrupt_payload",
+          "_build_ask_user_question_payload",
+          "_ensure_full_msg",
+          "_extract_ai_message",
+          "_resolve_agent_runtime",
+          "check_and_handle_interrupts",
+          "_ensure_thread_bound_agent",
+          "_normalize_attachment_file_ids",
+          "_bind_request_attachments",
+          "agent_chat",
+          "stream_agent_chat",
+          "stream_agent_resume",
+          "_serialize_state_messages",
+          "_read_checkpoint_state",
+          "_serialize_subagent_run",
+          "get_agent_state_view"
+        ]
+      }
+    ]
+  }
+}

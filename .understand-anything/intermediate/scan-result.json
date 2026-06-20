@@ -1,0 +1,5274 @@
+{
+  "name": "yuxi",
+  "description": "语析（Yuxi）是一个基于大模型的智能知识库与知识图谱智能体开发平台，融合了 RAG 检索、知识图谱与 LangGraph 多智能体编排，提供统一的多租户工作台。技术栈包括 Vue 3 + Vite + Pinia（前端）、FastAPI + LangGraph + ARQ（后端）、PostgreSQL + Redis + MinIO + Milvus + Neo4j（存储层）。 Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "conf",
+    "config",
+    "csv",
+    "css",
+    "dockerfile",
+    "docx",
+    "html",
+    "javascript",
+    "json",
+    "jsonl",
+    "makefile",
+    "markdown",
+    "mts",
+    "powershell",
+    "pptx",
+    "python",
+    "shell",
+    "toml",
+    "tsv",
+    "txt",
+    "typescript",
+    "unknown",
+    "vue",
+    "xlsx",
+    "yaml"
+  ],
+  "frameworks": [
+    "Vue",
+    "Vite",
+    "Pinia",
+    "FastAPI",
+    "LangGraph",
+    "LangChain",
+    "SQLAlchemy",
+    "Docker",
+    "Docker Compose",
+    "GitHub Actions"
+  ],
+  "files": [
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "sizeLines": 23,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".env.template",
+      "language": "config",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个提问.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个需求建议.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个bug.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个docker启动问题.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/workflows/close-stale-issues.yml",
+      "language": "yaml",
+      "sizeLines": 29,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "language": "yaml",
+      "sizeLines": 72,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/publish-yuxi-cli.yml",
+      "language": "yaml",
+      "sizeLines": 49,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/ruff.yml",
+      "language": "yaml",
+      "sizeLines": 157,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "language": "markdown",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/.python-version",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/MANIFEST.in",
+      "language": "in",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 117,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/package/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/__init__.py",
+      "language": "python",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/__init__.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/__init__.py",
+      "language": "python",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/composite.py",
+      "language": "python",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/knowledge_base_backend.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "language": "python",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/sandbox/backend.py",
+      "language": "python",
+      "sizeLines": 555,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/sandbox/paths.py",
+      "language": "python",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/sandbox/provider.py",
+      "language": "python",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/sandbox/provisioner_client.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/backends/skills_backend.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/base.py",
+      "language": "python",
+      "sizeLines": 429,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/__init__.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/chatbot/__init__.py",
+      "language": "python",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/chatbot/context.py",
+      "language": "python",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/chatbot/graph.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/chatbot/prompt.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/chatbot/state.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/subagent/__init__.py",
+      "language": "python",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/subagent/context.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/buildin/subagent/graph.py",
+      "language": "python",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/context.py",
+      "language": "python",
+      "sizeLines": 543,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/mcp/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/mcp/repository.py",
+      "language": "python",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/mcp/service.py",
+      "language": "python",
+      "sizeLines": 609,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/__init__.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/attachment.py",
+      "language": "python",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/context.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/dynamic_tool.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/knowledge_base.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/skills.py",
+      "language": "python",
+      "sizeLines": 459,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/subagent_task.py",
+      "language": "python",
+      "sizeLines": 529,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/summary.py",
+      "language": "python",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/middlewares/token_usage.py",
+      "language": "python",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/models.py",
+      "language": "python",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/__init__.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/deep-research/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/image-gen/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/describe_table.py",
+      "language": "python",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/list_tables.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/query.py",
+      "language": "python",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/remote_install.py",
+      "language": "python",
+      "sizeLines": 380,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/repository.py",
+      "language": "python",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/service.py",
+      "language": "python",
+      "sizeLines": 1345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/state.py",
+      "language": "python",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/__init__.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/buildin/__init__.py",
+      "language": "python",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/buildin/install_skill.py",
+      "language": "python",
+      "sizeLines": 302,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/buildin/tools.py",
+      "language": "python",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/debug/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/debug/tools.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/kbs/__init__.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/kbs/tools.py",
+      "language": "python",
+      "sizeLines": 368,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/registry.py",
+      "language": "python",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/service.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/utils.py",
+      "language": "python",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/config/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/config/app.py",
+      "language": "python",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/config/static/bad_keywords.txt",
+      "language": "txt",
+      "sizeLines": 128,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/config/static/info.template.yaml",
+      "language": "yaml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/__init__.py",
+      "language": "python",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/base.py",
+      "language": "python",
+      "sizeLines": 1780,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "language": "python",
+      "sizeLines": 583,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "language": "python",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "language": "python",
+      "sizeLines": 260,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py",
+      "language": "python",
+      "sizeLines": 298,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py",
+      "language": "python",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+      "language": "python",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py",
+      "language": "python",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/benchmark_generation.py",
+      "language": "python",
+      "sizeLines": 357,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/evaluator.py",
+      "language": "python",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/metrics.py",
+      "language": "python",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/service.py",
+      "language": "python",
+      "sizeLines": 726,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/factory.py",
+      "language": "python",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/extractors/__init__.py",
+      "language": "python",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/extractors/base.py",
+      "language": "python",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/extractors/factory.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/extractors/llm.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/graph_utils.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_service.py",
+      "language": "python",
+      "sizeLines": 938,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py",
+      "language": "python",
+      "sizeLines": 322,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/implementations/__init__.py",
+      "language": "python",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/implementations/dify.py",
+      "language": "python",
+      "sizeLines": 217,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+      "language": "python",
+      "sizeLines": 1346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/implementations/notion.py",
+      "language": "python",
+      "sizeLines": 744,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/implementations/read_only_connectors.py",
+      "language": "python",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/manager.py",
+      "language": "python",
+      "sizeLines": 933,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/__init__.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/base.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/deepseek_ocr.py",
+      "language": "python",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/factory.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/mineru_official.py",
+      "language": "python",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/mineru.py",
+      "language": "python",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/pp_structure_v3.py",
+      "language": "python",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/rapid_ocr.py",
+      "language": "python",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/unified.py",
+      "language": "python",
+      "sizeLines": 446,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "language": "python",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/schemas.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/kb_utils.py",
+      "language": "python",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/mindmap_utils.py",
+      "language": "python",
+      "sizeLines": 599,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/sample_question_utils.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/url_fetcher.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/url_validator.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/main.py",
+      "language": "python",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/__init__.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/chat.py",
+      "language": "python",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/embed.py",
+      "language": "python",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/builtin.py",
+      "language": "python",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/cache.py",
+      "language": "python",
+      "sizeLines": 220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/repository.py",
+      "language": "python",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/service.py",
+      "language": "python",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/rerank.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/agent_repository.py",
+      "language": "python",
+      "sizeLines": 542,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/agent_run_repository.py",
+      "language": "python",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/conversation_repository.py",
+      "language": "python",
+      "sizeLines": 509,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/department_repository.py",
+      "language": "python",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/evaluation_repository.py",
+      "language": "python",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/knowledge_chunk_repository.py",
+      "language": "python",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/knowledge_file_repository.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/knowledge_graph_repository.py",
+      "language": "python",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/message_feedback_repository.py",
+      "language": "python",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/task_repository.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/user_repository.py",
+      "language": "python",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/agent_eval_run_service.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/agent_run_service.py",
+      "language": "python",
+      "sizeLines": 597,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/agent_runtime_service.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/auth_service.py",
+      "language": "python",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/chat_service.py",
+      "language": "python",
+      "sizeLines": 1586,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/conversation_service.py",
+      "language": "python",
+      "sizeLines": 926,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/feedback_service.py",
+      "language": "python",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/file_preview.py",
+      "language": "python",
+      "sizeLines": 128,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/langfuse_service.py",
+      "language": "python",
+      "sizeLines": 227,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/mention_search_service.py",
+      "language": "python",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/oidc_service.py",
+      "language": "python",
+      "sizeLines": 901,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/operation_log_service.py",
+      "language": "python",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/run_queue_service.py",
+      "language": "python",
+      "sizeLines": 282,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/run_worker.py",
+      "language": "python",
+      "sizeLines": 535,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/task_service.py",
+      "language": "python",
+      "sizeLines": 385,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/thread_files_service.py",
+      "language": "python",
+      "sizeLines": 262,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/user_identity_service.py",
+      "language": "python",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/viewer_filesystem_service.py",
+      "language": "python",
+      "sizeLines": 564,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/workspace_service.py",
+      "language": "python",
+      "sizeLines": 326,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/__init__.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/client.py",
+      "language": "python",
+      "sizeLines": 468,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/utils.py",
+      "language": "python",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/neo4j/__init__.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/neo4j/manager.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/postgres/manager.py",
+      "language": "python",
+      "sizeLines": 532,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/postgres/models_business.py",
+      "language": "python",
+      "sizeLines": 808,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/postgres/models_knowledge.py",
+      "language": "python",
+      "sizeLines": 292,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/auth_utils.py",
+      "language": "python",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/datetime_utils.py",
+      "language": "python",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/guard.py",
+      "language": "python",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/image_processor.py",
+      "language": "python",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/logging_config.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/paths.py",
+      "language": "python",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/question_utils.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/share_config.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/singleton.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/subagent_thread_utils.py",
+      "language": "python",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/upload_utils.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/scripts/seed_initial_users.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/main.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/__init__.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/agent_router.py",
+      "language": "python",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/auth_dept_router.py",
+      "language": "python",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/auth_router.py",
+      "language": "python",
+      "sizeLines": 1028,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/chat_router.py",
+      "language": "python",
+      "sizeLines": 659,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/dashboard_router.py",
+      "language": "python",
+      "sizeLines": 989,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/filesystem_router.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/graph_router.py",
+      "language": "python",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/knowledge_eval_router.py",
+      "language": "python",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/knowledge_router.py",
+      "language": "python",
+      "sizeLines": 1696,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/mcp_router.py",
+      "language": "python",
+      "sizeLines": 415,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/mention_router.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/model_provider_router.py",
+      "language": "python",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/skill_router.py",
+      "language": "python",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/system_router.py",
+      "language": "python",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/system_task_router.py",
+      "language": "python",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/tool_router.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/user_router.py",
+      "language": "python",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/workspace_router.py",
+      "language": "python",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/access_log_middleware.py",
+      "language": "python",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/auth_middleware.py",
+      "language": "python",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/common_utils.py",
+      "language": "python",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/lifespan.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/worker_main.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/.env.test.example",
+      "language": "config",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/test/api/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/conftest.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试表格.xlsx",
+      "language": "xlsx",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试文档.docx",
+      "language": "docx",
+      "sizeLines": 266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试演示.pptx",
+      "language": "pptx",
+      "sizeLines": 679,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions_10hui.txt",
+      "language": "txt",
+      "sizeLines": 629,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions_tiny.jsonl",
+      "language": "jsonl",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions.jsonl",
+      "language": "jsonl",
+      "sizeLines": 380,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions.txt",
+      "language": "txt",
+      "sizeLines": 6300,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/test/data/complex_graph_test.jsonl",
+      "language": "jsonl",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/test_csv_file.csv",
+      "language": "csv",
+      "sizeLines": 7,
+      "fileCategory": "data"
+    },
+    {
+      "path": "backend/test/e2e/conftest.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_agent_bubble_sort_e2e.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_attachment_and_agent_state.py",
+      "language": "python",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_subagent_stream_e2e.py",
+      "language": "python",
+      "sizeLines": 372,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_viewer_filesystem_e2e.py",
+      "language": "python",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_agent_run_events_router.py",
+      "language": "python",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_apikey_router.py",
+      "language": "python",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_auth_router.py",
+      "language": "python",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_agent_sync.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_resume_batch_questions.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_router.py",
+      "language": "python",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_dashboard_router.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_department_router.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_evaluation_router.py",
+      "language": "python",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_graph_router_list.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_knowledge_router.py",
+      "language": "python",
+      "sizeLines": 744,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_settings_router.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_system_router.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_task_router.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_unified_graph_router.py",
+      "language": "python",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_user_agent_env_router.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_viewer_filesystem_router.py",
+      "language": "python",
+      "sizeLines": 690,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_viewer_filesystem_security.py",
+      "language": "python",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/conftest.py",
+      "language": "python",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/services/test_model_provider_runtime_connectivity.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/run_tests.sh",
+      "language": "shell",
+      "sizeLines": 87,
+      "fileCategory": "script"
+    },
+    {
+      "path": "backend/test/unit/agents/skills/test_mysql_reporter_scripts.py",
+      "language": "python",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/skills/test_remote_install.py",
+      "language": "python",
+      "sizeLines": 370,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_base_tool_event_normalize.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_context_auth.py",
+      "language": "python",
+      "sizeLines": 390,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_streaming_toolcall_fix.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_subagent_tool_filter.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/toolkits/buildin/test_ask_user_question.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_knowledge_base_backend.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_sandbox_backends.py",
+      "language": "python",
+      "sizeLines": 528,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_sandbox_provisioner_config.py",
+      "language": "python",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_semantic_chunking.py",
+      "language": "python",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_skills_backend_error_handling.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_skills_backend.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/graphs/test_milvus_graph_build.py",
+      "language": "python",
+      "sizeLines": 238,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/eval/test_benchmark_generation.py",
+      "language": "python",
+      "sizeLines": 390,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/eval/test_evaluator.py",
+      "language": "python",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/eval/test_metrics.py",
+      "language": "python",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/eval/test_service_generation.py",
+      "language": "python",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_file_size_fallback.py",
+      "language": "python",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_kb_utils.py",
+      "language": "python",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_knowledge_base_update.py",
+      "language": "python",
+      "sizeLines": 250,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_milvus_retrieval_config.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_parser_facade.py",
+      "language": "python",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/knowledge/test_sample_question_utils.py",
+      "language": "python",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/middlewares/test_skills_middleware.py",
+      "language": "python",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/middlewares/test_subagent_task_middleware.py",
+      "language": "python",
+      "sizeLines": 591,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/middlewares/test_summary_middleware.py",
+      "language": "python",
+      "sizeLines": 443,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/middlewares/test_token_usage_middleware.py",
+      "language": "python",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/plugins/test_dify_kb.py",
+      "language": "python",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/plugins/test_milvus_kb.py",
+      "language": "python",
+      "sizeLines": 527,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/plugins/test_notion_kb.py",
+      "language": "python",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/plugins/test_ragflow_like_chunking.py",
+      "language": "python",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/repositories/test_agent_repository_deep_research.py",
+      "language": "python",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/repositories/test_agent_repository.py",
+      "language": "python",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_auth_router_cli_auth.py",
+      "language": "python",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_knowledge_router_cleanup.py",
+      "language": "python",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_knowledge_workspace_import.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_mcp_router.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_skill_router.py",
+      "language": "python",
+      "sizeLines": 347,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_subagent.py",
+      "language": "python",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_system_router.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/server/test_cors_config.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/server/test_model_provider_router.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_agent_artifacts_state.py",
+      "language": "python",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_agent_eval_run_service.py",
+      "language": "python",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_agent_run_service.py",
+      "language": "python",
+      "sizeLines": 1050,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_auth_service_cli_auth.py",
+      "language": "python",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_base_agent_langfuse_config.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_langfuse_stream.py",
+      "language": "python",
+      "sizeLines": 395,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_model_override.py",
+      "language": "python",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_sync.py",
+      "language": "python",
+      "sizeLines": 509,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_stream_attachment_materialize.py",
+      "language": "python",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_stream_interrupt.py",
+      "language": "python",
+      "sizeLines": 292,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_conversation_service_attachment_state.py",
+      "language": "python",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_langfuse_service.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_mcp_service.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_mention_search_service.py",
+      "language": "python",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_cache.py",
+      "language": "python",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_provider_service.py",
+      "language": "python",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_selectors.py",
+      "language": "python",
+      "sizeLines": 404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_oidc_service.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_run_queue_service.py",
+      "language": "python",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_run_worker.py",
+      "language": "python",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_skill_service.py",
+      "language": "python",
+      "sizeLines": 1226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_thread_files_service.py",
+      "language": "python",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_tool_service.py",
+      "language": "python",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_viewer_filesystem_service.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_workspace_service.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/storage/test_conversation_repository.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/storage/test_neo4j_manager.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_auth_utils.py",
+      "language": "python",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_chunking_token_limit.py",
+      "language": "python",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_package_import.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_tmp_attachment_service.py",
+      "language": "python",
+      "sizeLines": 351,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_install_skill.py",
+      "language": "python",
+      "sizeLines": 302,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_kbs_tools.py",
+      "language": "python",
+      "sizeLines": 377,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_tool_registry.py",
+      "language": "python",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/utils/test_image_processor.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/utils/test_share_config.py",
+      "language": "python",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker-compose.prod.yml",
+      "language": "yaml",
+      "sizeLines": 354,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 416,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker/api.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/mineru.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/nginx/default.conf",
+      "language": "conf",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/nginx/nginx.conf",
+      "language": "conf",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/paddlex.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/PP-StructureV3.yaml",
+      "language": "yaml",
+      "sizeLines": 229,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker/sandbox_provisioner/app.py",
+      "language": "python",
+      "sizeLines": 1064,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/sandbox_provisioner/Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 15,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker/sandbox_provisioner/requirements.txt",
+      "language": "txt",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker/sandbox_provisioner/sandbox.env",
+      "language": "config",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker/save_docker_images.ps1",
+      "language": "powershell",
+      "sizeLines": 53,
+      "fileCategory": "script"
+    },
+    {
+      "path": "docker/save_docker_images.sh",
+      "language": "shell",
+      "sizeLines": 40,
+      "fileCategory": "script"
+    },
+    {
+      "path": "docker/web.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/config.mts",
+      "language": "mts",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/theme/components/YuxiHome.vue",
+      "language": "vue",
+      "sizeLines": 848,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/theme/custom.css",
+      "language": "css",
+      "sizeLines": 43,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "docs/.vitepress/theme/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/advanced/api-key-integration.md",
+      "language": "markdown",
+      "sizeLines": 170,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/branding.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/configuration.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/deployment.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/document-processing.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/langfuse-integration.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/misc.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/third-party-auth.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/agent-evaluation.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/agents-config.md",
+      "language": "markdown",
+      "sizeLines": 335,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/mcp-integration.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/middleware.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/sandbox-architecture.md",
+      "language": "markdown",
+      "sizeLines": 306,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/skills-management.md",
+      "language": "markdown",
+      "sizeLines": 350,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/subagents-management.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/tools-system.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/changelog.md",
+      "language": "markdown",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/contributing.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/design.md",
+      "language": "markdown",
+      "sizeLines": 291,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/roadmap.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/testing-guidelines.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/index.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/cli.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/evaluation.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/knowledge-base.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/model-config.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/project-overview.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/quick-start.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/package.json",
+      "language": "json",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 53,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "packages/yuxi-cli/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/yuxi-cli/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/__main__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/agent_eval.py",
+      "language": "python",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "language": "python",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/commands.py",
+      "language": "python",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "language": "python",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/discovery.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/kb_upload.py",
+      "language": "python",
+      "sizeLines": 594,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/main.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_agent_eval.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_commands.py",
+      "language": "python",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_config.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_discovery.py",
+      "language": "python",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_kb_upload.py",
+      "language": "python",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_main.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.en.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/bump-version.sh",
+      "language": "shell",
+      "sizeLines": 181,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/init.ps1",
+      "language": "powershell",
+      "sizeLines": 165,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/init.sh",
+      "language": "shell",
+      "sizeLines": 149,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/pull_image.ps1",
+      "language": "powershell",
+      "sizeLines": 55,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/pull_image.sh",
+      "language": "shell",
+      "sizeLines": 38,
+      "fileCategory": "script"
+    },
+    {
+      "path": "web/.prettierrc.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "web/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/package.json",
+      "language": "json",
+      "sizeLines": 71,
+      "fileCategory": "config"
+    },
+    {
+      "path": "web/public/protocols/privacy-policy.template.html",
+      "language": "html",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/public/protocols/user-agreement.template.html",
+      "language": "html",
+      "sizeLines": 142,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/apis/agent_api.js",
+      "language": "javascript",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/agent_env_api.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/apikey_api.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/auth_api.js",
+      "language": "javascript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/base.js",
+      "language": "javascript",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/dashboard_api.js",
+      "language": "javascript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/department_api.js",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/graph_api.js",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/index.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/knowledge_api.js",
+      "language": "javascript",
+      "sizeLines": 539,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/mcp_api.js",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/mention_api.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/skill_api.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/system_api.js",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/tasker.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/tool_api.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/user_api.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/viewer_filesystem.js",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/workspace_api.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/App.vue",
+      "language": "vue",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/assets/css/animations.less",
+      "language": "css",
+      "sizeLines": 87,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/base.css",
+      "language": "css",
+      "sizeLines": 206,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/base.dark.css",
+      "language": "css",
+      "sizeLines": 149,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/code-highlight.less",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/dashboard.css",
+      "language": "css",
+      "sizeLines": 221,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/extension-detail.less",
+      "language": "css",
+      "sizeLines": 96,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/extensions.less",
+      "language": "css",
+      "sizeLines": 838,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/main.css",
+      "language": "css",
+      "sizeLines": 110,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/model-selector-common.less",
+      "language": "css",
+      "sizeLines": 134,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/shorts.css",
+      "language": "css",
+      "sizeLines": 44,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/sigma.css",
+      "language": "css",
+      "sizeLines": 87,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/components/AccountSettingsComponent.vue",
+      "language": "vue",
+      "sizeLines": 450,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentArtifactsCard.vue",
+      "language": "vue",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentChatComponent.vue",
+      "language": "vue",
+      "sizeLines": 3926,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentEnvSettingsCard.vue",
+      "language": "vue",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentFilePreview.vue",
+      "language": "vue",
+      "sizeLines": 907,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentInputArea.vue",
+      "language": "vue",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentMessageComponent.vue",
+      "language": "vue",
+      "sizeLines": 697,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentPanel.vue",
+      "language": "vue",
+      "sizeLines": 1013,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentRuntimeConfigForm.vue",
+      "language": "vue",
+      "sizeLines": 1305,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AiTextarea.vue",
+      "language": "vue",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ApiKeyManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 517,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AttachmentOptionsComponent.vue",
+      "language": "vue",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AttachmentTmpUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 709,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/BasicSettingsSection.vue",
+      "language": "vue",
+      "sizeLines": 333,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ChunkParamsConfig.vue",
+      "language": "vue",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/FallbackAvatar.vue",
+      "language": "vue",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/FileTypeIcon.vue",
+      "language": "vue",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/MarkdownPreview.vue",
+      "language": "vue",
+      "sizeLines": 500,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/MentionTextRenderer.vue",
+      "language": "vue",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ConversationNavSection.vue",
+      "language": "vue",
+      "sizeLines": 353,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/AgentStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/CallStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 417,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/FeedbackModalComponent.vue",
+      "language": "vue",
+      "sizeLines": 522,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/KnowledgeStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 417,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/StatsOverviewComponent.vue",
+      "language": "vue",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/ToolStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 350,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/UserStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/DebugComponent.vue",
+      "language": "vue",
+      "sizeLines": 845,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/DepartmentManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/EmbeddingModelSelector.vue",
+      "language": "vue",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/EvaluationBenchmarks.vue",
+      "language": "vue",
+      "sizeLines": 1202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionCardGrid.vue",
+      "language": "vue",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionDetailLayout.vue",
+      "language": "vue",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionToolbar.vue",
+      "language": "vue",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpCardList.vue",
+      "language": "vue",
+      "sizeLines": 473,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpDetailView.vue",
+      "language": "vue",
+      "sizeLines": 1014,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpFormModal.vue",
+      "language": "vue",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/SkillCardList.vue",
+      "language": "vue",
+      "sizeLines": 2069,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/SkillDetailView.vue",
+      "language": "vue",
+      "sizeLines": 1266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ToolsCardList.vue",
+      "language": "vue",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileDetailModal.vue",
+      "language": "vue",
+      "sizeLines": 639,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileTable.vue",
+      "language": "vue",
+      "sizeLines": 1739,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileTreeComponent.vue",
+      "language": "vue",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 2507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/GraphCanvas.vue",
+      "language": "vue",
+      "sizeLines": 833,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/GraphDetailPanel.vue",
+      "language": "vue",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/HeaderComponent.vue",
+      "language": "vue",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/HumanApprovalModal.vue",
+      "language": "vue",
+      "sizeLines": 602,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ImagePreviewComponent.vue",
+      "language": "vue",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/KnowledgeGraphSection.vue",
+      "language": "vue",
+      "sizeLines": 1161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/KnowledgeSourceSection.vue",
+      "language": "vue",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/LoadingComponent.vue",
+      "language": "vue",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MarkdownContentViewer.vue",
+      "language": "vue",
+      "sizeLines": 374,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/McpEnvEditor.vue",
+      "language": "vue",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MessageInputComponent.vue",
+      "language": "vue",
+      "sizeLines": 1658,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MindMapSection.vue",
+      "language": "vue",
+      "sizeLines": 803,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/modals/BenchmarkGenerateModal.vue",
+      "language": "vue",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/modals/BenchmarkUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/AgentEditModal.vue",
+      "language": "vue",
+      "sizeLines": 926,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/AgentManagePanel.vue",
+      "language": "vue",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/ModelProviderManagePanel.vue",
+      "language": "vue",
+      "sizeLines": 1513,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ModelSelectorComponent.vue",
+      "language": "vue",
+      "sizeLines": 406,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/QuerySection.vue",
+      "language": "vue",
+      "sizeLines": 746,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/RAGEvaluationTab.vue",
+      "language": "vue",
+      "sizeLines": 2155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/RefsComponent.vue",
+      "language": "vue",
+      "sizeLines": 432,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/RerankModelSelector.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SearchConfigModal.vue",
+      "language": "vue",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SearchConfigPanel.vue",
+      "language": "vue",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SettingsModal.vue",
+      "language": "vue",
+      "sizeLines": 550,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ShareConfigForm.vue",
+      "language": "vue",
+      "sizeLines": 712,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/InfoCard.vue",
+      "language": "vue",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/PageHeader.vue",
+      "language": "vue",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/PageShoulder.vue",
+      "language": "vue",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/ResourceEmptyState.vue",
+      "language": "vue",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/KbChunkDetailModal.vue",
+      "language": "vue",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/KbResultGroupedList.vue",
+      "language": "vue",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/WebSearchResultList.vue",
+      "language": "vue",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/StatusBar.vue",
+      "language": "vue",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SubagentThreadModal.vue",
+      "language": "vue",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/TaskCenterDrawer.vue",
+      "language": "vue",
+      "sizeLines": 640,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ThemeToggle.vue",
+      "language": "vue",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ThreadMessageList.vue",
+      "language": "vue",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/BaseToolCall.vue",
+      "language": "vue",
+      "sizeLines": 473,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/index.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/ToolCallRenderer.vue",
+      "language": "vue",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/toolRegistry.js",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/AskUserQuestionTool.vue",
+      "language": "vue",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/CalculatorTool.vue",
+      "language": "vue",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ChartTool.vue",
+      "language": "vue",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/EditFileTool.vue",
+      "language": "vue",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ExecuteTool.vue",
+      "language": "vue",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/FindKbDocumentTool.vue",
+      "language": "vue",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GetMindmapTool.vue",
+      "language": "vue",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GlobTool.vue",
+      "language": "vue",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GrepTool.vue",
+      "language": "vue",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ImageTool.vue",
+      "language": "vue",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/KbDocumentPreview.vue",
+      "language": "vue",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ListDirectoryTool.vue",
+      "language": "vue",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ListKbsTool.vue",
+      "language": "vue",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlDescribeTableTool.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlListTablesTool.vue",
+      "language": "vue",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlQueryTool.vue",
+      "language": "vue",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/OpenKbDocumentTool.vue",
+      "language": "vue",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/QueryKbTool.vue",
+      "language": "vue",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ReadFileTool.vue",
+      "language": "vue",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/SearchFileContentTool.vue",
+      "language": "vue",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/TaskTool.vue",
+      "language": "vue",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/TodoListTool.vue",
+      "language": "vue",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/WebSearchTool.vue",
+      "language": "vue",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/WriteFileTool.vue",
+      "language": "vue",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallsGroupComponent.vue",
+      "language": "vue",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/UserInfoComponent.vue",
+      "language": "vue",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/UserManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 1096,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ViewSwitchHeader.vue",
+      "language": "vue",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/WebSearchSourceSection.vue",
+      "language": "vue",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspaceFileList.vue",
+      "language": "vue",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspacePreviewPane.vue",
+      "language": "vue",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspaceSidebar.vue",
+      "language": "vue",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentMentionConfig.js",
+      "language": "javascript",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentRunStream.js",
+      "language": "javascript",
+      "sizeLines": 499,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentStreamHandler.js",
+      "language": "javascript",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentThreadState.js",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useApproval.js",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useGraph.js",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useMention.js",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useModelStatus.js",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useStreamSmoother.js",
+      "language": "javascript",
+      "sizeLines": 459,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/layouts/AppLayout.vue",
+      "language": "vue",
+      "sizeLines": 815,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/layouts/BlankLayout.vue",
+      "language": "vue",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/main.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/router/index.js",
+      "language": "javascript",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/agent.js",
+      "language": "javascript",
+      "sizeLines": 325,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/chatThreads.js",
+      "language": "javascript",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/chatUI.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/config.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/database.js",
+      "language": "javascript",
+      "sizeLines": 575,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/info.js",
+      "language": "javascript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/tasker.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/theme.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/user.js",
+      "language": "javascript",
+      "sizeLines": 421,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/messageProcessor.spec.js",
+      "language": "javascript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/pixelAvatar.test.js",
+      "language": "javascript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/runStreamResume.test.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/subagentThread.test.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/svgRenderer.test.js",
+      "language": "javascript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentConfigUtils.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentPanelAutoOpen.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentValidator.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chartColors.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chunk_presets.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chunkUtils.js",
+      "language": "javascript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/errorHandler.js",
+      "language": "javascript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/extensionDisplayName.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_icon.js",
+      "language": "javascript",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_preview.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_utils.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/html.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/kb_utils.js",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/markdown_preview.js",
+      "language": "javascript",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/mention_icon_utils.js",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/mention_utils.js",
+      "language": "javascript",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/messageGrouping.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/messageProcessor.js",
+      "language": "javascript",
+      "sizeLines": 424,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/modelIcon.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/oidcAutoStart.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/pixelAvatar.js",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/questionUtils.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/runStreamResume.js",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/scrollController.js",
+      "language": "javascript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/subagentThread.js",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/svgRenderer.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/time.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/upload_limits.js",
+      "language": "javascript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/AgentView.vue",
+      "language": "vue",
+      "sizeLines": 415,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/CLIAuthAuthorizeView.vue",
+      "language": "vue",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DashboardView.vue",
+      "language": "vue",
+      "sizeLines": 468,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DataBaseInfoView.vue",
+      "language": "vue",
+      "sizeLines": 1446,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DataBaseView.vue",
+      "language": "vue",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/EmptyView.vue",
+      "language": "vue",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/ExtensionsView.vue",
+      "language": "vue",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/HomeView.vue",
+      "language": "vue",
+      "sizeLines": 1220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/LoginView.vue",
+      "language": "vue",
+      "sizeLines": 1055,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/ModelManageView.vue",
+      "language": "vue",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/OIDCCallbackView.vue",
+      "language": "vue",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/WorkspaceView.vue",
+      "language": "vue",
+      "sizeLines": 971,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 640,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "very-large",
+  "importMap": {
+    ".dockerignore": [],
+    ".env.template": [],
+    ".github/ISSUE_TEMPLATE/提交一个提问.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个需求建议.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个bug.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个docker启动问题.md": [],
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".github/workflows/close-stale-issues.yml": [],
+    ".github/workflows/deploy.yml": [],
+    ".github/workflows/publish-yuxi-cli.yml": [],
+    ".github/workflows/ruff.yml": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "AGENTS.md": [],
+    "ARCHITECTURE.md": [],
+    "backend/.python-version": [],
+    "backend/package/MANIFEST.in": [],
+    "backend/package/pyproject.toml": [],
+    "backend/package/README.md": [],
+    "backend/package/yuxi/__init__.py": [
+      "backend/package/yuxi/config/__init__.py"
+    ],
+    "backend/package/yuxi/agents/__init__.py": [
+      "backend/package/yuxi/agents/base.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/agents/mcp/service.py",
+      "backend/package/yuxi/agents/models.py",
+      "backend/package/yuxi/agents/state.py",
+      "backend/package/yuxi/agents/toolkits/utils.py"
+    ],
+    "backend/package/yuxi/agents/backends/__init__.py": [
+      "backend/package/yuxi/agents/backends/composite.py",
+      "backend/package/yuxi/agents/backends/knowledge_base_backend.py",
+      "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "backend/package/yuxi/agents/backends/skills_backend.py"
+    ],
+    "backend/package/yuxi/agents/backends/composite.py": [
+      "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "backend/package/yuxi/agents/backends/skills_backend.py",
+      "backend/package/yuxi/agents/skills/service.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/agents/backends/knowledge_base_backend.py": [],
+    "backend/package/yuxi/agents/backends/sandbox/__init__.py": [
+      "backend/package/yuxi/agents/backends/sandbox/backend.py",
+      "backend/package/yuxi/agents/backends/sandbox/paths.py",
+      "backend/package/yuxi/agents/backends/sandbox/provider.py"
+    ],
+    "backend/package/yuxi/agents/backends/sandbox/backend.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/backends/sandbox/provider.py",
+      "backend/package/yuxi/agents/skills/service.py",
+      "backend/package/yuxi/utils/logging_config.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/agents/backends/sandbox/paths.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/utils/logging_config.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/agents/backends/sandbox/provider.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/backends/sandbox/provisioner_client.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/backends/sandbox/provisioner_client.py": [],
+    "backend/package/yuxi/agents/backends/skills_backend.py": [
+      "backend/package/yuxi/agents/skills/service.py"
+    ],
+    "backend/package/yuxi/agents/base.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/subagent_thread_utils.py"
+    ],
+    "backend/package/yuxi/agents/buildin/__init__.py": [
+      "backend/package/yuxi/agents/base.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/singleton.py"
+    ],
+    "backend/package/yuxi/agents/buildin/chatbot/__init__.py": [
+      "backend/package/yuxi/agents/buildin/chatbot/context.py",
+      "backend/package/yuxi/agents/buildin/chatbot/graph.py",
+      "backend/package/yuxi/agents/buildin/chatbot/state.py"
+    ],
+    "backend/package/yuxi/agents/buildin/chatbot/context.py": [
+      "backend/package/yuxi/agents/context.py"
+    ],
+    "backend/package/yuxi/agents/buildin/chatbot/graph.py": [
+      "backend/package/yuxi/agents/__init__.py",
+      "backend/package/yuxi/agents/backends/__init__.py",
+      "backend/package/yuxi/agents/buildin/chatbot/context.py",
+      "backend/package/yuxi/agents/buildin/chatbot/prompt.py",
+      "backend/package/yuxi/agents/buildin/chatbot/state.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/agents/middlewares/__init__.py",
+      "backend/package/yuxi/agents/middlewares/knowledge_base.py",
+      "backend/package/yuxi/agents/middlewares/skills.py",
+      "backend/package/yuxi/agents/middlewares/subagent_task.py",
+      "backend/package/yuxi/agents/toolkits/service.py"
+    ],
+    "backend/package/yuxi/agents/buildin/chatbot/prompt.py": [
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/agents/buildin/chatbot/state.py": [
+      "backend/package/yuxi/agents/state.py"
+    ],
+    "backend/package/yuxi/agents/buildin/subagent/__init__.py": [
+      "backend/package/yuxi/agents/buildin/subagent/context.py",
+      "backend/package/yuxi/agents/buildin/subagent/graph.py"
+    ],
+    "backend/package/yuxi/agents/buildin/subagent/context.py": [
+      "backend/package/yuxi/agents/context.py"
+    ],
+    "backend/package/yuxi/agents/buildin/subagent/graph.py": [
+      "backend/package/yuxi/agents/__init__.py",
+      "backend/package/yuxi/agents/backends/__init__.py",
+      "backend/package/yuxi/agents/buildin/chatbot/prompt.py",
+      "backend/package/yuxi/agents/buildin/subagent/context.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/agents/middlewares/__init__.py",
+      "backend/package/yuxi/agents/middlewares/knowledge_base.py",
+      "backend/package/yuxi/agents/middlewares/skills.py",
+      "backend/package/yuxi/agents/toolkits/service.py"
+    ],
+    "backend/package/yuxi/agents/context.py": [
+      "backend/package/yuxi/agents/backends/sandbox/paths.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/mcp/__init__.py": [],
+    "backend/package/yuxi/agents/mcp/repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/agents/mcp/service.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/__init__.py": [
+      "backend/package/yuxi/agents/middlewares/attachment.py",
+      "backend/package/yuxi/agents/middlewares/context.py",
+      "backend/package/yuxi/agents/middlewares/dynamic_tool.py",
+      "backend/package/yuxi/agents/middlewares/summary.py",
+      "backend/package/yuxi/agents/middlewares/token_usage.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/attachment.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/context.py": [
+      "backend/package/yuxi/agents/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/dynamic_tool.py": [
+      "backend/package/yuxi/agents/mcp/service.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/knowledge_base.py": [
+      "backend/package/yuxi/agents/toolkits/kbs/__init__.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/skills.py": [
+      "backend/package/yuxi/agents/mcp/service.py",
+      "backend/package/yuxi/agents/skills/repository.py",
+      "backend/package/yuxi/agents/skills/service.py",
+      "backend/package/yuxi/agents/toolkits/__init__.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/subagent_task.py": [
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/agent_run_repository.py",
+      "backend/package/yuxi/repositories/user_repository.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/subagent_thread_utils.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/summary.py": [
+      "backend/package/yuxi/agents/backends/composite.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/agents/middlewares/token_usage.py": [],
+    "backend/package/yuxi/agents/models.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/skills/__init__.py": [],
+    "backend/package/yuxi/agents/skills/buildin/__init__.py": [],
+    "backend/package/yuxi/agents/skills/buildin/deep-research/SKILL.md": [],
+    "backend/package/yuxi/agents/skills/buildin/image-gen/SKILL.md": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/describe_table.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/list_tables.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/query.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/SKILL.md": [],
+    "backend/package/yuxi/agents/skills/remote_install.py": [
+      "backend/package/yuxi/agents/skills/service.py"
+    ],
+    "backend/package/yuxi/agents/skills/repository.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/agents/skills/service.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/mcp/service.py",
+      "backend/package/yuxi/agents/skills/repository.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/logging_config.py",
+      "backend/package/yuxi/utils/share_config.py"
+    ],
+    "backend/package/yuxi/agents/state.py": [],
+    "backend/package/yuxi/agents/toolkits/__init__.py": [
+      "backend/package/yuxi/agents/toolkits/buildin/__init__.py",
+      "backend/package/yuxi/agents/toolkits/debug/__init__.py",
+      "backend/package/yuxi/agents/toolkits/kbs/__init__.py",
+      "backend/package/yuxi/agents/toolkits/registry.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/__init__.py": [
+      "backend/package/yuxi/agents/toolkits/buildin/install_skill.py",
+      "backend/package/yuxi/agents/toolkits/buildin/tools.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/install_skill.py": [
+      "backend/package/yuxi/agents/toolkits/registry.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/buildin/tools.py": [
+      "backend/package/yuxi/agents/toolkits/registry.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/paths.py",
+      "backend/package/yuxi/utils/question_utils.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/debug/__init__.py": [],
+    "backend/package/yuxi/agents/toolkits/debug/tools.py": [],
+    "backend/package/yuxi/agents/toolkits/kbs/__init__.py": [
+      "backend/package/yuxi/agents/toolkits/kbs/tools.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/kbs/tools.py": [
+      "backend/package/yuxi/agents/toolkits/registry.py",
+      "backend/package/yuxi/knowledge/base.py",
+      "backend/package/yuxi/knowledge/schemas.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/registry.py": [],
+    "backend/package/yuxi/agents/toolkits/service.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/agents/toolkits/utils.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/config/__init__.py": [
+      "backend/package/yuxi/config/app.py"
+    ],
+    "backend/package/yuxi/config/app.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/config/static/bad_keywords.txt": [],
+    "backend/package/yuxi/config/static/info.template.yaml": [],
+    "backend/package/yuxi/knowledge/__init__.py": [
+      "backend/package/yuxi/config/__init__.py",
+      "backend/package/yuxi/knowledge/factory.py",
+      "backend/package/yuxi/knowledge/implementations/dify.py",
+      "backend/package/yuxi/knowledge/implementations/milvus.py",
+      "backend/package/yuxi/knowledge/implementations/notion.py",
+      "backend/package/yuxi/knowledge/manager.py"
+    ],
+    "backend/package/yuxi/knowledge/base.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+      "backend/package/yuxi/knowledge/schemas.py",
+      "backend/package/yuxi/knowledge/utils/__init__.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/__init__.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py": [],
+    "backend/package/yuxi/knowledge/eval/__init__.py": [],
+    "backend/package/yuxi/knowledge/eval/benchmark_generation.py": [
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/eval/evaluator.py": [
+      "backend/package/yuxi/knowledge/eval/metrics.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/eval/metrics.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/eval/service.py": [
+      "backend/package/yuxi/knowledge/__init__.py",
+      "backend/package/yuxi/knowledge/eval/benchmark_generation.py",
+      "backend/package/yuxi/knowledge/eval/evaluator.py",
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/repositories/evaluation_repository.py",
+      "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "backend/package/yuxi/repositories/knowledge_chunk_repository.py",
+      "backend/package/yuxi/repositories/task_repository.py",
+      "backend/package/yuxi/services/task_service.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/factory.py": [
+      "backend/package/yuxi/knowledge/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/__init__.py": [
+      "backend/package/yuxi/knowledge/graphs/milvus_graph_service.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/extractors/__init__.py": [
+      "backend/package/yuxi/knowledge/graphs/extractors/base.py",
+      "backend/package/yuxi/knowledge/graphs/extractors/factory.py",
+      "backend/package/yuxi/knowledge/graphs/extractors/llm.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/extractors/base.py": [
+      "backend/package/yuxi/knowledge/graphs/graph_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/extractors/factory.py": [
+      "backend/package/yuxi/knowledge/graphs/extractors/base.py",
+      "backend/package/yuxi/knowledge/graphs/extractors/llm.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/extractors/llm.py": [
+      "backend/package/yuxi/knowledge/graphs/extractors/base.py",
+      "backend/package/yuxi/models/chat.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/graph_utils.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/milvus_graph_service.py": [
+      "backend/package/yuxi/knowledge/graphs/extractors/__init__.py",
+      "backend/package/yuxi/knowledge/graphs/graph_utils.py",
+      "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py",
+      "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "backend/package/yuxi/repositories/knowledge_chunk_repository.py",
+      "backend/package/yuxi/repositories/knowledge_graph_repository.py",
+      "backend/package/yuxi/storage/neo4j/__init__.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py": [
+      "backend/package/yuxi/knowledge/graphs/graph_utils.py",
+      "backend/package/yuxi/knowledge/implementations/milvus.py",
+      "backend/package/yuxi/models/embed.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/implementations/__init__.py": [
+      "backend/package/yuxi/knowledge/implementations/dify.py",
+      "backend/package/yuxi/knowledge/implementations/milvus.py",
+      "backend/package/yuxi/knowledge/implementations/notion.py",
+      "backend/package/yuxi/knowledge/implementations/read_only_connectors.py"
+    ],
+    "backend/package/yuxi/knowledge/implementations/dify.py": [
+      "backend/package/yuxi/knowledge/implementations/read_only_connectors.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/implementations/milvus.py": [
+      "backend/package/yuxi/knowledge/base.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "backend/package/yuxi/knowledge/parser/unified.py",
+      "backend/package/yuxi/knowledge/utils/kb_utils.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/repositories/knowledge_chunk_repository.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/implementations/notion.py": [
+      "backend/package/yuxi/knowledge/implementations/read_only_connectors.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/implementations/read_only_connectors.py": [
+      "backend/package/yuxi/knowledge/base.py"
+    ],
+    "backend/package/yuxi/knowledge/manager.py": [
+      "backend/package/yuxi/knowledge/base.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+      "backend/package/yuxi/knowledge/factory.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/share_config.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/__init__.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/knowledge/parser/factory.py",
+      "backend/package/yuxi/knowledge/parser/unified.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/base.py": [],
+    "backend/package/yuxi/knowledge/parser/deepseek_ocr.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/factory.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/mineru_official.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/mineru.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/pp_structure_v3.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/rapid_ocr.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/unified.py": [
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/zip_utils.py": [
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/schemas.py": [],
+    "backend/package/yuxi/knowledge/utils/__init__.py": [
+      "backend/package/yuxi/knowledge/utils/kb_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/kb_utils.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/mindmap_utils.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/config/__init__.py",
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/sample_question_utils.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/config/__init__.py",
+      "backend/package/yuxi/knowledge/factory.py",
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/url_fetcher.py": [
+      "backend/package/yuxi/knowledge/utils/url_validator.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/url_validator.py": [],
+    "backend/package/yuxi/main.py": [],
+    "backend/package/yuxi/models/__init__.py": [],
+    "backend/package/yuxi/models/chat.py": [
+      "backend/package/yuxi/agents/models.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/models/embed.py": [
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/models/providers/__init__.py": [],
+    "backend/package/yuxi/models/providers/builtin.py": [],
+    "backend/package/yuxi/models/providers/cache.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/models/providers/repository.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/models/providers/service.py": [
+      "backend/package/yuxi/models/providers/builtin.py",
+      "backend/package/yuxi/models/providers/repository.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/models/rerank.py": [
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/repositories/__init__.py": [],
+    "backend/package/yuxi/repositories/agent_repository.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/share_config.py"
+    ],
+    "backend/package/yuxi/repositories/agent_run_repository.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/repositories/conversation_repository.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/repositories/department_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/repositories/evaluation_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py"
+    ],
+    "backend/package/yuxi/repositories/knowledge_base_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py"
+    ],
+    "backend/package/yuxi/repositories/knowledge_chunk_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py"
+    ],
+    "backend/package/yuxi/repositories/knowledge_file_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py"
+    ],
+    "backend/package/yuxi/repositories/knowledge_graph_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py"
+    ],
+    "backend/package/yuxi/repositories/message_feedback_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/repositories/task_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/repositories/user_repository.py": [
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/services/agent_eval_run_service.py": [
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/agent_run_service.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/services/agent_run_service.py": [
+      "backend/package/yuxi/agents/buildin/__init__.py",
+      "backend/package/yuxi/agents/models.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/agent_run_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/run_queue_service.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/agent_runtime_service.py": [
+      "backend/package/yuxi/agents/buildin/__init__.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/conversation_service.py",
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/services/auth_service.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/auth_utils.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/services/chat_service.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/buildin/__init__.py",
+      "backend/package/yuxi/agents/context.py",
+      "backend/package/yuxi/agents/state.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/agent_run_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/conversation_service.py",
+      "backend/package/yuxi/services/langfuse_service.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/guard.py",
+      "backend/package/yuxi/utils/logging_config.py",
+      "backend/package/yuxi/utils/question_utils.py"
+    ],
+    "backend/package/yuxi/services/conversation_service.py": [
+      "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "backend/package/yuxi/agents/buildin/__init__.py",
+      "backend/package/yuxi/config/__init__.py",
+      "backend/package/yuxi/knowledge/parser/__init__.py",
+      "backend/package/yuxi/repositories/agent_repository.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/mention_search_service.py",
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/logging_config.py",
+      "backend/package/yuxi/utils/paths.py",
+      "backend/package/yuxi/utils/upload_utils.py"
+    ],
+    "backend/package/yuxi/services/feedback_service.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/file_preview.py": [],
+    "backend/package/yuxi/services/langfuse_service.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/mention_search_service.py": [
+      "backend/package/yuxi/agents/backends/sandbox/paths.py",
+      "backend/package/yuxi/config/app.py",
+      "backend/package/yuxi/services/run_queue_service.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/oidc_service.py": [
+      "backend/package/yuxi/repositories/user_repository.py",
+      "backend/package/yuxi/services/operation_log_service.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/auth_utils.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/operation_log_service.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py"
+    ],
+    "backend/package/yuxi/services/run_queue_service.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/run_worker.py": [
+      "backend/package/yuxi/agents/mcp/service.py",
+      "backend/package/yuxi/agents/skills/service.py",
+      "backend/package/yuxi/repositories/agent_run_repository.py",
+      "backend/package/yuxi/services/chat_service.py",
+      "backend/package/yuxi/services/run_queue_service.py",
+      "backend/package/yuxi/storage/postgres/manager.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/task_service.py": [
+      "backend/package/yuxi/repositories/task_repository.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/services/thread_files_service.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "backend/package/yuxi/repositories/conversation_repository.py",
+      "backend/package/yuxi/services/conversation_service.py",
+      "backend/package/yuxi/services/mention_search_service.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/services/user_identity_service.py": [],
+    "backend/package/yuxi/services/viewer_filesystem_service.py": [
+      "backend/package/yuxi/agents/backends/__init__.py",
+      "backend/package/yuxi/agents/backends/sandbox/__init__.py",
+      "backend/package/yuxi/agents/backends/skills_backend.py",
+      "backend/package/yuxi/agents/skills/service.py",
+      "backend/package/yuxi/services/agent_runtime_service.py",
+      "backend/package/yuxi/services/file_preview.py",
+      "backend/package/yuxi/services/workspace_service.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/paths.py"
+    ],
+    "backend/package/yuxi/services/workspace_service.py": [
+      "backend/package/yuxi/agents/backends/sandbox/paths.py",
+      "backend/package/yuxi/services/file_preview.py",
+      "backend/package/yuxi/services/mention_search_service.py",
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py",
+      "backend/package/yuxi/utils/paths.py",
+      "backend/package/yuxi/utils/upload_utils.py"
+    ],
+    "backend/package/yuxi/storage/minio/__init__.py": [
+      "backend/package/yuxi/storage/minio/client.py",
+      "backend/package/yuxi/storage/minio/utils.py"
+    ],
+    "backend/package/yuxi/storage/minio/client.py": [
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/storage/minio/utils.py": [
+      "backend/package/yuxi/storage/minio/client.py",
+      "backend/package/yuxi/utils/upload_utils.py"
+    ],
+    "backend/package/yuxi/storage/neo4j/__init__.py": [
+      "backend/package/yuxi/storage/neo4j/manager.py"
+    ],
+    "backend/package/yuxi/storage/neo4j/manager.py": [
+      "backend/package/yuxi/storage/neo4j/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/storage/postgres/manager.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/storage/postgres/models_knowledge.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/singleton.py"
+    ],
+    "backend/package/yuxi/storage/postgres/models_business.py": [
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/storage/postgres/models_knowledge.py": [
+      "backend/package/yuxi/storage/postgres/models_business.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/utils/__init__.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/utils/auth_utils.py": [
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/utils/datetime_utils.py": [],
+    "backend/package/yuxi/utils/guard.py": [
+      "backend/package/yuxi/config/app.py",
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/utils/image_processor.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/utils/logging_config.py": [
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/utils/paths.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/config/__init__.py"
+    ],
+    "backend/package/yuxi/utils/question_utils.py": [],
+    "backend/package/yuxi/utils/share_config.py": [],
+    "backend/package/yuxi/utils/singleton.py": [],
+    "backend/package/yuxi/utils/subagent_thread_utils.py": [],
+    "backend/package/yuxi/utils/upload_utils.py": [],
+    "backend/pyproject.toml": [],
+    "backend/scripts/seed_initial_users.py": [],
+    "backend/server/main.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/utils/access_log_middleware.py",
+      "backend/server/utils/common_utils.py",
+      "backend/server/utils/lifespan.py"
+    ],
+    "backend/server/routers/__init__.py": [
+      "backend/server/routers/agent_router.py",
+      "backend/server/routers/auth_dept_router.py",
+      "backend/server/routers/auth_router.py",
+      "backend/server/routers/chat_router.py",
+      "backend/server/routers/dashboard_router.py",
+      "backend/server/routers/filesystem_router.py",
+      "backend/server/routers/mcp_router.py",
+      "backend/server/routers/mention_router.py",
+      "backend/server/routers/model_provider_router.py",
+      "backend/server/routers/skill_router.py",
+      "backend/server/routers/system_router.py",
+      "backend/server/routers/system_task_router.py",
+      "backend/server/routers/tool_router.py",
+      "backend/server/routers/user_router.py",
+      "backend/server/routers/workspace_router.py"
+    ],
+    "backend/server/routers/agent_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/auth_dept_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/auth_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/chat_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/dashboard_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/filesystem_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/graph_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/knowledge_eval_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/knowledge_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/mcp_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/mention_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/model_provider_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/skill_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/system_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/system_task_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/tool_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/user_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/workspace_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/utils/__init__.py": [],
+    "backend/server/utils/access_log_middleware.py": [],
+    "backend/server/utils/auth_middleware.py": [],
+    "backend/server/utils/common_utils.py": [],
+    "backend/server/utils/lifespan.py": [],
+    "backend/server/worker_main.py": [],
+    "backend/test/.env.test.example": [],
+    "backend/test/api/__init__.py": [],
+    "backend/test/conftest.py": [],
+    "backend/test/data/测试表格.xlsx": [],
+    "backend/test/data/测试文档.docx": [],
+    "backend/test/data/测试演示.pptx": [],
+    "backend/test/data/A_Dream_of_Red_Mansions_10hui.txt": [],
+    "backend/test/data/A_Dream_of_Red_Mansions_tiny.jsonl": [],
+    "backend/test/data/A_Dream_of_Red_Mansions.jsonl": [],
+    "backend/test/data/A_Dream_of_Red_Mansions.txt": [],
+    "backend/test/data/complex_graph_test.jsonl": [],
+    "backend/test/data/test_csv_file.csv": [],
+    "backend/test/e2e/conftest.py": [],
+    "backend/test/e2e/test_agent_bubble_sort_e2e.py": [],
+    "backend/test/e2e/test_attachment_and_agent_state.py": [],
+    "backend/test/e2e/test_subagent_stream_e2e.py": [],
+    "backend/test/e2e/test_viewer_filesystem_e2e.py": [],
+    "backend/test/integration/api/test_agent_run_events_router.py": [],
+    "backend/test/integration/api/test_apikey_router.py": [],
+    "backend/test/integration/api/test_auth_router.py": [],
+    "backend/test/integration/api/test_chat_agent_sync.py": [],
+    "backend/test/integration/api/test_chat_resume_batch_questions.py": [],
+    "backend/test/integration/api/test_chat_router.py": [],
+    "backend/test/integration/api/test_dashboard_router.py": [],
+    "backend/test/integration/api/test_department_router.py": [],
+    "backend/test/integration/api/test_evaluation_router.py": [],
+    "backend/test/integration/api/test_graph_router_list.py": [],
+    "backend/test/integration/api/test_knowledge_router.py": [],
+    "backend/test/integration/api/test_settings_router.py": [],
+    "backend/test/integration/api/test_system_router.py": [],
+    "backend/test/integration/api/test_task_router.py": [],
+    "backend/test/integration/api/test_unified_graph_router.py": [],
+    "backend/test/integration/api/test_user_agent_env_router.py": [],
+    "backend/test/integration/api/test_viewer_filesystem_router.py": [],
+    "backend/test/integration/api/test_viewer_filesystem_security.py": [],
+    "backend/test/integration/conftest.py": [],
+    "backend/test/integration/services/test_model_provider_runtime_connectivity.py": [],
+    "backend/test/run_tests.sh": [],
+    "backend/test/unit/agents/skills/test_mysql_reporter_scripts.py": [],
+    "backend/test/unit/agents/skills/test_remote_install.py": [],
+    "backend/test/unit/agents/test_base_tool_event_normalize.py": [],
+    "backend/test/unit/agents/test_context_auth.py": [],
+    "backend/test/unit/agents/test_streaming_toolcall_fix.py": [],
+    "backend/test/unit/agents/test_subagent_tool_filter.py": [],
+    "backend/test/unit/agents/toolkits/buildin/test_ask_user_question.py": [],
+    "backend/test/unit/backends/test_knowledge_base_backend.py": [],
+    "backend/test/unit/backends/test_sandbox_backends.py": [],
+    "backend/test/unit/backends/test_sandbox_provisioner_config.py": [],
+    "backend/test/unit/backends/test_semantic_chunking.py": [],
+    "backend/test/unit/backends/test_skills_backend_error_handling.py": [],
+    "backend/test/unit/backends/test_skills_backend.py": [],
+    "backend/test/unit/graphs/test_milvus_graph_build.py": [],
+    "backend/test/unit/knowledge/eval/test_benchmark_generation.py": [],
+    "backend/test/unit/knowledge/eval/test_evaluator.py": [],
+    "backend/test/unit/knowledge/eval/test_metrics.py": [],
+    "backend/test/unit/knowledge/eval/test_service_generation.py": [],
+    "backend/test/unit/knowledge/test_file_size_fallback.py": [],
+    "backend/test/unit/knowledge/test_kb_utils.py": [],
+    "backend/test/unit/knowledge/test_knowledge_base_update.py": [],
+    "backend/test/unit/knowledge/test_milvus_retrieval_config.py": [],
+    "backend/test/unit/knowledge/test_parser_facade.py": [],
+    "backend/test/unit/knowledge/test_sample_question_utils.py": [],
+    "backend/test/unit/middlewares/test_skills_middleware.py": [],
+    "backend/test/unit/middlewares/test_subagent_task_middleware.py": [],
+    "backend/test/unit/middlewares/test_summary_middleware.py": [],
+    "backend/test/unit/middlewares/test_token_usage_middleware.py": [],
+    "backend/test/unit/plugins/test_dify_kb.py": [],
+    "backend/test/unit/plugins/test_milvus_kb.py": [],
+    "backend/test/unit/plugins/test_notion_kb.py": [],
+    "backend/test/unit/plugins/test_ragflow_like_chunking.py": [],
+    "backend/test/unit/repositories/test_agent_repository_deep_research.py": [],
+    "backend/test/unit/repositories/test_agent_repository.py": [],
+    "backend/test/unit/routers/test_auth_router_cli_auth.py": [
+      "backend/server/routers/auth_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_knowledge_router_cleanup.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/knowledge_router.py"
+    ],
+    "backend/test/unit/routers/test_knowledge_workspace_import.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/knowledge_router.py"
+    ],
+    "backend/test/unit/routers/test_mcp_router.py": [
+      "backend/server/routers/mcp_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_skill_router.py": [
+      "backend/server/routers/skill_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_subagent.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_system_router.py": [
+      "backend/server/routers/system_router.py"
+    ],
+    "backend/test/unit/server/test_cors_config.py": [
+      "backend/server/main.py"
+    ],
+    "backend/test/unit/server/test_model_provider_router.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/model_provider_router.py"
+    ],
+    "backend/test/unit/services/test_agent_artifacts_state.py": [],
+    "backend/test/unit/services/test_agent_eval_run_service.py": [],
+    "backend/test/unit/services/test_agent_run_service.py": [],
+    "backend/test/unit/services/test_auth_service_cli_auth.py": [],
+    "backend/test/unit/services/test_base_agent_langfuse_config.py": [],
+    "backend/test/unit/services/test_chat_service_langfuse_stream.py": [],
+    "backend/test/unit/services/test_chat_service_model_override.py": [],
+    "backend/test/unit/services/test_chat_service_sync.py": [],
+    "backend/test/unit/services/test_chat_stream_attachment_materialize.py": [],
+    "backend/test/unit/services/test_chat_stream_interrupt.py": [],
+    "backend/test/unit/services/test_conversation_service_attachment_state.py": [],
+    "backend/test/unit/services/test_langfuse_service.py": [],
+    "backend/test/unit/services/test_mcp_service.py": [],
+    "backend/test/unit/services/test_mention_search_service.py": [],
+    "backend/test/unit/services/test_model_cache.py": [],
+    "backend/test/unit/services/test_model_provider_service.py": [],
+    "backend/test/unit/services/test_model_selectors.py": [],
+    "backend/test/unit/services/test_oidc_service.py": [],
+    "backend/test/unit/services/test_run_queue_service.py": [],
+    "backend/test/unit/services/test_run_worker.py": [],
+    "backend/test/unit/services/test_skill_service.py": [],
+    "backend/test/unit/services/test_thread_files_service.py": [],
+    "backend/test/unit/services/test_tool_service.py": [],
+    "backend/test/unit/services/test_viewer_filesystem_service.py": [],
+    "backend/test/unit/services/test_workspace_service.py": [],
+    "backend/test/unit/storage/test_conversation_repository.py": [],
+    "backend/test/unit/storage/test_neo4j_manager.py": [],
+    "backend/test/unit/test_auth_utils.py": [],
+    "backend/test/unit/test_chunking_token_limit.py": [],
+    "backend/test/unit/test_package_import.py": [],
+    "backend/test/unit/test_tmp_attachment_service.py": [],
+    "backend/test/unit/toolkits/test_install_skill.py": [],
+    "backend/test/unit/toolkits/test_kbs_tools.py": [],
+    "backend/test/unit/toolkits/test_tool_registry.py": [],
+    "backend/test/unit/utils/test_image_processor.py": [],
+    "backend/test/unit/utils/test_share_config.py": [],
+    "CLAUDE.md": [],
+    "CONTRIBUTING.md": [],
+    "docker-compose.prod.yml": [],
+    "docker-compose.yml": [],
+    "docker/api.Dockerfile": [],
+    "docker/mineru.Dockerfile": [],
+    "docker/nginx/default.conf": [],
+    "docker/nginx/nginx.conf": [],
+    "docker/paddlex.Dockerfile": [],
+    "docker/PP-StructureV3.yaml": [],
+    "docker/sandbox_provisioner/app.py": [],
+    "docker/sandbox_provisioner/Dockerfile": [],
+    "docker/sandbox_provisioner/requirements.txt": [],
+    "docker/sandbox_provisioner/sandbox.env": [],
+    "docker/save_docker_images.ps1": [],
+    "docker/save_docker_images.sh": [],
+    "docker/web.Dockerfile": [],
+    "docs/.vitepress/config.mts": [],
+    "docs/.vitepress/theme/components/YuxiHome.vue": [],
+    "docs/.vitepress/theme/custom.css": [],
+    "docs/.vitepress/theme/index.ts": [
+      "docs/.vitepress/theme/components/YuxiHome.vue",
+      "docs/.vitepress/theme/custom.css"
+    ],
+    "docs/advanced/api-key-integration.md": [],
+    "docs/advanced/branding.md": [],
+    "docs/advanced/configuration.md": [],
+    "docs/advanced/deployment.md": [],
+    "docs/advanced/document-processing.md": [],
+    "docs/advanced/langfuse-integration.md": [],
+    "docs/advanced/misc.md": [],
+    "docs/advanced/third-party-auth.md": [],
+    "docs/agents/agent-evaluation.md": [],
+    "docs/agents/agents-config.md": [],
+    "docs/agents/mcp-integration.md": [],
+    "docs/agents/middleware.md": [],
+    "docs/agents/sandbox-architecture.md": [],
+    "docs/agents/skills-management.md": [],
+    "docs/agents/subagents-management.md": [],
+    "docs/agents/tools-system.md": [],
+    "docs/develop-guides/changelog.md": [],
+    "docs/develop-guides/contributing.md": [],
+    "docs/develop-guides/design.md": [],
+    "docs/develop-guides/roadmap.md": [],
+    "docs/develop-guides/testing-guidelines.md": [],
+    "docs/index.md": [],
+    "docs/intro/cli.md": [],
+    "docs/intro/evaluation.md": [],
+    "docs/intro/knowledge-base.md": [],
+    "docs/intro/model-config.md": [],
+    "docs/intro/project-overview.md": [],
+    "docs/intro/quick-start.md": [],
+    "docs/package.json": [],
+    "Makefile": [],
+    "packages/yuxi-cli/pyproject.toml": [],
+    "packages/yuxi-cli/README.md": [],
+    "packages/yuxi-cli/src/yuxi_cli/__init__.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/__main__.py": [
+      "packages/yuxi-cli/src/yuxi_cli/main.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/agent_eval.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/client.py": [
+      "packages/yuxi-cli/src/yuxi_cli/config.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/commands.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/discovery.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/config.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/discovery.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/kb_upload.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/discovery.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/main.py": [
+      "packages/yuxi-cli/src/yuxi_cli/__init__.py",
+      "packages/yuxi-cli/src/yuxi_cli/agent_eval.py",
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/commands.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/kb_upload.py"
+    ],
+    "packages/yuxi-cli/tests/test_agent_eval.py": [],
+    "packages/yuxi-cli/tests/test_commands.py": [],
+    "packages/yuxi-cli/tests/test_config.py": [],
+    "packages/yuxi-cli/tests/test_discovery.py": [],
+    "packages/yuxi-cli/tests/test_kb_upload.py": [],
+    "packages/yuxi-cli/tests/test_main.py": [],
+    "README.en.md": [],
+    "README.md": [],
+    "scripts/bump-version.sh": [],
+    "scripts/init.ps1": [],
+    "scripts/init.sh": [],
+    "scripts/pull_image.ps1": [],
+    "scripts/pull_image.sh": [],
+    "web/.prettierrc.json": [],
+    "web/eslint.config.js": [],
+    "web/index.html": [],
+    "web/package.json": [],
+    "web/public/protocols/privacy-policy.template.html": [],
+    "web/public/protocols/user-agreement.template.html": [],
+    "web/src/apis/agent_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/agent_env_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/apikey_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/auth_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/base.js": [],
+    "web/src/apis/dashboard_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/department_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/graph_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/index.js": [],
+    "web/src/apis/knowledge_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/mcp_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/mention_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/skill_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/system_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/tasker.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/tool_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/user_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/viewer_filesystem.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/workspace_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/App.vue": [],
+    "web/src/assets/css/animations.less": [],
+    "web/src/assets/css/base.css": [],
+    "web/src/assets/css/base.dark.css": [],
+    "web/src/assets/css/code-highlight.less": [],
+    "web/src/assets/css/dashboard.css": [],
+    "web/src/assets/css/extension-detail.less": [],
+    "web/src/assets/css/extensions.less": [],
+    "web/src/assets/css/main.css": [],
+    "web/src/assets/css/model-selector-common.less": [],
+    "web/src/assets/css/shorts.css": [],
+    "web/src/assets/css/sigma.css": [],
+    "web/src/components/AccountSettingsComponent.vue": [],
+    "web/src/components/AgentArtifactsCard.vue": [],
+    "web/src/components/AgentChatComponent.vue": [],
+    "web/src/components/AgentEnvSettingsCard.vue": [],
+    "web/src/components/AgentFilePreview.vue": [],
+    "web/src/components/AgentInputArea.vue": [],
+    "web/src/components/AgentMessageComponent.vue": [],
+    "web/src/components/AgentPanel.vue": [],
+    "web/src/components/AgentRuntimeConfigForm.vue": [],
+    "web/src/components/AiTextarea.vue": [],
+    "web/src/components/ApiKeyManagementComponent.vue": [],
+    "web/src/components/AttachmentOptionsComponent.vue": [],
+    "web/src/components/AttachmentTmpUploadModal.vue": [],
+    "web/src/components/BasicSettingsSection.vue": [],
+    "web/src/components/ChunkParamsConfig.vue": [],
+    "web/src/components/common/FallbackAvatar.vue": [],
+    "web/src/components/common/FileTypeIcon.vue": [],
+    "web/src/components/common/MarkdownPreview.vue": [],
+    "web/src/components/common/MentionTextRenderer.vue": [],
+    "web/src/components/ConversationNavSection.vue": [],
+    "web/src/components/dashboard/AgentStatsComponent.vue": [],
+    "web/src/components/dashboard/CallStatsComponent.vue": [],
+    "web/src/components/dashboard/FeedbackModalComponent.vue": [],
+    "web/src/components/dashboard/KnowledgeStatsComponent.vue": [],
+    "web/src/components/dashboard/StatsOverviewComponent.vue": [],
+    "web/src/components/dashboard/ToolStatsComponent.vue": [],
+    "web/src/components/dashboard/UserStatsComponent.vue": [],
+    "web/src/components/DebugComponent.vue": [],
+    "web/src/components/DepartmentManagementComponent.vue": [],
+    "web/src/components/EmbeddingModelSelector.vue": [],
+    "web/src/components/EvaluationBenchmarks.vue": [],
+    "web/src/components/extensions/ExtensionCardGrid.vue": [],
+    "web/src/components/extensions/ExtensionDetailLayout.vue": [],
+    "web/src/components/extensions/ExtensionToolbar.vue": [],
+    "web/src/components/extensions/McpCardList.vue": [],
+    "web/src/components/extensions/McpDetailView.vue": [],
+    "web/src/components/extensions/McpFormModal.vue": [],
+    "web/src/components/extensions/SkillCardList.vue": [],
+    "web/src/components/extensions/SkillDetailView.vue": [],
+    "web/src/components/extensions/ToolsCardList.vue": [],
+    "web/src/components/FileDetailModal.vue": [],
+    "web/src/components/FileTable.vue": [],
+    "web/src/components/FileTreeComponent.vue": [],
+    "web/src/components/FileUploadModal.vue": [],
+    "web/src/components/GraphCanvas.vue": [],
+    "web/src/components/GraphDetailPanel.vue": [],
+    "web/src/components/HeaderComponent.vue": [],
+    "web/src/components/HumanApprovalModal.vue": [],
+    "web/src/components/ImagePreviewComponent.vue": [],
+    "web/src/components/KnowledgeGraphSection.vue": [],
+    "web/src/components/KnowledgeSourceSection.vue": [],
+    "web/src/components/LoadingComponent.vue": [],
+    "web/src/components/MarkdownContentViewer.vue": [],
+    "web/src/components/McpEnvEditor.vue": [],
+    "web/src/components/MessageInputComponent.vue": [],
+    "web/src/components/MindMapSection.vue": [],
+    "web/src/components/modals/BenchmarkGenerateModal.vue": [],
+    "web/src/components/modals/BenchmarkUploadModal.vue": [],
+    "web/src/components/model-management/AgentEditModal.vue": [],
+    "web/src/components/model-management/AgentManagePanel.vue": [],
+    "web/src/components/model-management/ModelProviderManagePanel.vue": [],
+    "web/src/components/ModelSelectorComponent.vue": [],
+    "web/src/components/QuerySection.vue": [],
+    "web/src/components/RAGEvaluationTab.vue": [],
+    "web/src/components/RefsComponent.vue": [],
+    "web/src/components/RerankModelSelector.vue": [],
+    "web/src/components/SearchConfigModal.vue": [],
+    "web/src/components/SearchConfigPanel.vue": [],
+    "web/src/components/SettingsModal.vue": [],
+    "web/src/components/ShareConfigForm.vue": [],
+    "web/src/components/shared/InfoCard.vue": [],
+    "web/src/components/shared/PageHeader.vue": [],
+    "web/src/components/shared/PageShoulder.vue": [],
+    "web/src/components/shared/ResourceEmptyState.vue": [],
+    "web/src/components/sources/KbChunkDetailModal.vue": [],
+    "web/src/components/sources/KbResultGroupedList.vue": [],
+    "web/src/components/sources/WebSearchResultList.vue": [],
+    "web/src/components/StatusBar.vue": [],
+    "web/src/components/SubagentThreadModal.vue": [],
+    "web/src/components/TaskCenterDrawer.vue": [],
+    "web/src/components/ThemeToggle.vue": [],
+    "web/src/components/ThreadMessageList.vue": [],
+    "web/src/components/ToolCallingResult/BaseToolCall.vue": [],
+    "web/src/components/ToolCallingResult/index.js": [],
+    "web/src/components/ToolCallingResult/ToolCallRenderer.vue": [],
+    "web/src/components/ToolCallingResult/toolRegistry.js": [],
+    "web/src/components/ToolCallingResult/tools/AskUserQuestionTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/CalculatorTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ChartTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/EditFileTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ExecuteTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/FindKbDocumentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GetMindmapTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GlobTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GrepTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ImageTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/KbDocumentPreview.vue": [],
+    "web/src/components/ToolCallingResult/tools/ListDirectoryTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ListKbsTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlDescribeTableTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlListTablesTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlQueryTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/OpenKbDocumentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/QueryKbTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ReadFileTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/SearchFileContentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/TaskTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/TodoListTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/WebSearchTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/WriteFileTool.vue": [],
+    "web/src/components/ToolCallsGroupComponent.vue": [],
+    "web/src/components/UserInfoComponent.vue": [],
+    "web/src/components/UserManagementComponent.vue": [],
+    "web/src/components/ViewSwitchHeader.vue": [],
+    "web/src/components/WebSearchSourceSection.vue": [],
+    "web/src/components/workspace/WorkspaceFileList.vue": [],
+    "web/src/components/workspace/WorkspacePreviewPane.vue": [],
+    "web/src/components/workspace/WorkspaceSidebar.vue": [],
+    "web/src/composables/useAgentMentionConfig.js": [],
+    "web/src/composables/useAgentRunStream.js": [],
+    "web/src/composables/useAgentStreamHandler.js": [],
+    "web/src/composables/useAgentThreadState.js": [],
+    "web/src/composables/useApproval.js": [],
+    "web/src/composables/useGraph.js": [],
+    "web/src/composables/useMention.js": [],
+    "web/src/composables/useModelStatus.js": [],
+    "web/src/composables/useStreamSmoother.js": [],
+    "web/src/layouts/AppLayout.vue": [],
+    "web/src/layouts/BlankLayout.vue": [],
+    "web/src/main.js": [
+      "web/src/App.vue",
+      "web/src/router/index.js"
+    ],
+    "web/src/router/index.js": [],
+    "web/src/stores/agent.js": [],
+    "web/src/stores/chatThreads.js": [],
+    "web/src/stores/chatUI.js": [],
+    "web/src/stores/config.js": [],
+    "web/src/stores/database.js": [],
+    "web/src/stores/info.js": [],
+    "web/src/stores/tasker.js": [],
+    "web/src/stores/theme.js": [],
+    "web/src/stores/user.js": [
+      "web/src/stores/agent.js"
+    ],
+    "web/src/utils/__tests__/messageProcessor.spec.js": [
+      "web/src/utils/messageProcessor.js"
+    ],
+    "web/src/utils/__tests__/pixelAvatar.test.js": [
+      "web/src/utils/pixelAvatar.js"
+    ],
+    "web/src/utils/__tests__/runStreamResume.test.js": [
+      "web/src/utils/runStreamResume.js"
+    ],
+    "web/src/utils/__tests__/subagentThread.test.js": [
+      "web/src/utils/subagentThread.js"
+    ],
+    "web/src/utils/__tests__/svgRenderer.test.js": [
+      "web/src/utils/svgRenderer.js"
+    ],
+    "web/src/utils/agentConfigUtils.js": [],
+    "web/src/utils/agentPanelAutoOpen.js": [],
+    "web/src/utils/agentValidator.js": [],
+    "web/src/utils/chartColors.js": [],
+    "web/src/utils/chunk_presets.js": [],
+    "web/src/utils/chunkUtils.js": [],
+    "web/src/utils/errorHandler.js": [],
+    "web/src/utils/extensionDisplayName.js": [],
+    "web/src/utils/file_icon.js": [],
+    "web/src/utils/file_preview.js": [],
+    "web/src/utils/file_utils.js": [],
+    "web/src/utils/html.js": [],
+    "web/src/utils/kb_utils.js": [],
+    "web/src/utils/markdown_preview.js": [
+      "web/src/utils/svgRenderer.js"
+    ],
+    "web/src/utils/mention_icon_utils.js": [],
+    "web/src/utils/mention_utils.js": [],
+    "web/src/utils/messageGrouping.js": [],
+    "web/src/utils/messageProcessor.js": [],
+    "web/src/utils/modelIcon.js": [],
+    "web/src/utils/oidcAutoStart.js": [],
+    "web/src/utils/pixelAvatar.js": [],
+    "web/src/utils/questionUtils.js": [],
+    "web/src/utils/runStreamResume.js": [],
+    "web/src/utils/scrollController.js": [],
+    "web/src/utils/subagentThread.js": [],
+    "web/src/utils/svgRenderer.js": [],
+    "web/src/utils/time.js": [],
+    "web/src/utils/upload_limits.js": [],
+    "web/src/views/AgentView.vue": [],
+    "web/src/views/CLIAuthAuthorizeView.vue": [],
+    "web/src/views/DashboardView.vue": [],
+    "web/src/views/DataBaseInfoView.vue": [],
+    "web/src/views/DataBaseView.vue": [],
+    "web/src/views/EmptyView.vue": [],
+    "web/src/views/ExtensionsView.vue": [],
+    "web/src/views/HomeView.vue": [],
+    "web/src/views/LoginView.vue": [],
+    "web/src/views/ModelManageView.vue": [],
+    "web/src/views/OIDCCallbackView.vue": [],
+    "web/src/views/WorkspaceView.vue": [],
+    "web/vite.config.js": []
+  }
+}

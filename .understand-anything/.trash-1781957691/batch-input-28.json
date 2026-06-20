@@ -1,0 +1,183 @@
+{
+  "batchIndex": 29,
+  "files": [
+    {
+      "path": "backend/test/integration/api/test_department_router.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_evaluation_router.py",
+      "language": "python",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_graph_router_list.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_knowledge_router.py",
+      "language": "python",
+      "sizeLines": 744,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_settings_router.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_system_router.py",
+      "language": "python",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_task_router.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_unified_graph_router.py",
+      "language": "python",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_user_agent_env_router.py",
+      "language": "python",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_viewer_filesystem_router.py",
+      "language": "python",
+      "sizeLines": 690,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_viewer_filesystem_security.py",
+      "language": "python",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/conftest.py",
+      "language": "python",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/services/test_model_provider_runtime_connectivity.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/run_tests.sh",
+      "language": "shell",
+      "sizeLines": 87,
+      "fileCategory": "script"
+    },
+    {
+      "path": "backend/test/unit/agents/skills/test_mysql_reporter_scripts.py",
+      "language": "python",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/skills/test_remote_install.py",
+      "language": "python",
+      "sizeLines": 370,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_base_tool_event_normalize.py",
+      "language": "python",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_context_auth.py",
+      "language": "python",
+      "sizeLines": 390,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_streaming_toolcall_fix.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/test_subagent_tool_filter.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/agents/toolkits/buildin/test_ask_user_question.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_knowledge_base_backend.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_sandbox_backends.py",
+      "language": "python",
+      "sizeLines": 528,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_sandbox_provisioner_config.py",
+      "language": "python",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/backends/test_semantic_chunking.py",
+      "language": "python",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/test/integration/api/test_department_router.py": [],
+    "backend/test/integration/api/test_evaluation_router.py": [],
+    "backend/test/integration/api/test_graph_router_list.py": [],
+    "backend/test/integration/api/test_knowledge_router.py": [],
+    "backend/test/integration/api/test_settings_router.py": [],
+    "backend/test/integration/api/test_system_router.py": [],
+    "backend/test/integration/api/test_task_router.py": [],
+    "backend/test/integration/api/test_unified_graph_router.py": [],
+    "backend/test/integration/api/test_user_agent_env_router.py": [],
+    "backend/test/integration/api/test_viewer_filesystem_router.py": [],
+    "backend/test/integration/api/test_viewer_filesystem_security.py": [],
+    "backend/test/integration/conftest.py": [],
+    "backend/test/integration/services/test_model_provider_runtime_connectivity.py": [],
+    "backend/test/run_tests.sh": [],
+    "backend/test/unit/agents/skills/test_mysql_reporter_scripts.py": [],
+    "backend/test/unit/agents/skills/test_remote_install.py": [],
+    "backend/test/unit/agents/test_base_tool_event_normalize.py": [],
+    "backend/test/unit/agents/test_context_auth.py": [],
+    "backend/test/unit/agents/test_streaming_toolcall_fix.py": [],
+    "backend/test/unit/agents/test_subagent_tool_filter.py": [],
+    "backend/test/unit/agents/toolkits/buildin/test_ask_user_question.py": [],
+    "backend/test/unit/backends/test_knowledge_base_backend.py": [],
+    "backend/test/unit/backends/test_sandbox_backends.py": [],
+    "backend/test/unit/backends/test_sandbox_provisioner_config.py": [],
+    "backend/test/unit/backends/test_semantic_chunking.py": []
+  },
+  "neighborMap": {}
+}

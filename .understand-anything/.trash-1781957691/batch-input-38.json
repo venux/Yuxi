@@ -1,0 +1,206 @@
+{
+  "batchIndex": 39,
+  "files": [
+    {
+      "path": "web/src/utils/__tests__/pixelAvatar.test.js",
+      "language": "javascript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/runStreamResume.test.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/subagentThread.test.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentConfigUtils.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentPanelAutoOpen.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/agentValidator.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chartColors.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chunk_presets.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/chunkUtils.js",
+      "language": "javascript",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/errorHandler.js",
+      "language": "javascript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/extensionDisplayName.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_icon.js",
+      "language": "javascript",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_preview.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/file_utils.js",
+      "language": "javascript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/html.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/kb_utils.js",
+      "language": "javascript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/mention_icon_utils.js",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/mention_utils.js",
+      "language": "javascript",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/messageGrouping.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/messageProcessor.js",
+      "language": "javascript",
+      "sizeLines": 424,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/modelIcon.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/oidcAutoStart.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/pixelAvatar.js",
+      "language": "javascript",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/questionUtils.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/runStreamResume.js",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/utils/__tests__/pixelAvatar.test.js": [
+      "web/src/utils/pixelAvatar.js"
+    ],
+    "web/src/utils/__tests__/runStreamResume.test.js": [
+      "web/src/utils/runStreamResume.js"
+    ],
+    "web/src/utils/__tests__/subagentThread.test.js": [
+      "web/src/utils/subagentThread.js"
+    ],
+    "web/src/utils/agentConfigUtils.js": [],
+    "web/src/utils/agentPanelAutoOpen.js": [],
+    "web/src/utils/agentValidator.js": [],
+    "web/src/utils/chartColors.js": [],
+    "web/src/utils/chunk_presets.js": [],
+    "web/src/utils/chunkUtils.js": [],
+    "web/src/utils/errorHandler.js": [],
+    "web/src/utils/extensionDisplayName.js": [],
+    "web/src/utils/file_icon.js": [],
+    "web/src/utils/file_preview.js": [],
+    "web/src/utils/file_utils.js": [],
+    "web/src/utils/html.js": [],
+    "web/src/utils/kb_utils.js": [],
+    "web/src/utils/mention_icon_utils.js": [],
+    "web/src/utils/mention_utils.js": [],
+    "web/src/utils/messageGrouping.js": [],
+    "web/src/utils/messageProcessor.js": [],
+    "web/src/utils/modelIcon.js": [],
+    "web/src/utils/oidcAutoStart.js": [],
+    "web/src/utils/pixelAvatar.js": [],
+    "web/src/utils/questionUtils.js": [],
+    "web/src/utils/runStreamResume.js": []
+  },
+  "neighborMap": {
+    "web/src/utils/__tests__/subagentThread.test.js": [
+      {
+        "path": "web/src/utils/subagentThread.js",
+        "batchIndex": 40,
+        "symbols": [
+          "makeChildThreadId"
+        ]
+      }
+    ],
+    "web/src/utils/messageProcessor.js": [
+      {
+        "path": "web/src/utils/__tests__/messageProcessor.spec.js",
+        "batchIndex": 38,
+        "symbols": []
+      }
+    ]
+  }
+}

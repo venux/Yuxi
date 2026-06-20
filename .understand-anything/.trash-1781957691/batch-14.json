@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/close-stale-issues.yml",
+      "type": "pipeline",
+      "name": "close-stale-issues.yml",
+      "filePath": ".github/workflows/close-stale-issues.yml",
+      "summary": "定时清理不活跃的 Issue 和 PR 的 GitHub Actions 工作流，每天运行一次，对标记为 to-be-closed 的 Issue 在 30 天无活动后标记为 stale，再过 14 天自动关闭。",
+      "tags": ["ci-cd", "automation", "issue-management"],
+      "complexity": "simple",
+      "languageNotes": "使用 actions/stale@v5 官方 Action，通过 cron 定时触发。"
+    },
+    {
+      "id": "step:.github/workflows/close-stale-issues.yml:stale",
+      "type": "step",
+      "name": "stale",
+      "filePath": ".github/workflows/close-stale-issues.yml",
+      "summary": "运行 actions/stale Action，对带有 to-be-closed 标签的 Issue 进行不活跃检测，30 天无活动标记为 stale，再过 14 天自动关闭，并发送中文提示消息。",
+      "tags": ["automation", "issue-management"],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:.github/workflows/deploy.yml",
+      "type": "pipeline",
+      "name": "deploy.yml",
+      "filePath": ".github/workflows/deploy.yml",
+      "summary": "VitePress 文档站点的 CI/CD 工作流，在 docs 目录变更时触发构建，仅在 push 到 main 分支时部署到 GitHub Pages。包含 build 和 deploy 两个 job，使用并发控制避免重复部署。",
+      "tags": ["ci-cd", "deployment", "documentation", "github-pages"],
+      "complexity": "moderate",
+      "languageNotes": "使用 Node.js 22 构建 VitePress，通过 actions/deploy-pages@v4 部署。并发组 pages 确保同一时间只运行一个部署任务。"
+    },
+    {
+      "id": "step:.github/workflows/deploy.yml:build",
+      "type": "step",
+      "name": "build",
+      "filePath": ".github/workflows/deploy.yml",
+      "summary": "构建 VitePress 文档站点的 job，检出代码、安装 Node.js 22、安装依赖、执行 npm run build，并上传构建产物。",
+      "tags": ["build-system", "documentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "step:.github/workflows/deploy.yml:deploy",
+      "type": "step",
+      "name": "deploy",
+      "filePath": ".github/workflows/deploy.yml",
+      "summary": "部署 VitePress 站点到 GitHub Pages 的 job，仅在 push 到 main 时触发，依赖 build job 成功完成后执行。",
+      "tags": ["deployment", "github-pages"],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:.github/workflows/publish-yuxi-cli.yml",
+      "type": "pipeline",
+      "name": "publish-yuxi-cli.yml",
+      "filePath": ".github/workflows/publish-yuxi-cli.yml",
+      "summary": "yuxi-cli Python 包的发布工作流，在 GitHub Release 发布时或手动触发时运行，使用 uv 进行依赖管理和测试，构建包后通过 PyPI trusted publisher 发布。",
+      "tags": ["ci-cd", "deployment", "python-package", "pypi"],
+      "complexity": "moderate",
+      "languageNotes": "使用 uv 0.7.2 作为包管理器，Python 3.12，通过 pypa/gh-action-pypi-publish 的 trusted publisher 模式（id-token: write）进行身份认证发布。"
+    },
+    {
+      "id": "step:.github/workflows/publish-yuxi-cli.yml:publish",
+      "type": "step",
+      "name": "publish",
+      "filePath": ".github/workflows/publish-yuxi-cli.yml",
+      "summary": "构建并发布 yuxi-cli 到 PyPI 的 job，包含检出代码、安装 uv、设置 Python 3.12、安装依赖、运行测试、构建包和发布到 PyPI 等步骤。",
+      "tags": ["build-system", "deployment", "python-package"],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:.github/workflows/ruff.yml",
+      "type": "pipeline",
+      "name": "ruff.yml",
+      "filePath": ".github/workflows/ruff.yml",
+      "summary": "Ruff 代码格式化和 lint 检查的 CI 工作流，在 push 到 main 分支且 Python 文件或配置变更时触发。先运行检查，若有格式问题则自动修复并提交推送。",
+      "tags": ["ci-cd", "code-quality", "formatting", "linting"],
+      "complexity": "complex",
+      "languageNotes": "工作流分为两个步骤：先运行 ruff check、ruff format --diff 和 import sorting 检查；若发现问题则自动执行 ruff format、ruff check --fix 和 import sort --fix，然后自动提交并推送修复结果。"
+    },
+    {
+      "id": "step:.github/workflows/ruff.yml:ruff",
+      "type": "step",
+      "name": "ruff",
+      "filePath": ".github/workflows/ruff.yml",
+      "summary": "执行 Ruff 格式检查和自动修复的 job，包含检出代码、安装 uv 和 Python 依赖、运行格式检查（ruff check、format diff、import sorting），并在发现格式问题时自动修复提交。",
+      "tags": ["code-quality", "formatting", "automation"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline:.github/workflows/close-stale-issues.yml",
+      "target": "step:.github/workflows/close-stale-issues.yml:stale",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "pipeline:.github/workflows/deploy.yml",
+      "target": "step:.github/workflows/deploy.yml:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "pipeline:.github/workflows/deploy.yml",
+      "target": "step:.github/workflows/deploy.yml:deploy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "step:.github/workflows/deploy.yml:deploy",
+      "target": "step:.github/workflows/deploy.yml:build",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "pipeline:.github/workflows/publish-yuxi-cli.yml",
+      "target": "step:.github/workflows/publish-yuxi-cli.yml:publish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "pipeline:.github/workflows/ruff.yml",
+      "target": "step:.github/workflows/ruff.yml:ruff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "pipeline:.github/workflows/ruff.yml",
+      "target": "pipeline:.github/workflows/deploy.yml",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

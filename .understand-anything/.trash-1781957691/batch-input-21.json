@@ -1,0 +1,43 @@
+{
+  "batchIndex": 22,
+  "files": [
+    {
+      "path": "docs/develop-guides/changelog.md",
+      "language": "markdown",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/contributing.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/design.md",
+      "language": "markdown",
+      "sizeLines": 291,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/roadmap.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/develop-guides/testing-guidelines.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/develop-guides/changelog.md": [],
+    "docs/develop-guides/contributing.md": [],
+    "docs/develop-guides/design.md": [],
+    "docs/develop-guides/roadmap.md": [],
+    "docs/develop-guides/testing-guidelines.md": []
+  },
+  "neighborMap": {}
+}

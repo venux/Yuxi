@@ -1,0 +1,183 @@
+{
+  "batchIndex": 33,
+  "files": [
+    {
+      "path": "packages/yuxi-cli/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_agent_eval.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_commands.py",
+      "language": "python",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_config.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_discovery.py",
+      "language": "python",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_kb_upload.py",
+      "language": "python",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/tests/test_main.py",
+      "language": "python",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/public/protocols/privacy-policy.template.html",
+      "language": "html",
+      "sizeLines": 145,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/public/protocols/user-agreement.template.html",
+      "language": "html",
+      "sizeLines": 142,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/apis/index.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AccountSettingsComponent.vue",
+      "language": "vue",
+      "sizeLines": 450,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentArtifactsCard.vue",
+      "language": "vue",
+      "sizeLines": 273,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentChatComponent.vue",
+      "language": "vue",
+      "sizeLines": 3926,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentEnvSettingsCard.vue",
+      "language": "vue",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentFilePreview.vue",
+      "language": "vue",
+      "sizeLines": 907,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentInputArea.vue",
+      "language": "vue",
+      "sizeLines": 320,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentMessageComponent.vue",
+      "language": "vue",
+      "sizeLines": 697,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentPanel.vue",
+      "language": "vue",
+      "sizeLines": 1013,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AgentRuntimeConfigForm.vue",
+      "language": "vue",
+      "sizeLines": 1305,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AiTextarea.vue",
+      "language": "vue",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ApiKeyManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 517,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AttachmentOptionsComponent.vue",
+      "language": "vue",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/AttachmentTmpUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 709,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/BasicSettingsSection.vue",
+      "language": "vue",
+      "sizeLines": 333,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/yuxi-cli/README.md": [],
+    "packages/yuxi-cli/tests/test_agent_eval.py": [],
+    "packages/yuxi-cli/tests/test_commands.py": [],
+    "packages/yuxi-cli/tests/test_config.py": [],
+    "packages/yuxi-cli/tests/test_discovery.py": [],
+    "packages/yuxi-cli/tests/test_kb_upload.py": [],
+    "packages/yuxi-cli/tests/test_main.py": [],
+    "web/eslint.config.js": [],
+    "web/public/protocols/privacy-policy.template.html": [],
+    "web/public/protocols/user-agreement.template.html": [],
+    "web/src/apis/index.js": [],
+    "web/src/components/AccountSettingsComponent.vue": [],
+    "web/src/components/AgentArtifactsCard.vue": [],
+    "web/src/components/AgentChatComponent.vue": [],
+    "web/src/components/AgentEnvSettingsCard.vue": [],
+    "web/src/components/AgentFilePreview.vue": [],
+    "web/src/components/AgentInputArea.vue": [],
+    "web/src/components/AgentMessageComponent.vue": [],
+    "web/src/components/AgentPanel.vue": [],
+    "web/src/components/AgentRuntimeConfigForm.vue": [],
+    "web/src/components/AiTextarea.vue": [],
+    "web/src/components/ApiKeyManagementComponent.vue": [],
+    "web/src/components/AttachmentOptionsComponent.vue": [],
+    "web/src/components/AttachmentTmpUploadModal.vue": [],
+    "web/src/components/BasicSettingsSection.vue": []
+  },
+  "neighborMap": {}
+}

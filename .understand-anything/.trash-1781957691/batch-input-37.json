@@ -1,0 +1,197 @@
+{
+  "batchIndex": 38,
+  "files": [
+    {
+      "path": "web/src/components/WebSearchSourceSection.vue",
+      "language": "vue",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspaceFileList.vue",
+      "language": "vue",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspacePreviewPane.vue",
+      "language": "vue",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/workspace/WorkspaceSidebar.vue",
+      "language": "vue",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentMentionConfig.js",
+      "language": "javascript",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentRunStream.js",
+      "language": "javascript",
+      "sizeLines": 499,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentStreamHandler.js",
+      "language": "javascript",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useAgentThreadState.js",
+      "language": "javascript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useApproval.js",
+      "language": "javascript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useGraph.js",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useMention.js",
+      "language": "javascript",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useModelStatus.js",
+      "language": "javascript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/composables/useStreamSmoother.js",
+      "language": "javascript",
+      "sizeLines": 459,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/layouts/AppLayout.vue",
+      "language": "vue",
+      "sizeLines": 815,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/layouts/BlankLayout.vue",
+      "language": "vue",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/agent.js",
+      "language": "javascript",
+      "sizeLines": 325,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/chatThreads.js",
+      "language": "javascript",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/chatUI.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/config.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/database.js",
+      "language": "javascript",
+      "sizeLines": 575,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/info.js",
+      "language": "javascript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/tasker.js",
+      "language": "javascript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/theme.js",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/stores/user.js",
+      "language": "javascript",
+      "sizeLines": 421,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/__tests__/messageProcessor.spec.js",
+      "language": "javascript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/components/WebSearchSourceSection.vue": [],
+    "web/src/components/workspace/WorkspaceFileList.vue": [],
+    "web/src/components/workspace/WorkspacePreviewPane.vue": [],
+    "web/src/components/workspace/WorkspaceSidebar.vue": [],
+    "web/src/composables/useAgentMentionConfig.js": [],
+    "web/src/composables/useAgentRunStream.js": [],
+    "web/src/composables/useAgentStreamHandler.js": [],
+    "web/src/composables/useAgentThreadState.js": [],
+    "web/src/composables/useApproval.js": [],
+    "web/src/composables/useGraph.js": [],
+    "web/src/composables/useMention.js": [],
+    "web/src/composables/useModelStatus.js": [],
+    "web/src/composables/useStreamSmoother.js": [],
+    "web/src/layouts/AppLayout.vue": [],
+    "web/src/layouts/BlankLayout.vue": [],
+    "web/src/stores/agent.js": [],
+    "web/src/stores/chatThreads.js": [],
+    "web/src/stores/chatUI.js": [],
+    "web/src/stores/config.js": [],
+    "web/src/stores/database.js": [],
+    "web/src/stores/info.js": [],
+    "web/src/stores/tasker.js": [],
+    "web/src/stores/theme.js": [],
+    "web/src/stores/user.js": [
+      "web/src/stores/agent.js"
+    ],
+    "web/src/utils/__tests__/messageProcessor.spec.js": [
+      "web/src/utils/messageProcessor.js"
+    ]
+  },
+  "neighborMap": {
+    "web/src/utils/__tests__/messageProcessor.spec.js": [
+      {
+        "path": "web/src/utils/messageProcessor.js",
+        "batchIndex": 39,
+        "symbols": [
+          "MessageProcessor"
+        ]
+      }
+    ]
+  }
+}

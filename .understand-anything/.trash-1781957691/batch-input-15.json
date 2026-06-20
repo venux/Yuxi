@@ -1,0 +1,85 @@
+{
+  "batchIndex": 16,
+  "files": [
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "sizeLines": 23,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".env.template",
+      "language": "config",
+      "sizeLines": 74,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "language": "markdown",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 53,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "README.en.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker-compose.prod.yml",
+      "language": "yaml",
+      "sizeLines": 354,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 416,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    ".dockerignore": [],
+    ".env.template": [],
+    "AGENTS.md": [],
+    "ARCHITECTURE.md": [],
+    "CLAUDE.md": [],
+    "CONTRIBUTING.md": [],
+    "Makefile": [],
+    "README.en.md": [],
+    "README.md": [],
+    "docker-compose.prod.yml": [],
+    "docker-compose.yml": []
+  },
+  "neighborMap": {}
+}

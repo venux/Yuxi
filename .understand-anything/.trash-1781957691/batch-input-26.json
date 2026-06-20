@@ -1,0 +1,183 @@
+{
+  "batchIndex": 27,
+  "files": [
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/.python-version",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/MANIFEST.in",
+      "language": "in",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 117,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/package/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/mcp/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/__init__.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/deep-research/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/image-gen/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/describe_table.py",
+      "language": "python",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/list_tables.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/query.py",
+      "language": "python",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/agents/skills/buildin/mysql-reporter/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/agents/toolkits/debug/tools.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/config/static/bad_keywords.txt",
+      "language": "txt",
+      "sizeLines": 128,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/package/yuxi/config/static/info.template.yaml",
+      "language": "yaml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/eval/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/main.py",
+      "language": "python",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/repositories/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/services/user_identity_service.py",
+      "language": "python",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".github/PULL_REQUEST_TEMPLATE.md": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "backend/.python-version": [],
+    "backend/package/MANIFEST.in": [],
+    "backend/package/pyproject.toml": [],
+    "backend/package/README.md": [],
+    "backend/package/yuxi/agents/mcp/__init__.py": [],
+    "backend/package/yuxi/agents/skills/__init__.py": [],
+    "backend/package/yuxi/agents/skills/buildin/__init__.py": [],
+    "backend/package/yuxi/agents/skills/buildin/deep-research/SKILL.md": [],
+    "backend/package/yuxi/agents/skills/buildin/image-gen/SKILL.md": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/describe_table.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/list_tables.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/scripts/query.py": [],
+    "backend/package/yuxi/agents/skills/buildin/mysql-reporter/SKILL.md": [],
+    "backend/package/yuxi/agents/toolkits/debug/tools.py": [],
+    "backend/package/yuxi/config/static/bad_keywords.txt": [],
+    "backend/package/yuxi/config/static/info.template.yaml": [],
+    "backend/package/yuxi/knowledge/chunking/__init__.py": [],
+    "backend/package/yuxi/knowledge/eval/__init__.py": [],
+    "backend/package/yuxi/main.py": [],
+    "backend/package/yuxi/models/providers/__init__.py": [],
+    "backend/package/yuxi/repositories/__init__.py": [],
+    "backend/package/yuxi/services/user_identity_service.py": []
+  },
+  "neighborMap": {}
+}

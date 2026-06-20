@@ -1,0 +1,183 @@
+{
+  "batchIndex": 28,
+  "files": [
+    {
+      "path": "backend/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/scripts/seed_initial_users.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/worker_main.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/.env.test.example",
+      "language": "config",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "backend/test/api/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/conftest.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试表格.xlsx",
+      "language": "xlsx",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试文档.docx",
+      "language": "docx",
+      "sizeLines": 266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/测试演示.pptx",
+      "language": "pptx",
+      "sizeLines": 679,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions_tiny.jsonl",
+      "language": "jsonl",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions.jsonl",
+      "language": "jsonl",
+      "sizeLines": 380,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/data/complex_graph_test.jsonl",
+      "language": "jsonl",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/conftest.py",
+      "language": "python",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_agent_bubble_sort_e2e.py",
+      "language": "python",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_attachment_and_agent_state.py",
+      "language": "python",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_subagent_stream_e2e.py",
+      "language": "python",
+      "sizeLines": 372,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/e2e/test_viewer_filesystem_e2e.py",
+      "language": "python",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_agent_run_events_router.py",
+      "language": "python",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_apikey_router.py",
+      "language": "python",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_auth_router.py",
+      "language": "python",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_agent_sync.py",
+      "language": "python",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_resume_batch_questions.py",
+      "language": "python",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_chat_router.py",
+      "language": "python",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/integration/api/test_dashboard_router.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/pyproject.toml": [],
+    "backend/scripts/seed_initial_users.py": [],
+    "backend/server/utils/__init__.py": [],
+    "backend/server/worker_main.py": [],
+    "backend/test/.env.test.example": [],
+    "backend/test/api/__init__.py": [],
+    "backend/test/conftest.py": [],
+    "backend/test/data/测试表格.xlsx": [],
+    "backend/test/data/测试文档.docx": [],
+    "backend/test/data/测试演示.pptx": [],
+    "backend/test/data/A_Dream_of_Red_Mansions_tiny.jsonl": [],
+    "backend/test/data/A_Dream_of_Red_Mansions.jsonl": [],
+    "backend/test/data/complex_graph_test.jsonl": [],
+    "backend/test/e2e/conftest.py": [],
+    "backend/test/e2e/test_agent_bubble_sort_e2e.py": [],
+    "backend/test/e2e/test_attachment_and_agent_state.py": [],
+    "backend/test/e2e/test_subagent_stream_e2e.py": [],
+    "backend/test/e2e/test_viewer_filesystem_e2e.py": [],
+    "backend/test/integration/api/test_agent_run_events_router.py": [],
+    "backend/test/integration/api/test_apikey_router.py": [],
+    "backend/test/integration/api/test_auth_router.py": [],
+    "backend/test/integration/api/test_chat_agent_sync.py": [],
+    "backend/test/integration/api/test_chat_resume_batch_questions.py": [],
+    "backend/test/integration/api/test_chat_router.py": [],
+    "backend/test/integration/api/test_dashboard_router.py": []
+  },
+  "neighborMap": {}
+}

@@ -1,0 +1,183 @@
+{
+  "batchIndex": 31,
+  "files": [
+    {
+      "path": "backend/test/unit/services/test_agent_run_service.py",
+      "language": "python",
+      "sizeLines": 1050,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_auth_service_cli_auth.py",
+      "language": "python",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_base_agent_langfuse_config.py",
+      "language": "python",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_langfuse_stream.py",
+      "language": "python",
+      "sizeLines": 395,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_model_override.py",
+      "language": "python",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_service_sync.py",
+      "language": "python",
+      "sizeLines": 509,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_stream_attachment_materialize.py",
+      "language": "python",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_chat_stream_interrupt.py",
+      "language": "python",
+      "sizeLines": 292,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_conversation_service_attachment_state.py",
+      "language": "python",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_langfuse_service.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_mcp_service.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_mention_search_service.py",
+      "language": "python",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_cache.py",
+      "language": "python",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_provider_service.py",
+      "language": "python",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_model_selectors.py",
+      "language": "python",
+      "sizeLines": 404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_oidc_service.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_run_queue_service.py",
+      "language": "python",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_run_worker.py",
+      "language": "python",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_skill_service.py",
+      "language": "python",
+      "sizeLines": 1226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_thread_files_service.py",
+      "language": "python",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_tool_service.py",
+      "language": "python",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_viewer_filesystem_service.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/services/test_workspace_service.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/storage/test_conversation_repository.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/storage/test_neo4j_manager.py",
+      "language": "python",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/test/unit/services/test_agent_run_service.py": [],
+    "backend/test/unit/services/test_auth_service_cli_auth.py": [],
+    "backend/test/unit/services/test_base_agent_langfuse_config.py": [],
+    "backend/test/unit/services/test_chat_service_langfuse_stream.py": [],
+    "backend/test/unit/services/test_chat_service_model_override.py": [],
+    "backend/test/unit/services/test_chat_service_sync.py": [],
+    "backend/test/unit/services/test_chat_stream_attachment_materialize.py": [],
+    "backend/test/unit/services/test_chat_stream_interrupt.py": [],
+    "backend/test/unit/services/test_conversation_service_attachment_state.py": [],
+    "backend/test/unit/services/test_langfuse_service.py": [],
+    "backend/test/unit/services/test_mcp_service.py": [],
+    "backend/test/unit/services/test_mention_search_service.py": [],
+    "backend/test/unit/services/test_model_cache.py": [],
+    "backend/test/unit/services/test_model_provider_service.py": [],
+    "backend/test/unit/services/test_model_selectors.py": [],
+    "backend/test/unit/services/test_oidc_service.py": [],
+    "backend/test/unit/services/test_run_queue_service.py": [],
+    "backend/test/unit/services/test_run_worker.py": [],
+    "backend/test/unit/services/test_skill_service.py": [],
+    "backend/test/unit/services/test_thread_files_service.py": [],
+    "backend/test/unit/services/test_tool_service.py": [],
+    "backend/test/unit/services/test_viewer_filesystem_service.py": [],
+    "backend/test/unit/services/test_workspace_service.py": [],
+    "backend/test/unit/storage/test_conversation_repository.py": [],
+    "backend/test/unit/storage/test_neo4j_manager.py": []
+  },
+  "neighborMap": {}
+}

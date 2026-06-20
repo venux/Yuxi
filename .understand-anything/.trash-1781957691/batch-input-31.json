@@ -1,0 +1,186 @@
+{
+  "batchIndex": 32,
+  "files": [
+    {
+      "path": "backend/test/unit/test_auth_utils.py",
+      "language": "python",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_chunking_token_limit.py",
+      "language": "python",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_package_import.py",
+      "language": "python",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/test_tmp_attachment_service.py",
+      "language": "python",
+      "sizeLines": 351,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_install_skill.py",
+      "language": "python",
+      "sizeLines": 302,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_kbs_tools.py",
+      "language": "python",
+      "sizeLines": 377,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/toolkits/test_tool_registry.py",
+      "language": "python",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/utils/test_image_processor.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/utils/test_share_config.py",
+      "language": "python",
+      "sizeLines": 52,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/api.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/mineru.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/nginx/default.conf",
+      "language": "conf",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/nginx/nginx.conf",
+      "language": "conf",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/paddlex.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/sandbox_provisioner/app.py",
+      "language": "python",
+      "sizeLines": 1064,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docker/sandbox_provisioner/requirements.txt",
+      "language": "txt",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docker/sandbox_provisioner/sandbox.env",
+      "language": "config",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker/web.Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/config.mts",
+      "language": "mts",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/theme/components/YuxiHome.vue",
+      "language": "vue",
+      "sizeLines": 848,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/.vitepress/theme/custom.css",
+      "language": "css",
+      "sizeLines": 43,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "docs/.vitepress/theme/index.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/index.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/package.json",
+      "language": "json",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/yuxi-cli/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "backend/test/unit/test_auth_utils.py": [],
+    "backend/test/unit/test_chunking_token_limit.py": [],
+    "backend/test/unit/test_package_import.py": [],
+    "backend/test/unit/test_tmp_attachment_service.py": [],
+    "backend/test/unit/toolkits/test_install_skill.py": [],
+    "backend/test/unit/toolkits/test_kbs_tools.py": [],
+    "backend/test/unit/toolkits/test_tool_registry.py": [],
+    "backend/test/unit/utils/test_image_processor.py": [],
+    "backend/test/unit/utils/test_share_config.py": [],
+    "docker/api.Dockerfile": [],
+    "docker/mineru.Dockerfile": [],
+    "docker/nginx/default.conf": [],
+    "docker/nginx/nginx.conf": [],
+    "docker/paddlex.Dockerfile": [],
+    "docker/sandbox_provisioner/app.py": [],
+    "docker/sandbox_provisioner/requirements.txt": [],
+    "docker/sandbox_provisioner/sandbox.env": [],
+    "docker/web.Dockerfile": [],
+    "docs/.vitepress/config.mts": [],
+    "docs/.vitepress/theme/components/YuxiHome.vue": [],
+    "docs/.vitepress/theme/custom.css": [],
+    "docs/.vitepress/theme/index.ts": [
+      "docs/.vitepress/theme/components/YuxiHome.vue",
+      "docs/.vitepress/theme/custom.css"
+    ],
+    "docs/index.md": [],
+    "docs/package.json": [],
+    "packages/yuxi-cli/pyproject.toml": []
+  },
+  "neighborMap": {}
+}

@@ -1,0 +1,187 @@
+{
+  "nodes": [
+    {
+      "id": "file:web/src/utils/__tests__/svgRenderer.test.js",
+      "type": "file",
+      "name": "svgRenderer.test.js",
+      "filePath": "web/src/utils/__tests__/svgRenderer.test.js",
+      "summary": "renderSvgBlocks 函数的单元测试，覆盖基本围栏转换、波浪线围栏、空白行压缩、大小写匹配、流式安全（未闭合块）、非 SVG 代码块、多 SVG 块、空块、恒等变换、围栏内反引号、带属性围栏、首尾位置、非连续 SVG 块、HTML 注释以及操作按钮结构等 16 个场景。",
+      "tags": ["test", "utility", "svg", "单元测试"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:web/src/utils/markdown_preview.js",
+      "type": "file",
+      "name": "markdown_preview.js",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "summary": "Markdown 渲染引擎，集成 markdown-it、KaTeX 数学公式、任务列表、Shiki 代码高亮、frontmatter 卡片解析和 SVG 围栏块转换，提供带 DOMPurify 消毒和 LRU 缓存的异步 renderMarkdown 公共接口。",
+      "tags": ["utility", "markdown", "渲染", "缓存", "代码高亮"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:web/src/utils/svgRenderer.js",
+      "type": "file",
+      "name": "svgRenderer.js",
+      "filePath": "web/src/utils/svgRenderer.js",
+      "summary": "SVG 渲染工具函数，将 Markdown 中的 ```svg 围栏代码块逐行扫描转换为内联 SVG HTML，支持压缩空白行、注入复制 SVG / 复制为 PNG 操作按钮，并对未闭合围栏保持原始内容以支持流式场景。",
+      "tags": ["utility", "svg", "渲染", "markdown-it"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/svgRenderer.js:renderSvgBlocks",
+      "type": "function",
+      "name": "renderSvgBlocks",
+      "filePath": "web/src/utils/svgRenderer.js",
+      "lineRange": [15, 73],
+      "summary": "逐行扫描 Markdown 字符串，将 ```svg 围栏代码块转换为带操作按钮的内联 SVG div，压缩空白行为单行以防止 markdown-it HTML 块解析截断，未闭合围栏保持原样以支持流式渲染。",
+      "tags": ["svg", "解析", "逐行扫描"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/markdown_preview.js:renderMarkdown",
+      "type": "function",
+      "name": "renderMarkdown",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "lineRange": [199, 236],
+      "summary": "公共异步入口，依次执行 HTML 标签引号规范化、SVG 围栏转换、语法高亮语言加载、markdown-it 渲染和 DOMPurify 消毒，结果通过 LRU 缓存加速。",
+      "tags": ["入口函数", "markdown", "缓存", "异步"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/markdown_preview.js:markdownItFrontmatterCard",
+      "type": "function",
+      "name": "markdownItFrontmatterCard",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "lineRange": [88, 124],
+      "summary": "markdown-it 插件，通过自定义 block rule 在文档开头解析 YAML frontmatter 并渲染为结构化的 frontmatter 卡片 HTML。",
+      "tags": ["markdown-it插件", "frontmatter", "yaml"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/markdown_preview.js:createRenderer",
+      "type": "function",
+      "name": "createRenderer",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "lineRange": [159, 176],
+      "summary": "创建并配置 markdown-it 实例，挂载 KaTeX 数学公式、任务列表和 frontmatter 卡片插件，可选集成 Shiki 代码高亮。",
+      "tags": ["工厂函数", "markdown-it", "配置"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/markdown_preview.js:getRenderer",
+      "type": "function",
+      "name": "getRenderer",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "lineRange": [178, 189],
+      "summary": "带缓存的 markdown-it 实例获取器，根据主题和高亮需求创建或复用渲染器，避免重复初始化。",
+      "tags": ["缓存", "单例", "工厂"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:web/src/utils/markdown_preview.js:ensureLanguages",
+      "type": "function",
+      "name": "ensureLanguages",
+      "filePath": "web/src/utils/markdown_preview.js",
+      "lineRange": [144, 157],
+      "summary": "批量加载 Shiki 语法高亮器中缺失的语言包，失败时静默跳过不影响主流程。",
+      "tags": ["异步", "语法高亮", "语言加载"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:web/src/utils/__tests__/svgRenderer.test.js:run",
+      "type": "function",
+      "name": "run",
+      "filePath": "web/src/utils/__tests__/svgRenderer.test.js",
+      "lineRange": [4, 166],
+      "summary": "测试入口函数，依次执行 16 个测试用例，使用 node:assert/strict 验证 renderSvgBlocks 在各种场景下的正确性，包括围栏转换、流式安全、按钮结构等。",
+      "tags": ["test", "断言", "入口函数"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:web/src/utils/__tests__/svgRenderer.test.js",
+      "target": "file:web/src/utils/svgRenderer.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "file:web/src/utils/svgRenderer.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:web/src/utils/svgRenderer.js",
+      "target": "function:web/src/utils/svgRenderer.js:renderSvgBlocks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/svgRenderer.js",
+      "target": "function:web/src/utils/svgRenderer.js:renderSvgBlocks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:renderMarkdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:markdownItFrontmatterCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:createRenderer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:getRenderer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:ensureLanguages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/markdown_preview.js",
+      "target": "function:web/src/utils/markdown_preview.js:renderMarkdown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:web/src/utils/__tests__/svgRenderer.test.js",
+      "target": "function:web/src/utils/__tests__/svgRenderer.test.js:run",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:web/src/utils/svgRenderer.js",
+      "target": "file:web/src/utils/__tests__/svgRenderer.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

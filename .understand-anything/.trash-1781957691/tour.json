@@ -1,0 +1,65 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览",
+    "description": "语析（Yuxi）是一个基于大模型的智能知识库与知识图谱智能体开发平台。从 README 了解项目定位、技术栈和快速开始指南。",
+    "nodeIds": [
+      "document:README.md",
+      "document:README.en.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "后端应用入口",
+    "description": "FastAPI 应用入口，了解后端服务如何初始化、注册路由和中间件。backend/server/main.py 是 HTTP 服务器入口，backend/package/yuxi/main.py 是核心包入口。",
+    "nodeIds": [
+      "file:backend/package/yuxi/main.py",
+      "file:backend/server/main.py"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "前端应用启动",
+    "description": "Vue 3 应用的入口文件、根组件和路由配置，了解前端如何初始化和导航守卫。",
+    "nodeIds": [
+      "file:web/src/main.js",
+      "file:web/src/App.vue",
+      "file:web/src/router/index.js"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "智能体系统",
+    "description": "LangGraph 多智能体编排是核心功能。智能体后端支持沙箱执行、MCP 工具调用和子智能体协作。从 agents 模块入口开始探索。",
+    "nodeIds": [
+      "file:backend/package/yuxi/agents/__init__.py"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "知识库与 RAG",
+    "description": "知识库管理、RAG 检索和知识图谱操作。支持 Milvus 向量存储和 Neo4j 图数据库。",
+    "nodeIds": [
+      "file:backend/package/yuxi/knowledge/__init__.py"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "数据模型与存储",
+    "description": "PostgreSQL 数据模型、仓库模式和多存储后端（Milvus, Neo4j, MinIO）的抽象层。",
+    "nodeIds": [
+      "file:backend/package/yuxi/models/__init__.py",
+      "file:backend/package/yuxi/repositories/__init__.py"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "API 路由层",
+    "description": "FastAPI 路由定义，按功能域划分：智能体、知识库、用户管理等。每个 router 处理特定的 HTTP 端点。",
+    "nodeIds": [
+      "file:backend/server/routers/agent_router.py",
+      "file:backend/server/routers/knowledge_router.py",
+      "file:backend/server/routers/user_router.py"
+    ]
+  }
+]

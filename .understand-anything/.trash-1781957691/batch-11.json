@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "file:web/src/App.vue",
+      "type": "file",
+      "name": "App.vue",
+      "filePath": "web/src/App.vue",
+      "summary": "Vue 应用根组件，配置 Ant Design 主题与中文语言包，登录后初始化 Agent store。",
+      "tags": ["entry-point", "component", "theme", "initialization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:web/src/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "web/src/main.js",
+      "summary": "Vue 应用入口文件，创建并挂载 Vue 实例，注册 Pinia（含持久化插件）、Vue Router 和 Ant Design Vue，同时预加载系统信息配置。",
+      "tags": ["entry-point", "bootstrap", "plugin-registration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:web/src/router/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "web/src/router/index.js",
+      "summary": "前端路由配置中心，定义全部页面路由（首页、登录、Agent、工作台、Dashboard、模型管理、扩展中心等），并实现全局前置守卫处理认证、管理员权限校验和登录后重定向逻辑。",
+      "tags": ["routing", "auth-guard", "navigation", "configuration"],
+      "complexity": "moderate",
+      "languageNotes": "使用 Vue Router 的 createWebHistory 模式，路由组件全部采用懒加载（动态 import），全局 beforeEach 守卫集中处理认证与权限校验，包含 OIDC 回调和 CLI 授权等特殊路由。"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:web/src/main.js",
+      "target": "file:web/src/App.vue",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:web/src/main.js",
+      "target": "file:web/src/router/index.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

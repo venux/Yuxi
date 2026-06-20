@@ -1,0 +1,91 @@
+# .understandignore — patterns for files/dirs to exclude from analysis
+# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
+# Lines below are suggestions — uncomment to activate.
+# Use ! prefix to force-include something excluded by defaults.
+#
+# Built-in defaults (always excluded unless negated):
+#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
+#
+
+# --- From .gitignore (uncomment to exclude) ---
+
+# .yuxi/
+# *.egg-info
+# *.pyc
+# .ruff_cache
+# .DS_Store
+# .env
+# .env.prod
+# .env.test
+# .env.local
+# .env.*.local
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# log
+# logs
+# *.log.*
+# *.db
+# !uv.lock
+# tmp
+# cache
+# .backup
+# *.bak
+# *._*
+# .pytest_cache
+# .playwright
+# .playwright-cli
+# .playwright-mcp
+# .opencode
+# .vibe
+# .qoder
+# .claude
+# .cursor
+# .trae
+# .codex
+# .sisyphus
+# .pytest_cache
+# *.secret*
+# *.nogit*
+# *_private
+# *.private
+# *.local.py
+# *.local.js
+# *.local.yaml
+# *.local/*
+# src/data
+# */package-lock.json
+# web/package-lock.json
+# saves
+# saves_dev
+# notebooks
+# graphrag
+# docker/volumes
+# docs/vibe
+# .cursorrules
+# /models
+# .taskr/
+
+# --- Detected directories (uncomment to exclude) ---
+
+# docs/
+# scripts/
+
+# --- Test file patterns (uncomment to exclude) ---
+
+# JS / TS
+# *.test.*
+# *.spec.*
+# *.snap
+# C# / .NET
+# **/*Tests.cs
+# **/*Test.cs
+# **/*Fixture.cs
+# **/*.Tests.csproj
+# Java / Kotlin
+# **/src/test/**
+# **/*Test.java
+# **/*IT.java
+# **/*Spec.kt
+# Go
+# **/*_test.go

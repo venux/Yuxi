@@ -1,0 +1,50 @@
+{
+  "batchIndex": 23,
+  "files": [
+    {
+      "path": "docs/intro/cli.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/evaluation.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/knowledge-base.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/model-config.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/project-overview.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/intro/quick-start.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/intro/cli.md": [],
+    "docs/intro/evaluation.md": [],
+    "docs/intro/knowledge-base.md": [],
+    "docs/intro/model-config.md": [],
+    "docs/intro/project-overview.md": [],
+    "docs/intro/quick-start.md": []
+  },
+  "neighborMap": {}
+}

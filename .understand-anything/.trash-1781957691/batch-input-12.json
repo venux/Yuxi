@@ -1,0 +1,33 @@
+{
+  "batchIndex": 13,
+  "files": [
+    {
+      "path": "web/src/utils/__tests__/svgRenderer.test.js",
+      "language": "javascript",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/markdown_preview.js",
+      "language": "javascript",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/svgRenderer.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/utils/__tests__/svgRenderer.test.js": [
+      "web/src/utils/svgRenderer.js"
+    ],
+    "web/src/utils/markdown_preview.js": [
+      "web/src/utils/svgRenderer.js"
+    ],
+    "web/src/utils/svgRenderer.js": []
+  },
+  "neighborMap": {}
+}

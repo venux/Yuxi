@@ -1,0 +1,29 @@
+{
+  "batchIndex": 25,
+  "files": [
+    {
+      "path": "web/.prettierrc.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "web/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/package.json",
+      "language": "json",
+      "sizeLines": 71,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "web/.prettierrc.json": [],
+    "web/index.html": [],
+    "web/package.json": []
+  },
+  "neighborMap": {}
+}

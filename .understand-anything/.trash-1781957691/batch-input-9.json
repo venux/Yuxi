@@ -1,0 +1,93 @@
+{
+  "batchIndex": 10,
+  "files": [
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/__main__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/agent_eval.py",
+      "language": "python",
+      "sizeLines": 138,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "language": "python",
+      "sizeLines": 195,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/commands.py",
+      "language": "python",
+      "sizeLines": 201,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "language": "python",
+      "sizeLines": 173,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/discovery.py",
+      "language": "python",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/kb_upload.py",
+      "language": "python",
+      "sizeLines": 594,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/yuxi-cli/src/yuxi_cli/main.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "packages/yuxi-cli/src/yuxi_cli/__init__.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/__main__.py": [
+      "packages/yuxi-cli/src/yuxi_cli/main.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/agent_eval.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/client.py": [
+      "packages/yuxi-cli/src/yuxi_cli/config.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/commands.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/discovery.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/config.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/discovery.py": [],
+    "packages/yuxi-cli/src/yuxi_cli/kb_upload.py": [
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/discovery.py"
+    ],
+    "packages/yuxi-cli/src/yuxi_cli/main.py": [
+      "packages/yuxi-cli/src/yuxi_cli/__init__.py",
+      "packages/yuxi-cli/src/yuxi_cli/agent_eval.py",
+      "packages/yuxi-cli/src/yuxi_cli/client.py",
+      "packages/yuxi-cli/src/yuxi_cli/commands.py",
+      "packages/yuxi-cli/src/yuxi_cli/config.py",
+      "packages/yuxi-cli/src/yuxi_cli/kb_upload.py"
+    ]
+  },
+  "neighborMap": {}
+}

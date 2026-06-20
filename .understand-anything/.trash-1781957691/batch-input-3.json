@@ -1,0 +1,1098 @@
+{
+  "batchIndex": 4,
+  "files": [
+    {
+      "path": "backend/package/yuxi/knowledge/parser/mineru.py",
+      "language": "python",
+      "sizeLines": 240,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/mineru_official.py",
+      "language": "python",
+      "sizeLines": 365,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/pp_structure_v3.py",
+      "language": "python",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/rapid_ocr.py",
+      "language": "python",
+      "sizeLines": 225,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/unified.py",
+      "language": "python",
+      "sizeLines": 446,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "language": "python",
+      "sizeLines": 210,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/schemas.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/kb_utils.py",
+      "language": "python",
+      "sizeLines": 265,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/sample_question_utils.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/url_fetcher.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/utils/url_validator.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/chat.py",
+      "language": "python",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/embed.py",
+      "language": "python",
+      "sizeLines": 279,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/providers/cache.py",
+      "language": "python",
+      "sizeLines": 220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/models/rerank.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/__init__.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/client.py",
+      "language": "python",
+      "sizeLines": 468,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/minio/utils.py",
+      "language": "python",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/neo4j/__init__.py",
+      "language": "python",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/storage/neo4j/manager.py",
+      "language": "python",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/image_processor.py",
+      "language": "python",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/share_config.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/utils/upload_utils.py",
+      "language": "python",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/package/yuxi/knowledge/parser/mineru.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/mineru_official.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/pp_structure_v3.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/rapid_ocr.py": [
+      "backend/package/yuxi/knowledge/parser/base.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/unified.py": [
+      "backend/package/yuxi/knowledge/parser/zip_utils.py",
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/parser/zip_utils.py": [
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/schemas.py": [],
+    "backend/package/yuxi/knowledge/utils/__init__.py": [
+      "backend/package/yuxi/knowledge/utils/kb_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/kb_utils.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+      "backend/package/yuxi/utils/__init__.py",
+      "backend/package/yuxi/utils/datetime_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/sample_question_utils.py": [
+      "backend/package/yuxi/__init__.py",
+      "backend/package/yuxi/config/__init__.py",
+      "backend/package/yuxi/knowledge/factory.py",
+      "backend/package/yuxi/models/__init__.py",
+      "backend/package/yuxi/repositories/knowledge_base_repository.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/url_fetcher.py": [
+      "backend/package/yuxi/knowledge/utils/url_validator.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/knowledge/utils/url_validator.py": [],
+    "backend/package/yuxi/models/chat.py": [
+      "backend/package/yuxi/agents/models.py",
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/models/embed.py": [
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/models/providers/cache.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/models/rerank.py": [
+      "backend/package/yuxi/models/providers/cache.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/storage/minio/__init__.py": [
+      "backend/package/yuxi/storage/minio/client.py",
+      "backend/package/yuxi/storage/minio/utils.py"
+    ],
+    "backend/package/yuxi/storage/minio/client.py": [
+      "backend/package/yuxi/storage/minio/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/storage/minio/utils.py": [
+      "backend/package/yuxi/storage/minio/client.py",
+      "backend/package/yuxi/utils/upload_utils.py"
+    ],
+    "backend/package/yuxi/storage/neo4j/__init__.py": [
+      "backend/package/yuxi/storage/neo4j/manager.py"
+    ],
+    "backend/package/yuxi/storage/neo4j/manager.py": [
+      "backend/package/yuxi/storage/neo4j/__init__.py",
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/utils/__init__.py": [
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/utils/image_processor.py": [
+      "backend/package/yuxi/utils/__init__.py"
+    ],
+    "backend/package/yuxi/utils/share_config.py": [],
+    "backend/package/yuxi/utils/upload_utils.py": []
+  },
+  "neighborMap": {
+    "backend/package/yuxi/knowledge/parser/mineru.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/parser/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DocumentProcessorException",
+          "OCRException",
+          "DocumentParserException",
+          "ServiceHealthCheckException",
+          "BaseDocumentProcessor"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/parser/mineru_official.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/parser/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DocumentProcessorException",
+          "OCRException",
+          "DocumentParserException",
+          "ServiceHealthCheckException",
+          "BaseDocumentProcessor"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/parser/pp_structure_v3.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/parser/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DocumentProcessorException",
+          "OCRException",
+          "DocumentParserException",
+          "ServiceHealthCheckException",
+          "BaseDocumentProcessor"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/parser/rapid_ocr.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/parser/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DocumentProcessorException",
+          "OCRException",
+          "DocumentParserException",
+          "ServiceHealthCheckException",
+          "BaseDocumentProcessor"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/parser/unified.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/parser/__init__.py",
+        "batchIndex": 3,
+        "symbols": []
+      }
+    ],
+    "backend/package/yuxi/knowledge/schemas.py": [
+      {
+        "path": "backend/package/yuxi/agents/toolkits/kbs/tools.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_knowledge_base",
+          "ListKBsInput",
+          "list_kbs",
+          "GetMindmapInput",
+          "get_mindmap",
+          "_resolve_visible_knowledge_bases_for_query",
+          "_find_query_target",
+          "query_kb",
+          "open_kb_document",
+          "find_kb_document",
+          "get_common_kb_tools"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "FileStatus",
+          "KnowledgeBaseException",
+          "KBNotFoundError",
+          "KBOperationError",
+          "KnowledgeBase"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/utils/__init__.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "FileStatus",
+          "KnowledgeBaseException",
+          "KBNotFoundError",
+          "KBOperationError",
+          "KnowledgeBase"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/utils/kb_utils.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+        "batchIndex": 3,
+        "symbols": [
+          "deep_merge",
+          "normalize_chunk_preset_id",
+          "map_to_internal_parser_id",
+          "get_default_chunk_parser_config",
+          "ensure_chunk_defaults_in_additional_params",
+          "resolve_chunk_processing_params",
+          "get_chunk_preset_options"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/utils/datetime_utils.py",
+        "batchIndex": 2,
+        "symbols": [
+          "utc_now",
+          "utc_now_naive",
+          "shanghai_now",
+          "ensure_utc",
+          "ensure_shanghai",
+          "utc_isoformat",
+          "shanghai_isoformat",
+          "coerce_datetime",
+          "coerce_any_to_utc_datetime",
+          "normalize_iterable_to_utc",
+          "format_utc_datetime",
+          "utc_isoformat_from_timestamp"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/utils/sample_question_utils.py": [
+      {
+        "path": "backend/package/yuxi/__init__.py",
+        "batchIndex": 6,
+        "symbols": [
+          "get_version",
+          "__getattr__",
+          "__dir__"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/config/__init__.py",
+        "batchIndex": 6,
+        "symbols": []
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/factory.py",
+        "batchIndex": 3,
+        "symbols": [
+          "KnowledgeBaseFactory"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/models/__init__.py",
+        "batchIndex": 8,
+        "symbols": [
+          "__getattr__",
+          "__dir__"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/repositories/knowledge_base_repository.py",
+        "batchIndex": 8,
+        "symbols": [
+          "KnowledgeBaseRepository"
+        ]
+      }
+    ],
+    "backend/package/yuxi/models/chat.py": [
+      {
+        "path": "backend/package/yuxi/agents/models.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_normalize_tool_call_chunks",
+          "_ToolCallChunkFixChatOpenAI",
+          "resolve_chat_model_spec",
+          "load_chat_model"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/extractors/llm.py",
+        "batchIndex": 3,
+        "symbols": [
+          "LLMGraphExtractor"
+        ]
+      }
+    ],
+    "backend/package/yuxi/models/embed.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py",
+        "batchIndex": 3,
+        "symbols": [
+          "MilvusGraphVectorStore"
+        ]
+      }
+    ],
+    "backend/package/yuxi/models/providers/cache.py": [
+      {
+        "path": "backend/package/yuxi/utils/logging_config.py",
+        "batchIndex": 2,
+        "symbols": [
+          "LoguruHandler",
+          "_setup_logging_bridge",
+          "setup_logger"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/models.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_normalize_tool_call_chunks",
+          "_ToolCallChunkFixChatOpenAI",
+          "resolve_chat_model_spec",
+          "load_chat_model"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py",
+        "batchIndex": 3,
+        "symbols": [
+          "MilvusGraphVectorStore"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/services/agent_run_service.py",
+        "batchIndex": 2,
+        "symbols": [
+          "_validate_model_spec",
+          "_resolve_effective_model_spec",
+          "_build_run_response",
+          "_format_sse",
+          "_format_heartbeat",
+          "_compact_message_dict",
+          "_compact_semantic_stream_event",
+          "_compact_tool_stream_event",
+          "_compact_stream_chunk",
+          "_request_id_from_chunk",
+          "_request_id_from_payload",
+          "_compact_run_event_payload",
+          "_is_empty_agent_state",
+          "_compact_run_event_envelope",
+          "create_agent_run_view",
+          "get_agent_run_view",
+          "_select_output_message",
+          "get_agent_run_result",
+          "load_agent_run_result",
+          "await_agent_run_result",
+          "cancel_agent_run_view",
+          "stream_agent_run_events",
+          "get_active_run_by_thread"
+        ]
+      }
+    ],
+    "backend/package/yuxi/storage/minio/__init__.py": [
+      {
+        "path": "backend/package/yuxi/services/conversation_service.py",
+        "batchIndex": 2,
+        "symbols": [
+          "ConversionResult",
+          "_ensure_workdir",
+          "_write_upload_to_disk",
+          "_truncate_markdown",
+          "_convert_upload_to_markdown",
+          "require_user_conversation",
+          "_safe_file_name",
+          "_make_upload_virtual_path",
+          "_make_attachment_path",
+          "_build_attachment_storage_path",
+          "_artifact_url",
+          "_tmp_attachment_prefix",
+          "_get_tmp_attachment_bucket",
+          "_make_tmp_attachment_object",
+          "_make_tmp_parsed_object",
+          "_minio_source",
+          "_parse_user_tmp_object",
+          "_require_tmp_object_section",
+          "_normalize_parse_method",
+          "_build_state_uploads",
+          "_sync_thread_upload_state",
+          "serialize_attachment",
+          "_materialize_attachment_files",
+          "_materialize_tmp_attachment_files",
+          "create_thread_view",
+          "list_threads_view",
+          "delete_thread_view",
+          "update_thread_view",
+          "upload_tmp_attachment_view",
+          "parse_tmp_attachment_view",
+          "confirm_tmp_thread_attachments_view",
+          "upload_thread_attachment_view",
+          "list_thread_attachments_view",
+          "delete_thread_attachment_view",
+          "get_thread_history_view"
+        ]
+      }
+    ],
+    "backend/package/yuxi/storage/neo4j/__init__.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_service.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_neo4j_query_offload_semaphore",
+          "_run_neo4j_query_io",
+          "MilvusGraphService"
+        ]
+      }
+    ],
+    "backend/package/yuxi/utils/__init__.py": [
+      {
+        "path": "backend/package/yuxi/utils/logging_config.py",
+        "batchIndex": 2,
+        "symbols": [
+          "LoguruHandler",
+          "_setup_logging_bridge",
+          "setup_logger"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/base.py",
+        "batchIndex": 5,
+        "symbols": [
+          "_json_safe",
+          "_normalize_tool_event_data",
+          "_metadata_thread_id",
+          "_subagent_route_for_namespace",
+          "_collect_subagent_routes",
+          "_recursion_limit_from_context",
+          "BaseAgent"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/buildin/__init__.py",
+        "batchIndex": 2,
+        "symbols": [
+          "AgentManager"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/mcp/service.py",
+        "batchIndex": 6,
+        "symbols": [
+          "ensure_builtin_mcp_servers_in_db",
+          "get_mcp_client",
+          "to_camel_case",
+          "_load_enabled_mcp_server_configs",
+          "get_enabled_mcp_server_config",
+          "get_enabled_mcp_server_slugs",
+          "get_mcp_tools",
+          "get_tools_from_all_servers",
+          "clear_mcp_cache",
+          "clear_mcp_server_tools_cache",
+          "get_mcp_tools_stats",
+          "get_mcp_server",
+          "get_all_mcp_servers",
+          "create_mcp_server",
+          "update_mcp_server",
+          "delete_mcp_server",
+          "set_server_enabled",
+          "toggle_tool_enabled",
+          "get_enabled_mcp_tools",
+          "get_servers_config",
+          "get_all_mcp_tools"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/middlewares/attachment.py",
+        "batchIndex": 5,
+        "symbols": [
+          "AttachmentState",
+          "_build_attachment_prompt",
+          "AttachmentMiddleware"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/middlewares/context.py",
+        "batchIndex": 5,
+        "symbols": [
+          "context_aware_prompt",
+          "context_based_model"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/middlewares/dynamic_tool.py",
+        "batchIndex": 5,
+        "symbols": [
+          "DynamicToolMiddleware"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/models.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_normalize_tool_call_chunks",
+          "_ToolCallChunkFixChatOpenAI",
+          "resolve_chat_model_spec",
+          "load_chat_model"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/toolkits/buildin/tools.py",
+        "batchIndex": 11,
+        "symbols": [
+          "_create_tavily_search",
+          "_register_tavily_tool",
+          "PresentArtifactsInput",
+          "_normalize_presented_artifact_path",
+          "present_artifacts",
+          "ask_user_question"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/toolkits/kbs/tools.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_knowledge_base",
+          "ListKBsInput",
+          "list_kbs",
+          "GetMindmapInput",
+          "get_mindmap",
+          "_resolve_visible_knowledge_bases_for_query",
+          "_find_query_target",
+          "query_kb",
+          "open_kb_document",
+          "find_kb_document",
+          "get_common_kb_tools"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/toolkits/service.py",
+        "batchIndex": 5,
+        "symbols": [
+          "_extract_tool_info",
+          "_ensure_metadata_loaded",
+          "get_tool_metadata",
+          "get_tool_instances_by_category",
+          "resolve_configured_runtime_tools"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/agents/toolkits/utils.py",
+        "batchIndex": 5,
+        "symbols": [
+          "get_tool_info"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/base.py",
+        "batchIndex": 3,
+        "symbols": [
+          "FileStatus",
+          "KnowledgeBaseException",
+          "KBNotFoundError",
+          "KBOperationError",
+          "KnowledgeBase"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+        "batchIndex": 3,
+        "symbols": [
+          "deep_merge",
+          "normalize_chunk_preset_id",
+          "map_to_internal_parser_id",
+          "get_default_chunk_parser_config",
+          "ensure_chunk_defaults_in_additional_params",
+          "resolve_chunk_processing_params",
+          "get_chunk_preset_options"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/eval/benchmark_generation.py",
+        "batchIndex": 8,
+        "symbols": [
+          "collect_kb_chunks",
+          "clamp_neighbors_count",
+          "normalize_generation_concurrency_count",
+          "normalize_graph_expand_top_k",
+          "_chunk_entity_ids",
+          "_is_anchor_chunk",
+          "select_neighbor_chunks_by_kb_query",
+          "select_graph_enhanced_chunks",
+          "build_benchmark_generation_prompt",
+          "_generate_benchmark_item_once",
+          "iter_generated_benchmark_items",
+          "dump_benchmark_item"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/eval/evaluator.py",
+        "batchIndex": 3,
+        "symbols": [
+          "normalize_query_result",
+          "build_answer_prompt",
+          "generate_answer_if_needed",
+          "evaluate_question",
+          "aggregate_metrics"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/eval/metrics.py",
+        "batchIndex": 3,
+        "symbols": [
+          "RetrievalMetrics",
+          "AnswerMetrics",
+          "EvaluationMetricsCalculator"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/eval/service.py",
+        "batchIndex": 8,
+        "symbols": [
+          "build_evaluation_run_name",
+          "EvaluationService"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/factory.py",
+        "batchIndex": 3,
+        "symbols": [
+          "KnowledgeBaseFactory"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/graph_utils.py",
+        "batchIndex": 3,
+        "symbols": [
+          "normalize_entity_name",
+          "compute_entity_id",
+          "compute_triple_id",
+          "graph_entity_collection_name",
+          "graph_triple_collection_name",
+          "build_graph_payload",
+          "cypher_merge_chunk",
+          "cypher_merge_entity_mention",
+          "cypher_merge_relation"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_service.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_neo4j_query_offload_semaphore",
+          "_run_neo4j_query_io",
+          "MilvusGraphService"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/graphs/milvus_graph_vector_store.py",
+        "batchIndex": 3,
+        "symbols": [
+          "MilvusGraphVectorStore"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/dify.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DifyKB"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/notion.py",
+        "batchIndex": 3,
+        "symbols": [
+          "NotionAPIError",
+          "_NotionClient",
+          "NotionKB"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/manager.py",
+        "batchIndex": 3,
+        "symbols": [
+          "KnowledgeBaseManager"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/parser/deepseek_ocr.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DeepSeekOCRParser"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/parser/factory.py",
+        "batchIndex": 3,
+        "symbols": [
+          "DocumentProcessorFactory"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/utils/mindmap_utils.py",
+        "batchIndex": 6,
+        "symbols": [
+          "build_database_file_list",
+          "collect_mindmap_files",
+          "build_mindmap_user_message",
+          "build_mindmap_incremental_user_message",
+          "parse_mindmap_content",
+          "detect_mindmap_changes",
+          "_prune_mindmap_node",
+          "remove_files_from_mindmap",
+          "get_mindmap_database_files",
+          "get_mindmap_diff",
+          "update_mindmap_incremental",
+          "generate_database_mindmap",
+          "get_mindmap_databases_overview",
+          "get_database_mindmap_data",
+          "_collect_leaf_filenames",
+          "remove_file_from_mindmap",
+          "batch_remove_files_from_mindmap"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/repositories/conversation_repository.py",
+        "batchIndex": 2,
+        "symbols": [
+          "ConversationRepository"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/storage/postgres/manager.py",
+        "batchIndex": 8,
+        "symbols": [
+          "PostgresManager"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/utils/guard.py",
+        "batchIndex": 2,
+        "symbols": [
+          "load_keywords",
+          "ContentGuard"
+        ]
+      }
+    ],
+    "backend/package/yuxi/utils/share_config.py": [
+      {
+        "path": "backend/package/yuxi/agents/skills/service.py",
+        "batchIndex": 6,
+        "symbols": [
+          "_get_thread_skills_lock",
+          "normalize_string_list",
+          "is_valid_skill_slug",
+          "is_builtin_skill",
+          "get_allowed_skill_access_levels",
+          "normalize_skill_share_config",
+          "user_can_access_skill",
+          "user_can_manage_skill",
+          "can_skill_depend_on",
+          "_ensure_non_builtin",
+          "get_skills_root_dir",
+          "get_skill_drafts_root_dir",
+          "_cleanup_expired_skill_drafts",
+          "_load_skill_draft",
+          "get_thread_skills_root_dir",
+          "sync_thread_readable_skills",
+          "get_builtin_skill_specs",
+          "_build_builtin_skill_dir_path",
+          "_dirs_equal",
+          "_compute_dir_hash",
+          "_replace_skill_target",
+          "list_accessible_skills",
+          "list_manageable_skills",
+          "list_visible_skills_for_management",
+          "list_skills",
+          "list_skill_slugs",
+          "get_skill_dependency_options",
+          "_get_all_tool_names",
+          "_validate_dependencies",
+          "update_skill_dependencies",
+          "_validate_skill_slug_value",
+          "_validate_skill_display_name",
+          "_split_frontmatter",
+          "_parse_skill_markdown",
+          "_rewrite_frontmatter_slug",
+          "_validate_zip_paths",
+          "_generate_available_slug",
+          "_parse_skill_dir_metadata",
+          "_stage_skill_draft_item",
+          "_build_default_share_payload",
+          "_import_skill_dir_impl",
+          "_resolve_skill_dir",
+          "_resolve_relative_path",
+          "_is_text_path",
+          "_build_tree",
+          "prepare_skill_upload",
+          "prepare_remote_skill_install",
+          "confirm_skill_install_draft",
+          "discard_skill_install_draft",
+          "import_skill_dir",
+          "get_skill_or_raise",
+          "get_accessible_skill_or_raise",
+          "get_management_readable_skill_or_raise",
+          "get_manageable_skill_or_raise",
+          "get_skill_tree",
+          "read_skill_file",
+          "create_skill_node",
+          "update_skill_file",
+          "_update_skill_metadata_if_skills_md",
+          "delete_skill_node",
+          "export_skill_zip",
+          "delete_skill",
+          "delete_skills_batch",
+          "update_skill_share_config",
+          "update_skill_enabled",
+          "list_builtin_skill_specs",
+          "init_builtin_skills"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/manager.py",
+        "batchIndex": 3,
+        "symbols": [
+          "KnowledgeBaseManager"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/repositories/agent_repository.py",
+        "batchIndex": 2,
+        "symbols": [
+          "is_builtin_agent",
+          "resolve_agent_is_subagent",
+          "normalize_agent_share_config",
+          "user_can_access_agent",
+          "user_can_manage_agent",
+          "_slugify",
+          "AgentRepository"
+        ]
+      }
+    ],
+    "backend/package/yuxi/utils/upload_utils.py": [
+      {
+        "path": "backend/package/yuxi/services/conversation_service.py",
+        "batchIndex": 2,
+        "symbols": [
+          "ConversionResult",
+          "_ensure_workdir",
+          "_write_upload_to_disk",
+          "_truncate_markdown",
+          "_convert_upload_to_markdown",
+          "require_user_conversation",
+          "_safe_file_name",
+          "_make_upload_virtual_path",
+          "_make_attachment_path",
+          "_build_attachment_storage_path",
+          "_artifact_url",
+          "_tmp_attachment_prefix",
+          "_get_tmp_attachment_bucket",
+          "_make_tmp_attachment_object",
+          "_make_tmp_parsed_object",
+          "_minio_source",
+          "_parse_user_tmp_object",
+          "_require_tmp_object_section",
+          "_normalize_parse_method",
+          "_build_state_uploads",
+          "_sync_thread_upload_state",
+          "serialize_attachment",
+          "_materialize_attachment_files",
+          "_materialize_tmp_attachment_files",
+          "create_thread_view",
+          "list_threads_view",
+          "delete_thread_view",
+          "update_thread_view",
+          "upload_tmp_attachment_view",
+          "parse_tmp_attachment_view",
+          "confirm_tmp_thread_attachments_view",
+          "upload_thread_attachment_view",
+          "list_thread_attachments_view",
+          "delete_thread_attachment_view",
+          "get_thread_history_view"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/services/workspace_service.py",
+        "batchIndex": 6,
+        "symbols": [
+          "_workspace_root",
+          "_normalize_workspace_path",
+          "_resolve_workspace_path",
+          "_entry_for_path",
+          "_sort_entries",
+          "_validate_child_name",
+          "_resolve_parent_directory",
+          "_resolve_new_child",
+          "_list_directory",
+          "list_workspace_tree",
+          "resolve_workspace_file_path",
+          "read_workspace_file_content",
+          "write_workspace_file_content",
+          "delete_workspace_path",
+          "create_workspace_directory",
+          "_write_workspace_upload",
+          "upload_workspace_files",
+          "download_workspace_file"
+        ]
+      }
+    ]
+  }
+}

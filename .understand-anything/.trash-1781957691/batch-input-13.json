@@ -1,0 +1,15 @@
+{
+  "batchIndex": 14,
+  "files": [
+    {
+      "path": "docker/sandbox_provisioner/Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 15,
+      "fileCategory": "infra"
+    }
+  ],
+  "batchImportData": {
+    "docker/sandbox_provisioner/Dockerfile": []
+  },
+  "neighborMap": {}
+}

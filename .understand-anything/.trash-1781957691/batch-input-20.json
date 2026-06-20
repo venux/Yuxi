@@ -1,0 +1,64 @@
+{
+  "batchIndex": 21,
+  "files": [
+    {
+      "path": "docs/agents/agent-evaluation.md",
+      "language": "markdown",
+      "sizeLines": 88,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/agents-config.md",
+      "language": "markdown",
+      "sizeLines": 335,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/mcp-integration.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/middleware.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/sandbox-architecture.md",
+      "language": "markdown",
+      "sizeLines": 306,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/skills-management.md",
+      "language": "markdown",
+      "sizeLines": 350,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/subagents-management.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/agents/tools-system.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/agents/agent-evaluation.md": [],
+    "docs/agents/agents-config.md": [],
+    "docs/agents/mcp-integration.md": [],
+    "docs/agents/middleware.md": [],
+    "docs/agents/sandbox-architecture.md": [],
+    "docs/agents/skills-management.md": [],
+    "docs/agents/subagents-management.md": [],
+    "docs/agents/tools-system.md": []
+  },
+  "neighborMap": {}
+}

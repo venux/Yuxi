@@ -1,0 +1,29 @@
+{
+  "batchIndex": 19,
+  "files": [
+    {
+      "path": "docker/PP-StructureV3.yaml",
+      "language": "yaml",
+      "sizeLines": 229,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker/save_docker_images.ps1",
+      "language": "powershell",
+      "sizeLines": 53,
+      "fileCategory": "script"
+    },
+    {
+      "path": "docker/save_docker_images.sh",
+      "language": "shell",
+      "sizeLines": 40,
+      "fileCategory": "script"
+    }
+  ],
+  "batchImportData": {
+    "docker/PP-StructureV3.yaml": [],
+    "docker/save_docker_images.ps1": [],
+    "docker/save_docker_images.sh": []
+  },
+  "neighborMap": {}
+}

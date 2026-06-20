@@ -1,0 +1,320 @@
+{
+  "batchIndex": 1,
+  "files": [
+    {
+      "path": "backend/server/main.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/__init__.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/agent_router.py",
+      "language": "python",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/auth_dept_router.py",
+      "language": "python",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/auth_router.py",
+      "language": "python",
+      "sizeLines": 1028,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/chat_router.py",
+      "language": "python",
+      "sizeLines": 659,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/dashboard_router.py",
+      "language": "python",
+      "sizeLines": 989,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/filesystem_router.py",
+      "language": "python",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/graph_router.py",
+      "language": "python",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/knowledge_eval_router.py",
+      "language": "python",
+      "sizeLines": 249,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/knowledge_router.py",
+      "language": "python",
+      "sizeLines": 1696,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/mcp_router.py",
+      "language": "python",
+      "sizeLines": 415,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/mention_router.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/model_provider_router.py",
+      "language": "python",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/skill_router.py",
+      "language": "python",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/system_router.py",
+      "language": "python",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/system_task_router.py",
+      "language": "python",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/tool_router.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/user_router.py",
+      "language": "python",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/routers/workspace_router.py",
+      "language": "python",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/access_log_middleware.py",
+      "language": "python",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/auth_middleware.py",
+      "language": "python",
+      "sizeLines": 151,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/common_utils.py",
+      "language": "python",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/server/utils/lifespan.py",
+      "language": "python",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_auth_router_cli_auth.py",
+      "language": "python",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_knowledge_router_cleanup.py",
+      "language": "python",
+      "sizeLines": 345,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_knowledge_workspace_import.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_mcp_router.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_skill_router.py",
+      "language": "python",
+      "sizeLines": 347,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_subagent.py",
+      "language": "python",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/routers/test_system_router.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/server/test_cors_config.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/test/unit/server/test_model_provider_router.py",
+      "language": "python",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/server/main.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/utils/access_log_middleware.py",
+      "backend/server/utils/common_utils.py",
+      "backend/server/utils/lifespan.py"
+    ],
+    "backend/server/routers/__init__.py": [
+      "backend/server/routers/agent_router.py",
+      "backend/server/routers/auth_dept_router.py",
+      "backend/server/routers/auth_router.py",
+      "backend/server/routers/chat_router.py",
+      "backend/server/routers/dashboard_router.py",
+      "backend/server/routers/filesystem_router.py",
+      "backend/server/routers/mcp_router.py",
+      "backend/server/routers/mention_router.py",
+      "backend/server/routers/model_provider_router.py",
+      "backend/server/routers/skill_router.py",
+      "backend/server/routers/system_router.py",
+      "backend/server/routers/system_task_router.py",
+      "backend/server/routers/tool_router.py",
+      "backend/server/routers/user_router.py",
+      "backend/server/routers/workspace_router.py"
+    ],
+    "backend/server/routers/agent_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/auth_dept_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/auth_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/chat_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/dashboard_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/filesystem_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/graph_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/knowledge_eval_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/knowledge_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/mcp_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/mention_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/model_provider_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/skill_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/system_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/system_task_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/tool_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/user_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/routers/workspace_router.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/server/utils/access_log_middleware.py": [],
+    "backend/server/utils/auth_middleware.py": [],
+    "backend/server/utils/common_utils.py": [],
+    "backend/server/utils/lifespan.py": [],
+    "backend/test/unit/routers/test_auth_router_cli_auth.py": [
+      "backend/server/routers/auth_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_knowledge_router_cleanup.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/knowledge_router.py"
+    ],
+    "backend/test/unit/routers/test_knowledge_workspace_import.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/knowledge_router.py"
+    ],
+    "backend/test/unit/routers/test_mcp_router.py": [
+      "backend/server/routers/mcp_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_skill_router.py": [
+      "backend/server/routers/skill_router.py",
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_subagent.py": [
+      "backend/server/utils/auth_middleware.py"
+    ],
+    "backend/test/unit/routers/test_system_router.py": [
+      "backend/server/routers/system_router.py"
+    ],
+    "backend/test/unit/server/test_cors_config.py": [
+      "backend/server/main.py"
+    ],
+    "backend/test/unit/server/test_model_provider_router.py": [
+      "backend/server/routers/__init__.py",
+      "backend/server/routers/model_provider_router.py"
+    ]
+  },
+  "neighborMap": {}
+}

@@ -1,0 +1,168 @@
+{
+  "batchIndex": 7,
+  "files": [
+    {
+      "path": "web/src/apis/agent_api.js",
+      "language": "javascript",
+      "sizeLines": 363,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/agent_env_api.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/apikey_api.js",
+      "language": "javascript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/auth_api.js",
+      "language": "javascript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/base.js",
+      "language": "javascript",
+      "sizeLines": 251,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/dashboard_api.js",
+      "language": "javascript",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/department_api.js",
+      "language": "javascript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/graph_api.js",
+      "language": "javascript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/knowledge_api.js",
+      "language": "javascript",
+      "sizeLines": 539,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/mcp_api.js",
+      "language": "javascript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/mention_api.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/skill_api.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/system_api.js",
+      "language": "javascript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/tasker.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/tool_api.js",
+      "language": "javascript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/user_api.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/viewer_filesystem.js",
+      "language": "javascript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/apis/workspace_api.js",
+      "language": "javascript",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/apis/agent_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/agent_env_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/apikey_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/auth_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/base.js": [],
+    "web/src/apis/dashboard_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/department_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/graph_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/knowledge_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/mcp_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/mention_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/skill_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/system_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/tasker.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/tool_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/user_api.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/viewer_filesystem.js": [
+      "web/src/apis/base.js"
+    ],
+    "web/src/apis/workspace_api.js": [
+      "web/src/apis/base.js"
+    ]
+  },
+  "neighborMap": {}
+}

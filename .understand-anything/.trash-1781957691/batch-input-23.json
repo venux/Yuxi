@@ -1,0 +1,43 @@
+{
+  "batchIndex": 24,
+  "files": [
+    {
+      "path": "scripts/bump-version.sh",
+      "language": "shell",
+      "sizeLines": 181,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/init.ps1",
+      "language": "powershell",
+      "sizeLines": 165,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/init.sh",
+      "language": "shell",
+      "sizeLines": 149,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/pull_image.ps1",
+      "language": "powershell",
+      "sizeLines": 55,
+      "fileCategory": "script"
+    },
+    {
+      "path": "scripts/pull_image.sh",
+      "language": "shell",
+      "sizeLines": 38,
+      "fileCategory": "script"
+    }
+  ],
+  "batchImportData": {
+    "scripts/bump-version.sh": [],
+    "scripts/init.ps1": [],
+    "scripts/init.sh": [],
+    "scripts/pull_image.ps1": [],
+    "scripts/pull_image.sh": []
+  },
+  "neighborMap": {}
+}

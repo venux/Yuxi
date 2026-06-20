@@ -1,0 +1,183 @@
+{
+  "batchIndex": 35,
+  "files": [
+    {
+      "path": "web/src/components/extensions/ToolsCardList.vue",
+      "language": "vue",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileDetailModal.vue",
+      "language": "vue",
+      "sizeLines": 639,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileTable.vue",
+      "language": "vue",
+      "sizeLines": 1739,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileTreeComponent.vue",
+      "language": "vue",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/FileUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 2507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/GraphCanvas.vue",
+      "language": "vue",
+      "sizeLines": 833,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/GraphDetailPanel.vue",
+      "language": "vue",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/HeaderComponent.vue",
+      "language": "vue",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/HumanApprovalModal.vue",
+      "language": "vue",
+      "sizeLines": 602,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ImagePreviewComponent.vue",
+      "language": "vue",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/KnowledgeGraphSection.vue",
+      "language": "vue",
+      "sizeLines": 1161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/KnowledgeSourceSection.vue",
+      "language": "vue",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/LoadingComponent.vue",
+      "language": "vue",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MarkdownContentViewer.vue",
+      "language": "vue",
+      "sizeLines": 374,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/McpEnvEditor.vue",
+      "language": "vue",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MessageInputComponent.vue",
+      "language": "vue",
+      "sizeLines": 1658,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/MindMapSection.vue",
+      "language": "vue",
+      "sizeLines": 803,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/modals/BenchmarkGenerateModal.vue",
+      "language": "vue",
+      "sizeLines": 507,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/modals/BenchmarkUploadModal.vue",
+      "language": "vue",
+      "sizeLines": 283,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/AgentEditModal.vue",
+      "language": "vue",
+      "sizeLines": 926,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/AgentManagePanel.vue",
+      "language": "vue",
+      "sizeLines": 328,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/model-management/ModelProviderManagePanel.vue",
+      "language": "vue",
+      "sizeLines": 1513,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ModelSelectorComponent.vue",
+      "language": "vue",
+      "sizeLines": 406,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/QuerySection.vue",
+      "language": "vue",
+      "sizeLines": 746,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/RAGEvaluationTab.vue",
+      "language": "vue",
+      "sizeLines": 2155,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/components/extensions/ToolsCardList.vue": [],
+    "web/src/components/FileDetailModal.vue": [],
+    "web/src/components/FileTable.vue": [],
+    "web/src/components/FileTreeComponent.vue": [],
+    "web/src/components/FileUploadModal.vue": [],
+    "web/src/components/GraphCanvas.vue": [],
+    "web/src/components/GraphDetailPanel.vue": [],
+    "web/src/components/HeaderComponent.vue": [],
+    "web/src/components/HumanApprovalModal.vue": [],
+    "web/src/components/ImagePreviewComponent.vue": [],
+    "web/src/components/KnowledgeGraphSection.vue": [],
+    "web/src/components/KnowledgeSourceSection.vue": [],
+    "web/src/components/LoadingComponent.vue": [],
+    "web/src/components/MarkdownContentViewer.vue": [],
+    "web/src/components/McpEnvEditor.vue": [],
+    "web/src/components/MessageInputComponent.vue": [],
+    "web/src/components/MindMapSection.vue": [],
+    "web/src/components/modals/BenchmarkGenerateModal.vue": [],
+    "web/src/components/modals/BenchmarkUploadModal.vue": [],
+    "web/src/components/model-management/AgentEditModal.vue": [],
+    "web/src/components/model-management/AgentManagePanel.vue": [],
+    "web/src/components/model-management/ModelProviderManagePanel.vue": [],
+    "web/src/components/ModelSelectorComponent.vue": [],
+    "web/src/components/QuerySection.vue": [],
+    "web/src/components/RAGEvaluationTab.vue": []
+  },
+  "neighborMap": {}
+}

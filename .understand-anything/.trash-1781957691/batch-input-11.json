@@ -1,0 +1,32 @@
+{
+  "batchIndex": 12,
+  "files": [
+    {
+      "path": "web/src/App.vue",
+      "language": "vue",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/main.js",
+      "language": "javascript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/router/index.js",
+      "language": "javascript",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/App.vue": [],
+    "web/src/main.js": [
+      "web/src/App.vue",
+      "web/src/router/index.js"
+    ],
+    "web/src/router/index.js": []
+  },
+  "neighborMap": {}
+}

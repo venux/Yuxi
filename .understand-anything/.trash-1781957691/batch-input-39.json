@@ -1,0 +1,135 @@
+{
+  "batchIndex": 40,
+  "files": [
+    {
+      "path": "web/src/utils/scrollController.js",
+      "language": "javascript",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/subagentThread.js",
+      "language": "javascript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/time.js",
+      "language": "javascript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/utils/upload_limits.js",
+      "language": "javascript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/AgentView.vue",
+      "language": "vue",
+      "sizeLines": 415,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/CLIAuthAuthorizeView.vue",
+      "language": "vue",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DashboardView.vue",
+      "language": "vue",
+      "sizeLines": 468,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DataBaseInfoView.vue",
+      "language": "vue",
+      "sizeLines": 1446,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/DataBaseView.vue",
+      "language": "vue",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/EmptyView.vue",
+      "language": "vue",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/ExtensionsView.vue",
+      "language": "vue",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/HomeView.vue",
+      "language": "vue",
+      "sizeLines": 1220,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/LoginView.vue",
+      "language": "vue",
+      "sizeLines": 1055,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/ModelManageView.vue",
+      "language": "vue",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/OIDCCallbackView.vue",
+      "language": "vue",
+      "sizeLines": 188,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/views/WorkspaceView.vue",
+      "language": "vue",
+      "sizeLines": 971,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/utils/scrollController.js": [],
+    "web/src/utils/subagentThread.js": [],
+    "web/src/utils/time.js": [],
+    "web/src/utils/upload_limits.js": [],
+    "web/src/views/AgentView.vue": [],
+    "web/src/views/CLIAuthAuthorizeView.vue": [],
+    "web/src/views/DashboardView.vue": [],
+    "web/src/views/DataBaseInfoView.vue": [],
+    "web/src/views/DataBaseView.vue": [],
+    "web/src/views/EmptyView.vue": [],
+    "web/src/views/ExtensionsView.vue": [],
+    "web/src/views/HomeView.vue": [],
+    "web/src/views/LoginView.vue": [],
+    "web/src/views/ModelManageView.vue": [],
+    "web/src/views/OIDCCallbackView.vue": [],
+    "web/src/views/WorkspaceView.vue": [],
+    "web/vite.config.js": []
+  },
+  "neighborMap": {
+    "web/src/utils/subagentThread.js": [
+      {
+        "path": "web/src/utils/__tests__/subagentThread.test.js",
+        "batchIndex": 39,
+        "symbols": []
+      }
+    ]
+  }
+}

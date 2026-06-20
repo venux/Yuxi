@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "service:docker/sandbox_provisioner/Dockerfile",
+      "type": "service",
+      "name": "Dockerfile",
+      "filePath": "docker/sandbox_provisioner/Dockerfile",
+      "summary": "沙箱 provisioner 服务的 Docker 构建文件，基于 python:3.12-slim 构建轻量镜像，安装 Python 依赖并以 uvicorn 启动 FastAPI 应用，暴露 8002 端口提供沙箱管理能力。",
+      "tags": ["containerization", "infrastructure", "sandbox", "deployment"],
+      "complexity": "simple",
+      "languageNotes": "使用清华 PyPI 镜像源 (pypi.tuna.tsinghua.edu.cn) 加速依赖安装；设置 PYTHONDONTWRITEBYTECODE 和 PYTHONUNBUFFERED 环境变量优化 Python 容器运行时行为。"
+    }
+  ],
+  "edges": []
+}

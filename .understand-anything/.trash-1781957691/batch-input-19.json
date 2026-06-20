@@ -1,0 +1,64 @@
+{
+  "batchIndex": 20,
+  "files": [
+    {
+      "path": "docs/advanced/api-key-integration.md",
+      "language": "markdown",
+      "sizeLines": 170,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/branding.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/configuration.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/deployment.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/document-processing.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/langfuse-integration.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/misc.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/advanced/third-party-auth.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/advanced/api-key-integration.md": [],
+    "docs/advanced/branding.md": [],
+    "docs/advanced/configuration.md": [],
+    "docs/advanced/deployment.md": [],
+    "docs/advanced/document-processing.md": [],
+    "docs/advanced/langfuse-integration.md": [],
+    "docs/advanced/misc.md": [],
+    "docs/advanced/third-party-auth.md": []
+  },
+  "neighborMap": {}
+}

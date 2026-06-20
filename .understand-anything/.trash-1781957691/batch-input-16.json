@@ -1,0 +1,36 @@
+{
+  "batchIndex": 17,
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个bug.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个docker启动问题.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个提问.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/提交一个需求建议.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".github/ISSUE_TEMPLATE/提交一个bug.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个docker启动问题.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个提问.md": [],
+    ".github/ISSUE_TEMPLATE/提交一个需求建议.md": []
+  },
+  "neighborMap": {}
+}

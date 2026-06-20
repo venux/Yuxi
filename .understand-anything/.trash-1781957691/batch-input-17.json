@@ -1,0 +1,29 @@
+{
+  "batchIndex": 18,
+  "files": [
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions.txt",
+      "language": "txt",
+      "sizeLines": 6300,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/test/data/A_Dream_of_Red_Mansions_10hui.txt",
+      "language": "txt",
+      "sizeLines": 629,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "backend/test/data/test_csv_file.csv",
+      "language": "csv",
+      "sizeLines": 7,
+      "fileCategory": "data"
+    }
+  ],
+  "batchImportData": {
+    "backend/test/data/A_Dream_of_Red_Mansions.txt": [],
+    "backend/test/data/A_Dream_of_Red_Mansions_10hui.txt": [],
+    "backend/test/data/test_csv_file.csv": []
+  },
+  "neighborMap": {}
+}

@@ -1,0 +1,183 @@
+{
+  "batchIndex": 34,
+  "files": [
+    {
+      "path": "web/src/components/ChunkParamsConfig.vue",
+      "language": "vue",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/FallbackAvatar.vue",
+      "language": "vue",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/FileTypeIcon.vue",
+      "language": "vue",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/MarkdownPreview.vue",
+      "language": "vue",
+      "sizeLines": 500,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/common/MentionTextRenderer.vue",
+      "language": "vue",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ConversationNavSection.vue",
+      "language": "vue",
+      "sizeLines": 353,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/AgentStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/CallStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 417,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/FeedbackModalComponent.vue",
+      "language": "vue",
+      "sizeLines": 522,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/KnowledgeStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 417,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/StatsOverviewComponent.vue",
+      "language": "vue",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/ToolStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 350,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/dashboard/UserStatsComponent.vue",
+      "language": "vue",
+      "sizeLines": 346,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/DebugComponent.vue",
+      "language": "vue",
+      "sizeLines": 845,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/DepartmentManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/EmbeddingModelSelector.vue",
+      "language": "vue",
+      "sizeLines": 161,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/EvaluationBenchmarks.vue",
+      "language": "vue",
+      "sizeLines": 1202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionCardGrid.vue",
+      "language": "vue",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionDetailLayout.vue",
+      "language": "vue",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/ExtensionToolbar.vue",
+      "language": "vue",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpCardList.vue",
+      "language": "vue",
+      "sizeLines": 473,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpDetailView.vue",
+      "language": "vue",
+      "sizeLines": 1014,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/McpFormModal.vue",
+      "language": "vue",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/SkillCardList.vue",
+      "language": "vue",
+      "sizeLines": 2069,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/extensions/SkillDetailView.vue",
+      "language": "vue",
+      "sizeLines": 1266,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/components/ChunkParamsConfig.vue": [],
+    "web/src/components/common/FallbackAvatar.vue": [],
+    "web/src/components/common/FileTypeIcon.vue": [],
+    "web/src/components/common/MarkdownPreview.vue": [],
+    "web/src/components/common/MentionTextRenderer.vue": [],
+    "web/src/components/ConversationNavSection.vue": [],
+    "web/src/components/dashboard/AgentStatsComponent.vue": [],
+    "web/src/components/dashboard/CallStatsComponent.vue": [],
+    "web/src/components/dashboard/FeedbackModalComponent.vue": [],
+    "web/src/components/dashboard/KnowledgeStatsComponent.vue": [],
+    "web/src/components/dashboard/StatsOverviewComponent.vue": [],
+    "web/src/components/dashboard/ToolStatsComponent.vue": [],
+    "web/src/components/dashboard/UserStatsComponent.vue": [],
+    "web/src/components/DebugComponent.vue": [],
+    "web/src/components/DepartmentManagementComponent.vue": [],
+    "web/src/components/EmbeddingModelSelector.vue": [],
+    "web/src/components/EvaluationBenchmarks.vue": [],
+    "web/src/components/extensions/ExtensionCardGrid.vue": [],
+    "web/src/components/extensions/ExtensionDetailLayout.vue": [],
+    "web/src/components/extensions/ExtensionToolbar.vue": [],
+    "web/src/components/extensions/McpCardList.vue": [],
+    "web/src/components/extensions/McpDetailView.vue": [],
+    "web/src/components/extensions/McpFormModal.vue": [],
+    "web/src/components/extensions/SkillCardList.vue": [],
+    "web/src/components/extensions/SkillDetailView.vue": []
+  },
+  "neighborMap": {}
+}

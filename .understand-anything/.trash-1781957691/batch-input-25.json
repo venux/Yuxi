@@ -1,0 +1,85 @@
+{
+  "batchIndex": 26,
+  "files": [
+    {
+      "path": "web/src/assets/css/animations.less",
+      "language": "css",
+      "sizeLines": 87,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/base.css",
+      "language": "css",
+      "sizeLines": 206,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/base.dark.css",
+      "language": "css",
+      "sizeLines": 149,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/code-highlight.less",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/dashboard.css",
+      "language": "css",
+      "sizeLines": 221,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/extension-detail.less",
+      "language": "css",
+      "sizeLines": 96,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/extensions.less",
+      "language": "css",
+      "sizeLines": 838,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/main.css",
+      "language": "css",
+      "sizeLines": 110,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/model-selector-common.less",
+      "language": "css",
+      "sizeLines": 134,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/shorts.css",
+      "language": "css",
+      "sizeLines": 44,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "web/src/assets/css/sigma.css",
+      "language": "css",
+      "sizeLines": 87,
+      "fileCategory": "markup"
+    }
+  ],
+  "batchImportData": {
+    "web/src/assets/css/animations.less": [],
+    "web/src/assets/css/base.css": [],
+    "web/src/assets/css/base.dark.css": [],
+    "web/src/assets/css/code-highlight.less": [],
+    "web/src/assets/css/dashboard.css": [],
+    "web/src/assets/css/extension-detail.less": [],
+    "web/src/assets/css/extensions.less": [],
+    "web/src/assets/css/main.css": [],
+    "web/src/assets/css/model-selector-common.less": [],
+    "web/src/assets/css/shorts.css": [],
+    "web/src/assets/css/sigma.css": []
+  },
+  "neighborMap": {}
+}

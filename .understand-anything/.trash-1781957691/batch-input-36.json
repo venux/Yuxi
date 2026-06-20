@@ -1,0 +1,183 @@
+{
+  "batchIndex": 37,
+  "files": [
+    {
+      "path": "web/src/components/ToolCallingResult/tools/EditFileTool.vue",
+      "language": "vue",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ExecuteTool.vue",
+      "language": "vue",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/FindKbDocumentTool.vue",
+      "language": "vue",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GetMindmapTool.vue",
+      "language": "vue",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GlobTool.vue",
+      "language": "vue",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/GrepTool.vue",
+      "language": "vue",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ImageTool.vue",
+      "language": "vue",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/KbDocumentPreview.vue",
+      "language": "vue",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ListDirectoryTool.vue",
+      "language": "vue",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ListKbsTool.vue",
+      "language": "vue",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlDescribeTableTool.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlListTablesTool.vue",
+      "language": "vue",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/MysqlQueryTool.vue",
+      "language": "vue",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/OpenKbDocumentTool.vue",
+      "language": "vue",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/QueryKbTool.vue",
+      "language": "vue",
+      "sizeLines": 331,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ReadFileTool.vue",
+      "language": "vue",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/SearchFileContentTool.vue",
+      "language": "vue",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/TaskTool.vue",
+      "language": "vue",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/TodoListTool.vue",
+      "language": "vue",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/WebSearchTool.vue",
+      "language": "vue",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/WriteFileTool.vue",
+      "language": "vue",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallsGroupComponent.vue",
+      "language": "vue",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/UserInfoComponent.vue",
+      "language": "vue",
+      "sizeLines": 318,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/UserManagementComponent.vue",
+      "language": "vue",
+      "sizeLines": 1096,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ViewSwitchHeader.vue",
+      "language": "vue",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/components/ToolCallingResult/tools/EditFileTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ExecuteTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/FindKbDocumentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GetMindmapTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GlobTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/GrepTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ImageTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/KbDocumentPreview.vue": [],
+    "web/src/components/ToolCallingResult/tools/ListDirectoryTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ListKbsTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlDescribeTableTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlListTablesTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/MysqlQueryTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/OpenKbDocumentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/QueryKbTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ReadFileTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/SearchFileContentTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/TaskTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/TodoListTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/WebSearchTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/WriteFileTool.vue": [],
+    "web/src/components/ToolCallsGroupComponent.vue": [],
+    "web/src/components/UserInfoComponent.vue": [],
+    "web/src/components/UserManagementComponent.vue": [],
+    "web/src/components/ViewSwitchHeader.vue": []
+  },
+  "neighborMap": {}
+}

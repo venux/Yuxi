@@ -1,0 +1,188 @@
+{
+  "batchIndex": 9,
+  "files": [
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py",
+      "language": "python",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "language": "python",
+      "sizeLines": 583,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "language": "python",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "language": "python",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "language": "python",
+      "sizeLines": 260,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py",
+      "language": "python",
+      "sizeLines": 298,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py",
+      "language": "python",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py",
+      "language": "python",
+      "sizeLines": 150,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py",
+      "language": "python",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py",
+      "language": "python",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/book.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/laws.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/qa.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py",
+      "backend/package/yuxi/utils/logging_config.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/separator.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/__init__.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py",
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/general.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/md_parser_utils.py": [
+      "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py"
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/semantic_utils.py": [],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/utils/table_utils.py": []
+  },
+  "neighborMap": {
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/dispatcher.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/chunking/ragflow_like/presets.py",
+        "batchIndex": 3,
+        "symbols": [
+          "deep_merge",
+          "normalize_chunk_preset_id",
+          "map_to_internal_parser_id",
+          "get_default_chunk_parser_config",
+          "ensure_chunk_defaults_in_additional_params",
+          "resolve_chunk_processing_params",
+          "get_chunk_preset_options"
+        ]
+      },
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/nlp.py": [
+      {
+        "path": "backend/package/yuxi/knowledge/implementations/milvus.py",
+        "batchIndex": 3,
+        "symbols": [
+          "_get_milvus_query_offload_semaphore",
+          "_run_milvus_query_io",
+          "MilvusRetrievalConfig",
+          "_retrieval_config_options",
+          "MilvusKB"
+        ]
+      }
+    ],
+    "backend/package/yuxi/knowledge/chunking/ragflow_like/parsers/semantic.py": [
+      {
+        "path": "backend/package/yuxi/utils/logging_config.py",
+        "batchIndex": 2,
+        "symbols": [
+          "LoguruHandler",
+          "_setup_logging_bridge",
+          "setup_logger"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "batchIndex": 36,
+  "files": [
+    {
+      "path": "web/src/components/RefsComponent.vue",
+      "language": "vue",
+      "sizeLines": 432,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/RerankModelSelector.vue",
+      "language": "vue",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SearchConfigModal.vue",
+      "language": "vue",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SearchConfigPanel.vue",
+      "language": "vue",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SettingsModal.vue",
+      "language": "vue",
+      "sizeLines": 550,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ShareConfigForm.vue",
+      "language": "vue",
+      "sizeLines": 712,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/InfoCard.vue",
+      "language": "vue",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/PageHeader.vue",
+      "language": "vue",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/PageShoulder.vue",
+      "language": "vue",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/shared/ResourceEmptyState.vue",
+      "language": "vue",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/KbChunkDetailModal.vue",
+      "language": "vue",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/KbResultGroupedList.vue",
+      "language": "vue",
+      "sizeLines": 330,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/sources/WebSearchResultList.vue",
+      "language": "vue",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/StatusBar.vue",
+      "language": "vue",
+      "sizeLines": 332,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/SubagentThreadModal.vue",
+      "language": "vue",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/TaskCenterDrawer.vue",
+      "language": "vue",
+      "sizeLines": 640,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ThemeToggle.vue",
+      "language": "vue",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ThreadMessageList.vue",
+      "language": "vue",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/BaseToolCall.vue",
+      "language": "vue",
+      "sizeLines": 473,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/index.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/ToolCallRenderer.vue",
+      "language": "vue",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/toolRegistry.js",
+      "language": "javascript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/AskUserQuestionTool.vue",
+      "language": "vue",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/CalculatorTool.vue",
+      "language": "vue",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "web/src/components/ToolCallingResult/tools/ChartTool.vue",
+      "language": "vue",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "web/src/components/RefsComponent.vue": [],
+    "web/src/components/RerankModelSelector.vue": [],
+    "web/src/components/SearchConfigModal.vue": [],
+    "web/src/components/SearchConfigPanel.vue": [],
+    "web/src/components/SettingsModal.vue": [],
+    "web/src/components/ShareConfigForm.vue": [],
+    "web/src/components/shared/InfoCard.vue": [],
+    "web/src/components/shared/PageHeader.vue": [],
+    "web/src/components/shared/PageShoulder.vue": [],
+    "web/src/components/shared/ResourceEmptyState.vue": [],
+    "web/src/components/sources/KbChunkDetailModal.vue": [],
+    "web/src/components/sources/KbResultGroupedList.vue": [],
+    "web/src/components/sources/WebSearchResultList.vue": [],
+    "web/src/components/StatusBar.vue": [],
+    "web/src/components/SubagentThreadModal.vue": [],
+    "web/src/components/TaskCenterDrawer.vue": [],
+    "web/src/components/ThemeToggle.vue": [],
+    "web/src/components/ThreadMessageList.vue": [],
+    "web/src/components/ToolCallingResult/BaseToolCall.vue": [],
+    "web/src/components/ToolCallingResult/index.js": [],
+    "web/src/components/ToolCallingResult/ToolCallRenderer.vue": [],
+    "web/src/components/ToolCallingResult/toolRegistry.js": [],
+    "web/src/components/ToolCallingResult/tools/AskUserQuestionTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/CalculatorTool.vue": [],
+    "web/src/components/ToolCallingResult/tools/ChartTool.vue": []
+  },
+  "neighborMap": {}
+}
