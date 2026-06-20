@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
 
@@ -70,6 +71,35 @@ class YuxiClient:
     def delete_api_key(self, api_key_id: str) -> dict:
         return self._request("DELETE", f"/user/apikey/{api_key_id}")
 
+    def get_database(self, kb_id: str) -> dict:
+        return self._request("GET", f"/knowledge/databases/{kb_id}")
+
+    def list_databases(self) -> dict:
+        return self._request("GET", "/knowledge/databases")
+
+    def get_knowledge_base_types(self) -> dict:
+        return self._request("GET", "/knowledge/types")
+
+    def get_supported_file_types(self) -> dict:
+        return self._request("GET", "/knowledge/files/supported-types")
+
+    def upload_knowledge_file(self, kb_id: str, path: Path, *, timeout_seconds: float = 300) -> dict:
+        with path.open("rb") as fp:
+            return self._request(
+                "POST",
+                "/knowledge/files/upload",
+                params={"kb_id": kb_id},
+                files={"file": (path.name, fp, "application/octet-stream")},
+                timeout=timeout_seconds,
+            )
+
+    def add_uploaded_documents(self, kb_id: str, items: list[str], params: dict) -> dict:
+        return self._request(
+            "POST",
+            f"/knowledge/databases/{kb_id}/documents/add",
+            json={"items": items, "params": params},
+        )
+
     def run_agent_eval(
         self,
         *,
@@ -101,7 +131,10 @@ class YuxiClient:
         *,
         auth: bool = True,
         api_key: str | None = None,
-        json: dict | None = None,
+        json: Any | None = None,
+        params: dict | None = None,
+        files: dict | None = None,
+        data: dict | None = None,
         timeout: float | None = None,
     ) -> dict:
         headers = {}
@@ -110,7 +143,15 @@ class YuxiClient:
             headers["Authorization"] = f"Bearer {token}"
 
         url = f"{self.remote.api_base_url}{path if path.startswith('/') else f'/{path}'}"
-        request_kwargs: dict[str, Any] = {"headers": headers, "json": json}
+        request_kwargs: dict[str, Any] = {"headers": headers}
+        if params is not None:
+            request_kwargs["params"] = params
+        if files is not None:
+            request_kwargs["files"] = files
+        if data is not None:
+            request_kwargs["data"] = data
+        if json is not None:
+            request_kwargs["json"] = json
         if timeout is not None:
             request_kwargs["timeout"] = timeout
         try:

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import typer
 from rich.console import Console
 
@@ -20,13 +22,16 @@ from yuxi_cli.commands import (
     whoami as whoami_command,
 )
 from yuxi_cli.config import ConfigError, ConfigStore
+from yuxi_cli.kb_upload import KbUploadError, KbUploadOptions, run_kb_upload
 
 console = Console()
 app = typer.Typer(help="Yuxi command line client.", invoke_without_command=True)
 remote_app = typer.Typer(help="Manage Yuxi remotes.")
 agent_app = typer.Typer(help="Run and manage Yuxi agents.")
+kb_app = typer.Typer(help="Upload and manage knowledge base files.")
 app.add_typer(remote_app, name="remote")
 app.add_typer(agent_app, name="agent")
+app.add_typer(kb_app, name="kb")
 
 
 def _store() -> ConfigStore:
@@ -132,6 +137,30 @@ def logout(
     try:
         logout_command(_store(), remote, local_only, console)
     except (ConfigError, ClientError) as exc:
+        _handle_error(exc)
+
+
+@kb_app.command("upload")
+def upload_knowledge_base_files(
+    path: Path = typer.Argument(..., help="File or directory to upload."),
+    kb_id: str | None = typer.Option(None, "--kb-id", help="Knowledge base ID. Prompt when omitted."),
+    remote: str | None = typer.Option(None, "--remote", help="Remote name."),
+    yes: bool = typer.Option(False, "--yes", "-y", help="Skip confirmation."),
+    concurrency: int = typer.Option(3, "--concurrency", help="Concurrent upload count, 1-10."),
+    include_ext: str | None = typer.Option(None, "--include-ext", help="Comma separated extension allowlist."),
+    exclude_ext: str | None = typer.Option(None, "--exclude-ext", help="Comma separated extension denylist."),
+):
+    options = KbUploadOptions(
+        path=path,
+        kb_id=kb_id,
+        yes=yes,
+        concurrency=concurrency,
+        include_ext=include_ext,
+        exclude_ext=exclude_ext,
+    )
+    try:
+        run_kb_upload(_store(), remote, options, console)
+    except (ConfigError, ClientError, KbUploadError) as exc:
         _handle_error(exc)
 
 
